@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* SCSS Variables */
+$colorMaastrichtBlue: #001a3b;
+$colorAquamarine: #00fb9f;
+
+/* Fonts */
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Colors */
+
+.bg-theme-blue {
+    background-color: $colorMaastrichtBlue;
+}
+
+.color-theme-blue {
+    color: $colorMaastrichtBlue;
+}
+
+.bg-theme-green {
+    background-color: $colorAquamarine;
+}
+
+.color-theme-green {
+    color: $colorAquamarine;
+}
+
+/* Custom Size */
+
+.display-125 {
+    font-size: 1.25rem;
+}
+
+/* Logo Text */
+.logo-text {
+    color: $colorAquamarine;
+    font-size: xx-large;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin-left: 1rem;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: $colorAquamarine;
+}
+
+.logo-text .log-sub-text {
+    color: $colorMaastrichtBlue;
+    border: 1px solid $colorAquamarine;
+    background: $colorAquamarine;
+    padding-right: 2rem;
+    padding-left: 0.4rem;
+}
+
+/* Aquamarine button */
+.aqua-btn {
+    background-color: $colorMaastrichtBlue;
+    color: $colorMaastrichtBlue;
+    border: 1px solid $colorAquamarine;
+    border-radius: 0.25rem;
+    color: $colorAquamarine;
+    cursor: pointer;
+}
+
+.aqua-btn:hover {
+    background-color: $colorAquamarine;
+    color: $colorMaastrichtBlue;
+    border: 1px solid $colorMaastrichtBlue;
+}
+

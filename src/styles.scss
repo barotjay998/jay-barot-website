@@ -6,6 +6,7 @@ $colorAquamarine: #00fb9f;
 $colorGrey: #9e9e9e;
 $colorLavenderBlue: #c7d8ed;
 $colorCoolGrey: #8d93ab;
+$colorPlatinum: #e5e5e5;
 
 .html {
     scroll-behavior: smooth;
@@ -48,6 +49,14 @@ $colorCoolGrey: #8d93ab;
 
 .color-lavender-blue {
     color: $colorLavenderBlue;
+}
+
+.color-platinum {
+    color: $colorPlatinum;
+}
+
+.bg-platinum {
+    background-color: $colorPlatinum;
 }
 
 /* Custom Size */
@@ -119,7 +128,7 @@ $colorCoolGrey: #8d93ab;
 // Console style
 .console {
     padding-top: 1rem;
-    background: #001023;
+    background: #0010238c;
     border-radius: 0.6rem;
     padding: 1rem 1rem 1rem 1rem;
 }
@@ -141,16 +150,30 @@ $colorCoolGrey: #8d93ab;
     @extend .font-roboto;
 }
 
-.blob {
-    position: relative;
-    width: 5rem;
-    height: 5rem;
+.about-heading {
+    color:#bababa;
+    font-size: 10rem;
+    font-weight: bold;
+    @extend .font-roboto;
 }
 
-.blob:nth-child(2) {
-    filter: blur(50px);
+.img-jay-barot {
+    width: 40%;
+    margin: 25%;
+    border-radius: 100%;
 }
 
+.svg-container {
+    background-image: url(assets/images/gggyrate.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero {
+    background-image: url(assets/images/ffflurry.svg);
+    background-size: cover;
+    background-position: center;
+}
 
 // Media Queries
 

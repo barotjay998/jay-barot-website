@@ -1,0 +1,19 @@
+/* Transparent Navbar */
+.navbar.transparent.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+// .navbar.transparent.navbar-inverse .navbar-brand {
+// color: #fff;
+// }
+
+/* Solid Navbar on Scroll */
+.navbar.solid.navbar-inverse {
+background-color: #001a3b;
+transition: background-color 1s ease-in-out;
+}
+
+// .navbar.solid.navbar-inverse .navbar-brand {
+// color: #fff;
+// }

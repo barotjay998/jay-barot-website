@@ -3,6 +3,13 @@
 /* SCSS Variables */
 $colorMaastrichtBlue: #001a3b;
 $colorAquamarine: #00fb9f;
+$colorGrey: #9e9e9e;
+$colorLavenderBlue: #c7d8ed;
+$colorCoolGrey: #8d93ab;
+
+.html {
+    scroll-behavior: smooth;
+}
 
 /* Fonts */
 .font-roboto {
@@ -31,10 +38,38 @@ $colorAquamarine: #00fb9f;
     color: $colorAquamarine;
 }
 
+.bg-grey {
+    background-color: $colorGrey;
+}
+
+.color-grey {
+    color: $colorGrey;
+}
+
+.color-lavender-blue {
+    color: $colorLavenderBlue;
+}
+
 /* Custom Size */
 
 .display-125 {
     font-size: 1.25rem;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 0.1rem;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 0.2rem;
+}
+
+.letter-spacing-01 {
+    letter-spacing: 0.01rem;
+}
+
+.letter-spacing-02 {
+    letter-spacing: 0.02rem;
 }
 
 /* Logo Text */
@@ -75,3 +110,154 @@ $colorAquamarine: #00fb9f;
     border: 1px solid $colorMaastrichtBlue;
 }
 
+// Light Outline Button Custom
+.btn-custom-2 {
+    margin: 0.5rem;
+    width: 10rem;
+}
+
+// Console style
+.console {
+    padding-top: 1rem;
+    background: #001023;
+    border-radius: 0.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.hero-name {
+    color:$colorLavenderBlue;
+    font-weight: bold;
+    @extend .font-roboto, .letter-spacing-01;
+}
+
+.hero-title {
+    color: $colorCoolGrey;
+    font-weight: bolder;
+    @extend .font-roboto, .letter-spacing-01;
+}
+
+.hero-intro {
+    color: #c1c1c1;
+    @extend .font-roboto;
+}
+
+.blob {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px);
+}
+
+
+// Media Queries
+
+/* Very Small devices (phones, 600px and up) */
+@media only screen and (min-width: 200px) {
+
+    #hero-console {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #hero-left {
+        padding: 1rem;
+    }
+
+    #h-name {
+        font-size: 3rem;
+        margin-left: 0.5rem;
+    }
+
+    #h-title {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    #h-intro {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+}
+
+/* Small devices (phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #hero-console {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #hero-left {
+        padding: 2rem;
+    }
+
+    #h-name {
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    #h-title {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    #h-intro {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #hero-console {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #hero-left {
+        padding: 5rem;
+    }
+
+    #h-name {
+        font-size: 7rem;
+        margin-left: 2rem;
+    }
+
+    #h-title {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    #h-intro {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #hero-console {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #hero-left {
+        padding: 5rem;
+    }
+
+    #h-name {
+        font-size: 7rem;
+        margin-left: 2rem;
+
+    }
+
+    #h-title {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    #h-intro {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+}
+  
+  

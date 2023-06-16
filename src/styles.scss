@@ -21,6 +21,14 @@ $colorPlatinum: #e5e5e5;
     font-family: 'Roboto Mono', monospace;
 }
 
+.font-special-elite {
+    font-family: 'Special Elite';
+}
+
+.font-courier-prime {
+    font-family: 'Courier Prime', monospace;
+}
+
 /* Colors */
 
 .bg-theme-blue {
@@ -152,15 +160,46 @@ $colorPlatinum: #e5e5e5;
 
 .about-heading {
     color:#bababa;
-    font-size: 10rem;
     font-weight: bold;
     @extend .font-roboto;
+}
+
+.about-info {
+    font-size: 1.15rem;
+    color: #575757;
+    // border: 0.1rem solid;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem;
+    @extend .font-roboto;
+}
+
+.about-contact-info-card {
+    padding: 1rem;
+    background: #d6d6d6;
+    // background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(230,230,230,1) 35%, rgba(241,241,241,1) 100%);
+    background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(230,230,230,1) 35%, rgba(221,221,221,1) 100%);
+    border-radius: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    @extend .font-roboto;
+}
+
+.anchor-no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.anchor-no-style:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .img-jay-barot {
     width: 40%;
     margin: 25%;
-    border-radius: 100%;
+    // border-radius: 100%;
+    -webkit-clip-path: polygon(0% 50%, 27% 7%, 69% 6%, 99% 50%, 70% 94%, 26% 94%);
+    clip-path: polygon(0% 50%, 27% 7%, 69% 6%, 99% 50%, 70% 94%, 26% 94%);
 }
 
 .svg-container {
@@ -202,6 +241,11 @@ $colorPlatinum: #e5e5e5;
         font-size: 1.2rem;
         margin-left: 0.5rem;
     }
+
+    #about-head {
+        font-size: 4rem;
+        text-align: center;
+    }
 }
 
 /* Small devices (phones, 600px and up) */
@@ -228,12 +272,17 @@ $colorPlatinum: #e5e5e5;
         font-size: 1.4rem;
         margin-left: 1rem;
     }
+
+    #about-head {
+        font-size: 3rem;
+        text-align: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #hero-console {
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 1rem 1rem 1rem 2rem;
     }
 
     #hero-left {
@@ -254,12 +303,17 @@ $colorPlatinum: #e5e5e5;
         font-size: 1.4rem;
         margin-left: 2rem;
     }
+
+    #about-head {
+        font-size: 5rem;
+        text-align: center;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #hero-console {
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 1rem 3rem 1rem 2rem;
     }
 
     #hero-left {
@@ -280,6 +334,11 @@ $colorPlatinum: #e5e5e5;
     #h-intro {
         font-size: 1.5rem;
         margin-left: 2rem;
+    }
+
+    #about-head {
+        font-size: 7rem;
+        text-align: left;
     }
 }
   

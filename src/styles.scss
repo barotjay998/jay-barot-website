@@ -21,8 +21,8 @@ $colorPlatinum: #e5e5e5;
     font-family: 'Roboto Mono', monospace;
 }
 
-.font-special-elite {
-    font-family: 'Special Elite';
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .font-courier-prime {
@@ -113,6 +113,7 @@ $colorPlatinum: #e5e5e5;
 
 /* Aquamarine button */
 .aqua-btn {
+    font-weight: bold;
     background-color: $colorMaastrichtBlue;
     color: $colorMaastrichtBlue;
     border: 1px solid $colorAquamarine;
@@ -132,6 +133,31 @@ $colorPlatinum: #e5e5e5;
     margin: 0.5rem;
     width: 10rem;
 }
+
+.btn-custom-3 {
+    border-color: $colorLavenderBlue;
+    color: $colorLavenderBlue;
+}
+
+.btn-custom-3:hover {
+    background-color: $colorLavenderBlue;
+    color: $colorMaastrichtBlue;
+}
+
+.btn-custom-4 {
+    margin: 0.5rem;
+    width: 8rem;
+    border-radius: 100px;
+    border-color: $colorAquamarine;
+    color: $colorAquamarine;
+}
+
+.btn-custom-4:hover {
+    background-color: #00fb9f00;
+    border-color: $colorAquamarine;
+    color: $colorAquamarine;
+}
+
 
 // Console style
 .console {
@@ -155,7 +181,7 @@ $colorPlatinum: #e5e5e5;
 
 .hero-intro {
     color: #c1c1c1;
-    @extend .font-roboto;
+    @extend .font-montserrat, .letter-spacing-01;
 }
 
 .about-heading {
@@ -169,7 +195,7 @@ $colorPlatinum: #e5e5e5;
     color: #575757;
     // border: 0.1rem solid;
     padding: 1rem;
-    border-radius: 1rem;
+    // border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem;
     @extend .font-roboto;
 }
@@ -179,9 +205,103 @@ $colorPlatinum: #e5e5e5;
     background: #d6d6d6;
     // background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(230,230,230,1) 35%, rgba(241,241,241,1) 100%);
     background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(230,230,230,1) 35%, rgba(221,221,221,1) 100%);
-    border-radius: 2rem;
+    box-shadow: 0rem 0rem 1rem 0.05rem lightgray;
+    border-radius: 0.5rem;
     margin: 1rem 1rem 1rem 1rem;
     @extend .font-roboto;
+}
+
+.experience-light {
+    color: #00ffa2;
+}
+
+.experience-title {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(#00ffa2, #024b30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.experience-card-flex-container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem 0.2rem #00fb9f;
+    background-color: $colorMaastrichtBlue;
+}
+
+.experience-card-flex-item {
+    flex: 1;
+}
+
+.experience-job-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color:$colorLavenderBlue;
+    @extend .font-roboto;
+}
+
+.experience-company-name {
+    font-size: inherit;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    @extend .font-roboto;
+}
+
+.experience-job-link {
+    font-size: 1.5rem;
+    color: $colorAquamarine;
+}
+
+.experience-job-link:hover {
+    color: $colorLavenderBlue;
+}
+
+.experience-job-period {
+    font-size: 1.15rem;
+    color: $colorCoolGrey;
+    @extend .font-roboto-mono;
+}
+
+.experience-job-about {
+    font-size: 1rem;
+    color: white;
+    @extend .font-roboto;
+}
+
+.experience-job-description {
+    color: white;
+    font-size: 1.15rem;
+    @extend .font-montserrat;
+}
+
+.experience-projects-heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $colorLavenderBlue;
+    @extend .font-montserrat;
+}
+
+.key-projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center; /* Vertically center elements */
+}
+
+.custom-circle-check {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: $colorAquamarine;
 }
 
 .anchor-no-style {
@@ -192,6 +312,12 @@ $colorPlatinum: #e5e5e5;
 .anchor-no-style:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.key-projects-description {
+    font-size: 1.15rem;
+    color: white;
+    @extend .font-montserrat;
 }
 
 .img-jay-barot {
@@ -210,6 +336,12 @@ $colorPlatinum: #e5e5e5;
 
 #hero {
     background-image: url(assets/images/ffflurry.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#experience {
+    background-image: url(assets/images/nnnoise.svg);
     background-size: cover;
     background-position: center;
 }
@@ -246,6 +378,26 @@ $colorPlatinum: #e5e5e5;
         font-size: 4rem;
         text-align: center;
     }
+
+    .experience-title {
+        font-size: 3.5rem;
+    }
+
+    .experience-job-title {
+        font-size: 1.8rem;
+    }
+
+    .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
+        font-size: 1rem;
+    }
+
+    .experience-projects-heading {
+        font-size: 1.1rem;
+    }
+
+    .custom-circle-check {
+        font-size: 1.4rem;
+    }
 }
 
 /* Small devices (phones, 600px and up) */
@@ -276,6 +428,26 @@ $colorPlatinum: #e5e5e5;
     #about-head {
         font-size: 3rem;
         text-align: center;
+    }
+
+    .experience-title {
+        font-size: 4rem;
+    }
+
+    .experience-job-title {
+        font-size: 2rem;
+    }
+
+    .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
+        font-size: 1rem;
+    }
+
+    .experience-projects-heading {
+        font-size: 1.1rem;
+    }
+
+    .custom-circle-check {
+        font-size: 1.5rem;
     }
 }
 
@@ -308,6 +480,26 @@ $colorPlatinum: #e5e5e5;
         font-size: 5rem;
         text-align: center;
     }
+
+    .experience-title {
+        font-size: 5rem;
+    }
+
+    .experience-job-title {
+        font-size: 2.2rem;
+    }
+
+    .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
+        font-size: 1.1rem;
+    }
+
+    .experience-projects-heading {
+        font-size: 1.2rem;
+    }
+
+    .custom-circle-check {
+        font-size: 1.8rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -339,6 +531,26 @@ $colorPlatinum: #e5e5e5;
     #about-head {
         font-size: 7rem;
         text-align: left;
+    }
+
+    .experience-title {
+        font-size: 5rem;
+    }
+
+    .experience-job-title {
+        font-size: 2.5rem;
+    }
+
+    .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
+        font-size: 1.15rem;
+    }
+
+    .experience-projects-heading {
+        font-size: 1.5rem;
+    }
+
+    .custom-circle-check {
+        font-size: 2rem;
     }
 }
   

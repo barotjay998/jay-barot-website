@@ -185,9 +185,14 @@ $colorPlatinum: #e5e5e5;
 }
 
 .about-heading {
-    color:#bababa;
+    background: linear-gradient(#cacaca, #a9a7a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 7rem;
     font-weight: bold;
-    @extend .font-roboto;
+    @extend .font-roboto
 }
 
 .about-info {
@@ -320,6 +325,32 @@ $colorPlatinum: #e5e5e5;
     @extend .font-montserrat;
 }
 
+.projects-heading {
+    @extend .about-heading;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(72, 255, 0);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    box-shadow: 0rem 0rem 1rem 0.05rem lightgray;
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.project-card-row {
+    margin: 3rem;
+}
+
+.project-card-item {
+    flex: 1;
+}
+
 .img-jay-barot {
     width: 40%;
     margin: 25%;
@@ -345,6 +376,12 @@ $colorPlatinum: #e5e5e5;
     background-size: cover;
     background-position: center;
 }
+
+// #projects {
+//     background-image: url(assets/images/ooorganize.svg);
+//     background-size: cover;
+//     background-position: center;
+// } 
 
 // Media Queries
 
@@ -398,6 +435,11 @@ $colorPlatinum: #e5e5e5;
     .custom-circle-check {
         font-size: 1.4rem;
     }
+
+    .project-card-row {
+        margin: 1.5rem;
+    }
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -449,6 +491,11 @@ $colorPlatinum: #e5e5e5;
     .custom-circle-check {
         font-size: 1.5rem;
     }
+
+    .project-card-row {
+        margin: 2rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -500,6 +547,11 @@ $colorPlatinum: #e5e5e5;
     .custom-circle-check {
         font-size: 1.8rem;
     }
+
+    .project-card-row {
+        margin: 2.2rem;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -552,6 +604,11 @@ $colorPlatinum: #e5e5e5;
     .custom-circle-check {
         font-size: 2rem;
     }
+
+    .project-card-row {
+        margin: 3.5rem;
+    }
+
 }
   
   

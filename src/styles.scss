@@ -228,7 +228,7 @@ $colorPlatinum: #e5e5e5;
 .experience-title {
     font-size: 5rem;
     font-weight: bold;
-    background: linear-gradient(#00ffa2, #01c67d);
+    background: linear-gradient(#00ffa2, #028d59);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -439,11 +439,11 @@ $colorPlatinum: #e5e5e5;
     background-position: center;
 }
 
-// #projects {
-//     background-image: url(assets/images/ooorganize.svg);
-//     background-size: cover;
-//     background-position: center;
-// } 
+#projects {
+    background-image: url(assets/images/oooscillate.svg);
+    background-size: cover;
+    background-position: center;
+} 
 
 // Media Queries
 
@@ -502,6 +502,12 @@ $colorPlatinum: #e5e5e5;
         margin: 1.5rem;
     }
 
+    #projects {
+        background-image: url(assets/images/llleaves.svg);
+        background-size: cover;
+        background-position: center;
+    } 
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -557,6 +563,12 @@ $colorPlatinum: #e5e5e5;
     .project-card-row {
         margin: 2rem;
     }
+
+    #projects {
+        background-image: url(assets/images/llleaves.svg);
+        background-size: cover;
+        background-position: center;
+    } 
 
 }
 
@@ -614,6 +626,12 @@ $colorPlatinum: #e5e5e5;
         margin: 2.2rem;
     }
 
+    #projects {
+        background-image: url(assets/images/llleaves.svg);
+        background-size: cover;
+        background-position: center;
+    } 
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -670,6 +688,12 @@ $colorPlatinum: #e5e5e5;
     .project-card-row {
         margin: 3.5rem;
     }
+
+    #projects {
+        background-image: url(assets/images/oooscillate.svg);
+        background-size: cover;
+        background-position: center;
+    } 
 
 }
   

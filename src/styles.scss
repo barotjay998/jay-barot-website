@@ -158,7 +158,6 @@ $colorPlatinum: #e5e5e5;
     color: $colorAquamarine;
 }
 
-
 // Console style
 .console {
     padding-top: 1rem;
@@ -185,14 +184,20 @@ $colorPlatinum: #e5e5e5;
 }
 
 .about-heading {
-    background: linear-gradient(#cacaca, #a9a7a7);
+    background: #585757;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     @extend .font-roboto
+}
+
+.about-sub-heading {
+    color: #575757;
+    font-size: 2rem;
+    @extend .font-montserrat;
 }
 
 .about-info {
@@ -223,11 +228,17 @@ $colorPlatinum: #e5e5e5;
 .experience-title {
     font-size: 5rem;
     font-weight: bold;
-    background: linear-gradient(#00ffa2, #024b30);
+    background: linear-gradient(#00ffa2, #01c67d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.experience-subtitle {
+    font-size: 2rem;
+    color: #55cfa3;
+    @extend .font-montserrat;
 }
 
 .experience-card-flex-container {
@@ -326,20 +337,57 @@ $colorPlatinum: #e5e5e5;
 }
 
 .projects-heading {
-    @extend .about-heading;
+    background: linear-gradient(#3b3939, #727171);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 7rem;
+    font-weight: bold;
+    @extend .font-roboto
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgb(72, 255, 0);
+.projects-sub-heading {
+    font-size: 2rem;
+    color: #656565;
+    @extend .font-montserrat;
+}
+
+.project-technology-label {
+    font-size: 0.8rem;
+    color: #4d4d4d;
+    width: 5rem;
+    padding: 0.3rem;
+    border-radius: 3rem;
+    background: #b7eebd;
+    margin: 0.5rem;
+    @extend .font-roboto;
+}
+
+.btns-carousel {
+    color: #32cd77;
+    font-size: 5rem;
+}
+
+.btns-carousel:hover {
+    color: #02e08f;
+    padding: 5px;
+    border-radius: 100%;
+    border: 2px dotted rgb(97, 238, 84);
+    text-shadow: 0 0 5px rgb(97, 238, 84);
+}
+
+.carousel-indicators li {
+    background-color: #9d9d9d;
+}
+
+.carousel-indicators .active {
+    background-color: #32cd77;
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
     background: #f1f1f1;
-    box-shadow: 0rem 0rem 1rem 0.05rem lightgray;
-    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1rem 0.5rem lightgray;
     margin: 1rem 1rem 1rem 1rem;
 }
 
@@ -347,8 +395,22 @@ $colorPlatinum: #e5e5e5;
     margin: 3rem;
 }
 
-.project-card-item {
-    flex: 1;
+.project-visual {
+    padding: 2rem;
+    background: #e3e3e3;
+}
+
+.project-visual-icon {
+    font-size: 5rem;
+    color: #969696;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.01rem;
+    color: #3f3f3f;
+    text-align: left;
+    @extend .font-roboto;
 }
 
 .img-jay-barot {
@@ -412,7 +474,7 @@ $colorPlatinum: #e5e5e5;
     }
 
     #about-head {
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -581,7 +643,7 @@ $colorPlatinum: #e5e5e5;
     }
 
     #about-head {
-        font-size: 7rem;
+        font-size: 5rem;
         text-align: left;
     }
 

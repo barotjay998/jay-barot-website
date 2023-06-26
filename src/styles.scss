@@ -386,23 +386,24 @@ $colorPlatinum: #e5e5e5;
 }
 
 .project-card {
-    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #e7e6e6;
     box-shadow: 0rem 0rem 1rem 0.5rem lightgray;
     margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
 }
 
-.project-card-row {
-    margin: 3rem;
+.project-card-item {
+    flex: 1;
 }
 
 .project-visual {
-    padding: 2rem;
-    background: #e3e3e3;
-}
-
-.project-visual-icon {
-    font-size: 5rem;
-    color: #969696;
+    color: rgb(167, 167, 167);
+    background: #dadada;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
 .project-title {
@@ -410,6 +411,10 @@ $colorPlatinum: #e5e5e5;
     letter-spacing: 0.01rem;
     color: #3f3f3f;
     text-align: left;
+    @extend .font-montserrat;
+}
+
+.project-learn-more {
     @extend .font-roboto;
 }
 
@@ -508,6 +513,23 @@ $colorPlatinum: #e5e5e5;
         background-position: center;
     } 
 
+    .projects-heading {
+        font-size: 3.5rem;
+    }
+
+    .projects-sub-heading {
+        font-size: 1.4rem;
+    }
+
+    .project-card {
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .btns-carousel {
+        font-size: 2.5rem;
+    }
+
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -569,6 +591,30 @@ $colorPlatinum: #e5e5e5;
         background-size: cover;
         background-position: center;
     } 
+
+    .projects-heading {
+        font-size: 7rem;
+    }
+
+    .projects-sub-heading {
+        font-size: 2rem;
+    }
+
+    .projects-heading {
+        font-size: 4rem;
+    }
+
+    .projects-sub-heading {
+        font-size: 1.6rem;
+    }
+
+    .project-card {
+        margin: 1rem 3rem 1rem 3rem;
+    }
+
+    .btns-carousel {
+        font-size: 3rem;
+    }
 
 }
 
@@ -632,6 +678,23 @@ $colorPlatinum: #e5e5e5;
         background-position: center;
     } 
 
+    .projects-heading {
+        font-size: 5rem;
+    }
+
+    .projects-sub-heading {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        margin: 1rem 4rem 1rem 4rem;
+    }
+
+    .btns-carousel {
+        font-size: 3rem;
+    }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -686,7 +749,7 @@ $colorPlatinum: #e5e5e5;
     }
 
     .project-card-row {
-        margin: 3.5rem;
+        margin: 2rem;
     }
 
     #projects {
@@ -694,6 +757,22 @@ $colorPlatinum: #e5e5e5;
         background-size: cover;
         background-position: center;
     } 
+
+    .projects-heading {
+        font-size: 7rem;
+    }
+
+    .projects-sub-heading {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .btns-carousel {
+        font-size: 5rem;
+    }
 
 }
   

@@ -16,11 +16,9 @@
             <div id="hero-console" class="color-theme-green d-flex font-roboto-mono console font-weight-bold">
               <p>
                 <span class="color-grey">root@localhost:~#</span>
-                <!-- <span class="letter-spacing-01">
-                  Hello World! I'm Jay's personal AI, I'll to help you discover more about his professional background.
-                </span> -->
+                _<i class="fa-solid fa-robot"></i>_/
                 <span class="letter-spacing-01">
-                  Hello World! I'll to help you discover more about his professional background.
+                  Hello World!  I'll to help you discover more about Jay's professional background.
                 </span>
               </p>
             </div> 
@@ -510,135 +508,87 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-nav-btns">
-        </li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel-nav-btns">
-        </li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel-nav-btns">
+        <li *ngFor="let index of getRange(numRows)" 
+              data-target="#carouselExampleIndicators" 
+              [attr.data-slide-to]="index" class="carousel-nav-btns" 
+              [ngClass]="{ 'active': index === 0 }"
+            >
         </li>
       </ol>
 
       <div class="carousel-inner">
 
-        <!-- Carousel Item One -->
-        <div class="carousel-item active">
+        <!-- Carousel Item: Repeat it for numRows times -->
+        <div *ngFor="let index of getRange(numRows)"
+              [ngClass]="{ 'active': index === 0 }"
+              class="carousel-item"
+              >
+
           <div class="container">
-
             <div class="row project-card-row justify-content-center">
-
+              
               <!-- Projects Card -->
-              <div class="col-lg-3 project-card">
-                <div class="project-card-item">
+              <div *ngFor="let project of projectData[index]" class="col-lg-3 project-card">
+                <div class="project-card-item project-image-row">
                   <div class="row justify-content-center">
-                    <div class="col-11 text-center project-visual mb-2">
-                        <i class="fa-regular fa-image" 
-                           style="font-size: 4rem;">
+                    <div 
+                      class="col-12 text-center mb-2" 
+                      [ngClass]="{
+                          'col-11': project.image == '',
+                          'col-12': project.image != '',
+                          'project-visual': project.image == ''
+                        }"
+                    >
+                        <i 
+                          *ngIf="project.image == ''"
+                          class="fa-regular fa-image" 
+                          style="font-size: 2rem;">
                         </i>
+
+                        <img 
+                          style="border-radius: 0.5rem;"
+                          class="img-fluid project-image" 
+                          src={{project.image}}
+                        >
+                      
                     </div>
                   </div>
                 </div>
 
-                <div class="project-card-item">
+                <div class="project-card-item project-title-row">
                   <div class="row">
                     <div class="col-lg-12 project-title">
-                      <p> Stock Market Prediction </p>
+                      <p> 
+                        {{project.title}}
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div class="project-card-item mb-2">
+                <div id="proj-tech" class="project-card-item mb-2 project-tech-row">
                   <div class="row">
                     <div class="col-lg-12">
-                      <a class="d-block project-learn-more" href="#">Learn More <i class="fa-solid fa-angles-right" style="font-size: 0.8rem;"></i> </a>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-python"></i>
-                        Python
-                      </label>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-java"></i>
-                        Java
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <a 
+                        *ngIf=" project.links != '' "
+                        class="d-block project-learn-more"
+                        href="#"
+                      >
+                        Learn More <i class="fa-solid fa-angles-right" style="font-size: 0.8rem;"></i> 
+                      </a>
 
-              <!-- Projects Card -->
-              <div class="col-lg-3 project-card">
-                <div class="project-card-item">
-                  <div class="row justify-content-center">
-                    <div class="col-11 text-center project-visual mb-2">
-                        <i class="fa-regular fa-image" style="font-size: 4rem;"></i>
+                      <label *ngFor="let technology of project.techStack" class="project-technology-label b-inline text-center">
+                        {{technology}}
+                      </label>   
                     </div>
                   </div>
                 </div>
 
-                <div class="project-card-item">
-                  <div class="row">
-                    <div class="col-lg-12 project-title">
-                      <p> Stock Market Prediction </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="project-card-item mb-2">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <a class="d-block project-learn-more" href="#">Learn More <i class="fa-solid fa-angles-right" style="font-size: 0.8rem;"></i> </a>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-python"></i>
-                        Python
-                      </label>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-java"></i>
-                        Java
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Projects Card -->
-              <div class="col-lg-3 project-card">
-                <div class="project-card-item">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-11 text-center project-visual mb-2">
-                        <i class="fa-regular fa-image" style="font-size: 4rem;"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="project-card-item">
-                  <div class="row">
-                    <div class="col-lg-12 project-title">
-                      <p> Stock Market Prediction </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="project-card-item mb-2">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <a class="d-block project-learn-more" href="#">Learn More <i class="fa-solid fa-angles-right" style="font-size: 0.8rem;"></i> </a>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-python"></i>
-                        Python
-                      </label>
-                      <label for="" class="project-technology-label b-inline text-center">
-                        <i class="fa-brands fa-java"></i>
-                        Java
-                      </label>
-                    </div>
-                  </div>
-                </div>
               </div>
 
             </div>
 
           </div>
         </div>
-
-
       </div>
 
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -660,6 +610,24 @@
 
 <section id="education" class="py-5 bg-theme-blue d-flex" style="min-height: 100vh;">
   <div class="container-fluid">
+
+    <!-- Top Button -->
+    <div class="row justify-content-end">
+      <div class="col-lg-3 text-center">
+        <button type="button" class="btn btn-outline-light btn-custom-3" style="width: 35%"> 
+          <i class="fa-solid fa-jet-fighter-up"></i> 
+            Top
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-lg-12 text-center m-4">
+
+      </div>
+    </div>
     
   </div>
 </section>

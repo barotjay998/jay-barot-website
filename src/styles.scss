@@ -89,6 +89,13 @@ $colorPlatinum: #e5e5e5;
     letter-spacing: 0.02rem;
 }
 
+a.disabled {
+    /* Make the disabled links grayish*/
+    color: gray;
+    /* And disable the pointer events */
+    pointer-events: none;
+}
+
 /* Logo Text */
 .logo-text {
     color: $colorAquamarine;
@@ -117,7 +124,7 @@ $colorPlatinum: #e5e5e5;
     background-color: $colorMaastrichtBlue;
     color: $colorMaastrichtBlue;
     border: 1px solid $colorAquamarine;
-    border-radius: 0.25rem;
+    border-radius: 0rem;
     color: $colorAquamarine;
     cursor: pointer;
 }
@@ -132,6 +139,7 @@ $colorPlatinum: #e5e5e5;
 .btn-custom-2 {
     margin: 0.5rem;
     width: 10rem;
+    border-radius: 0.7rem;
 }
 
 .btn-custom-3 {
@@ -147,7 +155,7 @@ $colorPlatinum: #e5e5e5;
 .btn-custom-4 {
     margin: 0.5rem;
     width: 8rem;
-    border-radius: 100px;
+    border-radius: 0.7rem;
     border-color: $colorAquamarine;
     color: $colorAquamarine;
 }
@@ -247,7 +255,7 @@ $colorPlatinum: #e5e5e5;
     flex-direction: column;
     padding: 2rem;
     margin: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 0rem 0rem 1rem 0.2rem #00fb9f;
     background-color: $colorMaastrichtBlue;
 }
@@ -356,9 +364,8 @@ $colorPlatinum: #e5e5e5;
 .project-technology-label {
     font-size: 0.8rem;
     color: #4d4d4d;
-    width: 5rem;
-    padding: 0.3rem;
-    border-radius: 3rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 0.5rem;
     background: #b7eebd;
     margin: 0.5rem;
     @extend .font-roboto;
@@ -404,6 +411,7 @@ $colorPlatinum: #e5e5e5;
     color: rgb(167, 167, 167);
     background: #dadada;
     padding: 3rem 2rem 3rem 2rem;
+    border-radius: 0.5rem;
 }
 
 .project-title {
@@ -529,6 +537,17 @@ $colorPlatinum: #e5e5e5;
         font-size: 2.5rem;
     }
 
+    .project-image-row {
+        display: none;
+    }
+
+    .project-tech-row {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
+    }
 
 }
 
@@ -616,6 +635,18 @@ $colorPlatinum: #e5e5e5;
         font-size: 3rem;
     }
 
+    .project-image-row {
+        display: none;
+    }
+
+    .project-tech-row {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -694,6 +725,17 @@ $colorPlatinum: #e5e5e5;
         font-size: 3rem;
     }
 
+    .project-image-row {
+        display: none;
+    }
+
+    .project-tech-row {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
+    }
 
 }
 
@@ -772,6 +814,18 @@ $colorPlatinum: #e5e5e5;
 
     .btns-carousel {
         font-size: 5rem;
+    }
+
+    .project-image-row {
+        display: block;
+    }
+
+    .project-tech-row {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
     }
 
 }

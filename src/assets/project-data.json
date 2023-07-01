@@ -1,0 +1,315 @@
+[
+    {
+        "title": "Game of Papers - A recommendation system for research papers",
+        "techStack": [
+            "ML SciBERT", 
+            "Angular", 
+            "Flask", 
+            "Docker"
+        ],
+        "image": "/assets/images/projects/game-of-papers.png",
+        "imageAlt": "Jay Barot Machine Learning Project",
+        "links": "",
+        "partners": [
+            "Adit Negi",
+            "Samir Gupta"
+        ],
+        "mentor": [
+            "Ipek Oguz"
+        ],
+        "subject": "Projects in Machine Learning",
+        "subjectCode": "CS-5892-02",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "Masters",
+        "semester": "2",
+        "academicTerm": "Spring 2023",
+        "startDate": "01-01-2023",
+        "endDate": "05-01-2023"
+    },
+    {
+        "title": "Ingestion Service for Cloud Native Applications",
+        "techStack": [
+            "Kafka", 
+            "Envoy", 
+            "gRPC"
+        ],
+        "image": "/assets/images/projects/distributed-systems-project.png",
+        "imageAlt": "Jay Barot Distributed Systems Project",
+        "links": "",
+        "partners": [
+            "Adit Negi",
+            "Rithik Reddy",
+            "Pooja Satish"
+        ],
+        "mentor": [
+            "Aniruddha Gokhale"
+        ],
+        "subject": "Distributed Systems Principles",
+        "subjectCode": "CS-6381-01",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "Masters",
+        "semester": "2",
+        "academicTerm": "Spring 2023",
+        "startDate": "01-01-2023",
+        "endDate": "05-01-2023"
+    },
+    {
+        "title": "Dynamic Movie Discovery: Unleashing the Power of Java 19 Microservices with Spring MVC",
+        "techStack": [
+            "Spring MVC",
+            "Eureka"
+        ],
+        "image": "",
+        "imageAlt": "Jay Barot Microservices Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Douglas C. Schmidt"
+        ],
+        "subject": "Scalable Microservices",
+        "subjectCode": "CS-5891-01",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "Masters",
+        "semester": "2",
+        "academicTerm": "Spring 2023",
+        "startDate": "01-01-2023",
+        "endDate": "05-01-2023"
+    },
+    {
+        "title": "DDDoS Attack Detection and Mitigation Using SDN",
+        "techStack": [
+            "Ryu SDN", 
+            "Python"
+        ],
+        "image": "/assets/images/projects/computer-networks-project.png",
+        "imageAlt": "Jay Barot Software Defined Networking Project",
+        "links": "",
+        "partners": [
+            "Adit Negi",
+            "Justin Yeh"
+        ],
+        "mentor": [
+            "Aniruddha Gokhale"
+        ],
+        "subject": "Computer Networks",
+        "subjectCode": "CS-5283-01",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "Masters",
+        "semester": "1",
+        "academicTerm": "Fall 2022",
+        "startDate": "08-01-2022",
+        "endDate": "12-01-2022"
+    },
+    {
+        "title": "Using Medical Imaging to Identify, Benefit and Boost the Productivity of Software Developers with Mental Ailment",
+        "techStack": [
+            "SE Research Proposal"
+        ],
+        "image": "/assets/images/projects/left-dorsal-mid-insula.png",
+        "imageAlt": "Jay Barot Software Engineering Research Proposal",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Yu Huang"
+        ],
+        "subject": "Advance Topics Software Engineering",
+        "subjectCode": "CS-8395-02",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "Masters",
+        "semester": "1",
+        "academicTerm": "Fall 2022",
+        "startDate": "08-01-2022",
+        "endDate": "12-01-2022"
+    },
+    {
+        "title": "Flask App for Real Time Sentiment Analysis of Tweets on NASDAQ and NSE Stocks",
+        "techStack": [
+            "iJRASET",
+            "Python"
+        ],
+        "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.png",
+        "imageAlt": "Jay Machine Learning Sentiment Analysis Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Amit Narote"
+        ],
+        "subject": "",
+        "subjectCode": "",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "8",
+        "academicTerm": "Spring 2020",
+        "startDate": "03-01-2020",
+        "endDate": ""
+    },
+    {
+        "title": "Predicting NASDAQ and NSE Stocks using Machine Learning Algorithms: ARIMA, LSTM & Linear Regression",
+        "techStack": [
+            "iJRASET",
+            "Python",
+            "ML"
+        ],
+        "image": "/assets/images/projects/predicting-nasdaq-nse-ml.png",
+        "imageAlt": "Jay Barot Machine Learning Models Project: ARIMA, LSTM & Linear Regression",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Amit Narote"
+        ],
+        "subject": "",
+        "subjectCode": "",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "8",
+        "academicTerm": "Spring 2020",
+        "startDate": "03-01-2020",
+        "endDate": ""
+    },
+    {
+        "title": "Empowering Hope: Crafting an Intuitive Python Web App for Effortless Children's Cancer Donations",
+        "techStack": [
+            "Java",
+            "XML"
+        ],
+        "image": "/assets/images/projects/child-cancer-donation-project.png",
+        "imageAlt": "Jay Barot Children Cancer Donation Internet Programming Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Jaychand Upadhyay"
+        ],
+        "subject": "",
+        "subjectCode": "ITL404",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "4",
+        "academicTerm": "Spring 2018",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "title": "FlavorLink: Crafting a Seamless Online Food Ordering Web Application",
+        "techStack": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Python"
+        ],
+        "image": "",
+        "imageAlt": "Jay Barot Online Food Ordering Web Application Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Martina D'souza"
+        ],
+        "subject": "",
+        "subjectCode": "ITC502, ITL501",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "5",
+        "academicTerm": "Fall 2018",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "title": "FeedbackWizard: Empowering Students with an End Semester College Professor Feedback Mobile Android App",
+        "techStack": [
+            "Java",
+            "XML"
+        ],
+        "image": "/assets/images/projects/android-feedback-project.png",
+        "imageAlt": "Jay Barot Students Feedback Android App Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Prachi Tawade"
+        ],
+        "subject": "",
+        "subjectCode": "ITL704",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "7",
+        "academicTerm": "Fall 2019",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "title": "CineBuddy: A Cutting-Edge Movie Recommendation Chatbot Powered by NLP and AI",
+        "techStack": [
+            "Python",
+            "Slack API"
+        ],
+        "image": "/assets/images/projects/movie-recommendation-chatbot-project.png",
+        "imageAlt": "Jay Barot Movie Recommendation Chatbot Project, Slack API",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Simran Singhani"
+        ],
+        "subject": "",
+        "subjectCode": "ITC703",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "7",
+        "academicTerm": "Fall 2019",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "title": "Titanic Insights: Analyzing Passenger Survival - A Captivating Data Modeling Project",
+        "techStack": [
+            "R - programming"
+        ],
+        "image": "",
+        "imageAlt": "Jay Barot Titanic Data Visualization Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Simran Singhani"
+        ],
+        "subject": "",
+        "subjectCode": "ITC703",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "7",
+        "academicTerm": "Fall 2019",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "title": "SmartServe: Transforming Dining Experiences with an IoT Restaurant Automation Model Powered by Embedded System Boards",
+        "techStack": [
+            "Arduino",
+            "C++"
+        ],
+        "image": "/assets/images/projects/iot-project.png",
+        "imageAlt": "Jay Barot Wireless Networks and IoT Project",
+        "links": "",
+        "partners": [],
+        "mentor": [
+            "Meena Ugale"
+        ],
+        "subject": "",
+        "subjectCode": "ITC501, ITL504",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "5",
+        "academicTerm": "Fall 2018",
+        "startDate": "",
+        "endDate": ""
+    }
+]

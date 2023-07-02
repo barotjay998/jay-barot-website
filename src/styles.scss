@@ -139,7 +139,7 @@ a.disabled {
 .btn-custom-2 {
     margin: 0.5rem;
     width: 10rem;
-    border-radius: 0.7rem;
+    border-radius: 0rem;
 }
 
 .btn-custom-3 {
@@ -236,7 +236,7 @@ a.disabled {
 .experience-title {
     font-size: 5rem;
     font-weight: bold;
-    background: linear-gradient(#00ffa2, #028d59);
+    background: linear-gradient(#00ffa2, #00c47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -255,7 +255,7 @@ a.disabled {
     flex-direction: column;
     padding: 2rem;
     margin: 2rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     box-shadow: 0rem 0rem 1rem 0.2rem #00fb9f;
     background-color: $colorMaastrichtBlue;
 }
@@ -281,6 +281,7 @@ a.disabled {
 }
 
 .experience-job-link {
+    padding: 0rem 0.2rem 0rem 0.2rem;
     font-size: 1.5rem;
     color: $colorAquamarine;
 }
@@ -396,11 +397,12 @@ a.disabled {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: #e7e6e6;
+    background: #f1f1f1;
+    // background: linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(230, 230, 230) 35%, rgb(221, 221, 221) 100%);
     box-shadow: 0rem 0rem 1rem 0.5rem lightgray;
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
 }
 
 .project-card-item {
@@ -411,7 +413,7 @@ a.disabled {
     color: rgb(167, 167, 167);
     background: #dadada;
     padding: 3rem 2rem 3rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .project-title {
@@ -424,6 +426,40 @@ a.disabled {
 
 .project-learn-more {
     @extend .font-roboto;
+}
+
+.building-block {
+    color: #00ffa2;
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+    margin: 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid #00ffa2;
+    box-shadow: 3px 3px;
+}
+
+.building-base {
+    border-bottom: 3px dashed #01d084f7;
+    padding-bottom: 0.5rem;
+}
+
+.education-card {
+    padding: 2rem;
+}
+
+.education-title {
+    @extend .experience-job-title;
+}
+
+.education-institution-name {
+    @extend .experience-company-name;
+}
+
+.education-card{
+    @extend .experience-card-flex-container;
+    box-shadow: none;
+    background: none;
+    margin: 0rem;
 }
 
 .img-jay-barot {
@@ -454,6 +490,12 @@ a.disabled {
 
 #projects {
     background-image: url(assets/images/oooscillate.svg);
+    background-size: cover;
+    background-position: center;
+} 
+
+#education {
+    background-image: url(assets/images/mmmotif.svg);
     background-size: cover;
     background-position: center;
 } 
@@ -547,6 +589,14 @@ a.disabled {
 
     .project-image {
         width: 100%;
+    }
+
+    .bricks-education {
+        justify-content: left;
+    }
+
+    .building-block {
+        font-size: 1.5rem;
     }
 
 }
@@ -647,6 +697,14 @@ a.disabled {
         width: 100%;
     }
 
+    .bricks-education {
+        justify-content: left;
+    }
+
+    .building-block {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -714,7 +772,7 @@ a.disabled {
     }
 
     .projects-sub-heading {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .project-card {
@@ -735,6 +793,14 @@ a.disabled {
 
     .project-image {
         width: 100%;
+    }
+
+    .bricks-education {
+        justify-content: center;
+    }
+
+    .building-block {
+        font-size: 1.8rem;
     }
 
 }
@@ -805,7 +871,7 @@ a.disabled {
     }
 
     .projects-sub-heading {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .project-card {
@@ -826,6 +892,14 @@ a.disabled {
 
     .project-image {
         width: 100%;
+    }
+
+    .bricks-education {
+        justify-content: center;
+    }
+
+    .building-block {
+        font-size: 2rem;
     }
 
 }

@@ -2,10 +2,11 @@
     {
         "title": "Game of Papers - A recommendation system for research papers",
         "techStack": [
-            "ML SciBERT", 
+            "SciBERT", 
             "Angular", 
             "Flask", 
-            "Docker"
+            "Docker",
+            "Netlify"
         ],
         "image": "/assets/images/projects/game-of-papers.png",
         "imageAlt": "Jay Barot Machine Learning Project",
@@ -139,7 +140,7 @@
         "mentor": [
             "Amit Narote"
         ],
-        "subject": "",
+        "subject": "Machine Learning",
         "subjectCode": "",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -163,7 +164,7 @@
         "mentor": [
             "Amit Narote"
         ],
-        "subject": "",
+        "subject": "Machine Learning",
         "subjectCode": "",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -176,8 +177,8 @@
     {
         "title": "Empowering Hope: Crafting an Intuitive Python Web App for Effortless Children's Cancer Donations",
         "techStack": [
-            "Java",
-            "XML"
+            "Python",
+            "MonogoDB"
         ],
         "image": "/assets/images/projects/child-cancer-donation-project.png",
         "imageAlt": "Jay Barot Children Cancer Donation Internet Programming Project",
@@ -186,7 +187,7 @@
         "mentor": [
             "Jaychand Upadhyay"
         ],
-        "subject": "",
+        "subject": "Web Development with Python",
         "subjectCode": "ITL404",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -200,9 +201,8 @@
         "title": "FlavorLink: Crafting a Seamless Online Food Ordering Web Application",
         "techStack": [
             "JavaScript",
-            "HTML",
-            "CSS",
-            "Python"
+            "Flask",
+            "MySQL"
         ],
         "image": "",
         "imageAlt": "Jay Barot Online Food Ordering Web Application Project",
@@ -211,7 +211,7 @@
         "mentor": [
             "Martina D'souza"
         ],
-        "subject": "",
+        "subject": "Internet Programming",
         "subjectCode": "ITC502, ITL501",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -234,7 +234,7 @@
         "mentor": [
             "Prachi Tawade"
         ],
-        "subject": "",
+        "subject": "Android App Development",
         "subjectCode": "ITL704",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -257,7 +257,7 @@
         "mentor": [
             "Simran Singhani"
         ],
-        "subject": "",
+        "subject": "Artificial Intelligence, Natural Language Processing",
         "subjectCode": "ITC703",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -279,7 +279,7 @@
         "mentor": [
             "Simran Singhani"
         ],
-        "subject": "",
+        "subject": "Data Science & Engineering",
         "subjectCode": "ITC703",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -302,7 +302,7 @@
         "mentor": [
             "Meena Ugale"
         ],
-        "subject": "",
+        "subject": "Internet of Things, Wireless Sensor Networks",
         "subjectCode": "ITC501, ITL504",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",

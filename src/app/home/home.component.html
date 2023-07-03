@@ -2,7 +2,7 @@
   Adding "height: 100vh" instead of "min-height: 100vh" 
   will result in an overflow of contents problem 
 -->
-<section id="hero" class="py-5 bg-theme-blue" style="min-height: 100vh;">
+<section id="hero" class="py-5 bg-theme-blue d-flex align-items-center" style="min-height: 100vh;">
 
   <div class="container-fluid mt-3">
 
@@ -235,7 +235,7 @@
       </div>
 
       <!-- Right -->
-      <div class="col-xl-6">
+      <div class="col-xl-6 d-flex align-items-center">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="svg-container">
@@ -518,37 +518,41 @@
               >
 
           <div class="container">
-            <div class="row project-card-row justify-content-center">
+            <div class="row project-card-row d-flex justify-content-around">
               
               <!-- Projects Card -->
-              <div *ngFor="let project of projectData[index]" class="col-lg-3 project-card">
-                <div class="project-card-item project-image-row">
+              <div *ngFor="let project of projectData[index]" class="col-lg-3 project-card d-flex flex-column justify-content-between">
+
+                <div class="project-image-row">
                   <div class="row justify-content-center">
                     <div 
-                      class="col-12 text-center mb-2" 
-                      [ngClass]="{
-                          'col-11': project.image == '',
-                          'col-12': project.image != '',
-                          'project-visual': project.image == ''
-                        }"
+                      class="col-12 text-center p-0"
                     >
-                        <i 
-                          *ngIf="project.image == ''"
-                          class="fa-regular fa-image" 
-                          style="font-size: 2rem;">
-                        </i>
-
-                        <img 
-                          style="border-radius: 0.3rem;"
+                        <img
+                          *ngIf="project.image == '';else elseBlock"
                           class="img-fluid project-image" 
-                          src={{project.image}}
+                          src="assets/images/placeholder.png"
                         >
+
+                        <ng-template #elseBlock>
+                          <img
+                          class="img-fluid project-image" 
+                          src={{project.image}}>
+                        </ng-template>
                       
                     </div>
                   </div>
                 </div>
 
-                <div class="project-card-item project-title-row">
+                <div class="row mt-4">
+                  <div class="col-lg-12">
+                    <p class="project-subject">
+                      {{project.subject}}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="project-title-row">
                   <div class="row">
                     <div class="col-lg-12 project-title">
                       <p> 
@@ -558,7 +562,7 @@
                   </div>
                 </div>
 
-                <div id="proj-tech" class="project-card-item mb-2 project-tech-row">
+                <div id="proj-tech" class="mb-2 project-tech-row">
                   <div class="row">
                     <div class="col-lg-12">
                       <a 
@@ -601,7 +605,7 @@
   </div>
 </section>
 
-<section id="education" class="py-5 bg-theme-blue d-flex" style="min-height: 100vh;">
+<section id="education" class="py-5 bg-theme-blue d-flex mb-5" style="min-height: 100vh;">
   <div class="container-fluid">
 
     <!-- Top Button -->
@@ -639,7 +643,7 @@
     <!-- Content -->
     <div class="row">
       <div class="col-lg-12">
-        <div class="row justify-content-around">
+        <div class="row d-flex justify-content-around">
 
           <!-- Left -->
           <!-- Card -->
@@ -659,7 +663,7 @@
       
               <div class="row">
                 <div class="col-md-12">
-                  <p class="experience-job-period">August 2022 - May 2024</p>
+                  <p class="experience-job-period">August 2022 - May 2024 <i class="fa-solid fa-hourglass-start"></i> </p>
                 </div>
               </div>
       
@@ -696,7 +700,7 @@
       
               <div class="row">
                 <div class="col-md-12">
-                  <p class="experience-job-period">August 2016 - May 2020</p>
+                  <p class="experience-job-period">August 2016 - May 2020 <i class="fa-solid fa-user-graduate"></i> </p>
                 </div>
               </div>
       

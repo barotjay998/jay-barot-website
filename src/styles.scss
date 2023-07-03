@@ -393,27 +393,27 @@ a.disabled {
     background-color: #32cd77;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+    background-color: #0000000a;
+}
+
 .project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    border: 1px solid #c5c5c5;
     background: #f1f1f1;
     // background: linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(230, 230, 230) 35%, rgb(221, 221, 221) 100%);
     box-shadow: 0rem 0rem 1rem 0.5rem lightgray;
     margin: 1rem 1rem 1rem 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    // padding: 1rem;
+    border-radius: 1rem;
 }
 
 .project-card-item {
     flex: 1;
 }
 
-.project-visual {
-    color: rgb(167, 167, 167);
-    background: #dadada;
-    padding: 3rem 2rem 3rem 2rem;
-    border-radius: 0.3rem;
+.project-image {
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 
 .project-title {
@@ -426,6 +426,11 @@ a.disabled {
 
 .project-learn-more {
     @extend .font-roboto;
+}
+
+.project-subject {
+    font-size: 0.9rem;
+    @extend .font-roboto-mono;
 }
 
 .building-block {
@@ -462,6 +467,21 @@ a.disabled {
     margin: 0rem;
 }
 
+.contact-me-textarea {
+    height: 2.4rem;
+    width: 50%;
+}
+
+.contact-me-email {
+    width: 50%;
+}
+
+.footer-link {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color:#25c37c;
+}
+
 .img-jay-barot {
     width: 40%;
     margin: 25%;
@@ -489,13 +509,13 @@ a.disabled {
 }
 
 #projects {
-    background-image: url(assets/images/oooscillate.svg);
+    background-image: url(assets/images/ttten.svg);
     background-size: cover;
     background-position: center;
 } 
 
 #education {
-    background-image: url(assets/images/mmmotif.svg);
+    background-image: url(assets/images/llleaves.svg);
     background-size: cover;
     background-position: center;
 } 
@@ -556,12 +576,6 @@ a.disabled {
     .project-card-row {
         margin: 1.5rem;
     }
-
-    #projects {
-        background-image: url(assets/images/llleaves.svg);
-        background-size: cover;
-        background-position: center;
-    } 
 
     .projects-heading {
         font-size: 3.5rem;
@@ -654,12 +668,6 @@ a.disabled {
     .project-card-row {
         margin: 2rem;
     }
-
-    #projects {
-        background-image: url(assets/images/llleaves.svg);
-        background-size: cover;
-        background-position: center;
-    } 
 
     .projects-heading {
         font-size: 7rem;
@@ -761,12 +769,6 @@ a.disabled {
         margin: 2.2rem;
     }
 
-    #projects {
-        background-image: url(assets/images/llleaves.svg);
-        background-size: cover;
-        background-position: center;
-    } 
-
     .projects-heading {
         font-size: 5rem;
     }
@@ -859,12 +861,6 @@ a.disabled {
     .project-card-row {
         margin: 2rem;
     }
-
-    #projects {
-        background-image: url(assets/images/oooscillate.svg);
-        background-size: cover;
-        background-position: center;
-    } 
 
     .projects-heading {
         font-size: 7rem;

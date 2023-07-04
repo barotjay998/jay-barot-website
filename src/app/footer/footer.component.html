@@ -1,52 +1,88 @@
-<footer class="bg-light text-center text-lg-start font-roboto">
+<footer class="bg-platinum  text-center text-lg-start font-roboto">
 
   <div class="container-fluid">
 
-    <div class="row d-flex justify-content-around">
+    <div class="row">
+
+      <!-- Contact Me -->  
+      <div class="col-lg-6 d-flex align-self-center" style="margin-top: 3rem;">
+        <div class="row justify-content-center mx-1">
+          <div class="col-lg-10 col-md-10 col-sm-10 d-flex flex-column">
+
+            <div class="row">
+              <div class="col-md-12">
+                <p class="contact-me-title">Let's Start a Conversation. <i class="fa-solid fa-comments"></i> </p>
+                <p class="contact-me-sub-title">
+                  Share Your Ideas and Let's Bring Your Vision to Life! 
+                  Reach Out to Discuss Your Next Project or Collaboration Opportunity.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 col-md-9">
+                <textarea class="form-control contact-me-textarea mb-2" [(ngModel)]="message" placeholder="Message"></textarea>
+                <input type="email" class="form-control contact-me-email mb-2" [(ngModel)]="senderEmail" placeholder="Your Email">
+                <button class="btn btn-outline-dark w-100" (click)="sendEmail()">Send <i class="fa-solid fa-paper-plane"></i></button>   
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
       <!-- Icons -->
-      <div class="col-lg-2 d-flex flex-row align-items-center justify-content-center">
+      <div class="col-lg-6">
 
-        <!-- LinkedIn -->
-        <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
-            class="footer-link-box"
-            target="_blank" class="footer-link"> 
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
+        <div class="row d-flex justify-content-center" style="margin-top: 3rem;">
+          <div class="col-xl-8 col-lg-8 col-md-6 col-sm-7 col-10 d-flex justify-content-center">
+            <img class="img-fluid" src="assets/images/contact.png" alt="Hero Image Jay Barot">
+          </div>
+        </div>
 
-         <!-- Github -->
-        <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
-            target="_blank" class="footer-link"> 
-            <i class="fa-brands fa-github"></i>
-        </a>
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 d-flex flex-row justify-content-center">
+            <!-- LinkedIn -->
+            <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
+              class="footer-link-box"
+              target="_blank" class="footer-link"> 
+              <i class="fa-brands fa-linkedin footer-link-icon"></i>
+            </a>
 
-        <!-- LeetCode -->
-        <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
-            target="_blank" class="footer-link"> 
-            <i class="fa-solid fa-code"></i>
-        </a>
+            <!-- Github -->
+            <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
+                target="_blank" class="footer-link"> 
+                <i class="fa-brands fa-github footer-link-icon"></i>
+            </a>
 
-        <!-- Email -->
-        <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
-            target="_blank" class="footer-link"> 
-            <i class="fa-solid fa-envelope"></i>
-        </a>
+            <!-- LeetCode -->
+            <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
+                target="_blank" class="footer-link"> 
+                <i class="fa-solid fa-code footer-link-icon"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="https://goo.gl/maps/RPNTN3r63BKCnSVD9" 
+                target="_blank" class="footer-link">
+                <i class="fa-solid fa-envelope footer-link-icon"></i>
+            </a>
+          </div>
+
+        </div>
 
       </div>
 
+    </div>
+
+    <div class="row justify-content-center">
+
       <!-- Copyright -->
-      <div class="col-lg-2 text-center p-3 bg-light">
+      <div class="col-lg-8 text-center pb-3 pt-3 mt-3 ml-5 mr-5 font-courier-prime" style="border-top: 1px solid #c2c2c2;">
         © 2023 Copyright:
         <a class="text-dark" href="#">Jay Barot</a>
+        All Rights Reserved
       </div>
-
-      <!-- Copyright -->
-      <!-- 
-      <div class="col-lg-6 d-flex flex-row align-items-center">
-        <p>Say Hi</p>
-        <textarea class="form-control contact-me-textarea" [(ngModel)]="message" placeholder="Message"></textarea>
-        <input type="email" class="form-control contact-me-email" [(ngModel)]="senderEmail" placeholder="Your Email">
-        <button class="btn btn-primary" (click)="sendEmail()">Send</button>
-      </div> -->
 
     </div>
 

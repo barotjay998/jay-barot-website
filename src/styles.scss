@@ -468,18 +468,55 @@ a.disabled {
 }
 
 .contact-me-textarea {
-    height: 2.4rem;
-    width: 50%;
+    width: 100%;
 }
 
 .contact-me-email {
-    width: 50%;
+    width: 100%;
+}
+
+.form-control {
+    background-color: #cf000000;
+    border-radius: 0rem;
+    @extend .font-courier-prime;
+}
+
+.form-control:focus {
+    background-color: #cf000000;
+    color: #495057;
+    border-color: #80ff9c;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 76, 0.25);
 }
 
 .footer-link {
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: #9a9a9a;
+}
+
+.footer-link:hover {
     color:#25c37c;
+}
+
+.footer-link-icon {
+    padding: 0.2rem 0.3rem;
+}
+
+.contact-me-title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #747474;
+    @extend .font-roboto;
+}
+
+.contact-me-sub-title {
+    text-align: left;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #606060;
+    @extend .font-montserrat;
 }
 
 .img-jay-barot {

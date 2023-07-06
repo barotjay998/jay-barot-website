@@ -417,7 +417,7 @@ a.disabled {
 }
 
 .project-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.01rem;
     color: #3f3f3f;
     text-align: left;
@@ -650,6 +650,10 @@ a.disabled {
         font-size: 1.5rem;
     }
 
+    .project-title {
+        font-size: 0.85rem;
+    }
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -750,6 +754,10 @@ a.disabled {
         font-size: 1.5rem;
     }
 
+    .project-title {
+        font-size: 0.9rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -840,6 +848,10 @@ a.disabled {
 
     .building-block {
         font-size: 1.8rem;
+    }
+
+    .project-title {
+        font-size: 1rem;
     }
 
 }
@@ -933,6 +945,10 @@ a.disabled {
 
     .building-block {
         font-size: 2rem;
+    }
+    
+    .project-title {
+        font-size: 1rem;
     }
 
 }

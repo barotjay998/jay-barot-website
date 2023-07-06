@@ -1,7 +1,9 @@
 <!-- 
-  Adding "height: 100vh" instead of "min-height: 100vh" 
-  will result in an overflow of contents problem 
+  Note: Adding "height: 100vh" instead of "min-height: 100vh" to the sections
+  will result in an overflow of contents problem.
 -->
+
+<!-- Hero Section -->
 <section id="hero" class="py-5 bg-theme-blue d-flex align-items-center" style="min-height: 100vh;">
 
   <div class="container-fluid mt-3">
@@ -100,7 +102,7 @@
     </div>
   </div>
 </section>
-
+<!-- Hero Section Ends -->
 
 
 <!-- About Section -->
@@ -111,7 +113,7 @@
     <!-- Top Button -->
     <div class="row justify-content-end">
       <div class="col-lg-3 text-center">
-        <button type="button" class="btn btn-outline-dark" style="width: 35%"> 
+        <button type="button" class="btn btn-outline-dark" style="width: 35%" (click)="scrollToTop()"> 
           <i class="fa-solid fa-jet-fighter-up"></i> 
             Top
         </button>
@@ -249,15 +251,17 @@
 
   </div>
 </section>
+<!-- About Section Ends -->
 
-<!-- Experience -->
+
+<!-- Experience Section -->
 <section id="experience" class="py-5 bg-theme-blue d-flex" style="min-height: 100vh;">
   <div class="container-fluid">
 
     <!-- Top Button -->
     <div class="row justify-content-end">
       <div class="col-lg-3 text-center">
-        <button type="button" class="btn btn-outline-light btn-custom-3" style="width: 35%"> 
+        <button type="button" class="btn btn-outline-light btn-custom-3" style="width: 35%" (click)="scrollToTop()"> 
           <i class="fa-solid fa-jet-fighter-up"></i> 
             Top
         </button>
@@ -474,14 +478,17 @@
     </div>
   </div> 
 </section>
+<!-- Experience Section Ends -->
 
+
+<!-- Project Section -->
 <section id="projects" class="py-5 bg-platinum d-flex" style="min-height: 100vh;">
   <div class="container-fluid">
 
     <!-- Top Button -->
     <div class="row justify-content-end">
       <div class="col-lg-3 text-center">
-        <button type="button" class="btn btn-outline-dark" style="width: 35%"> 
+        <button type="button" class="btn btn-outline-dark" style="width: 35%" (click)="scrollToTop()"> 
           <i class="fa-solid fa-jet-fighter-up"></i> 
             Top
         </button>
@@ -603,14 +610,18 @@
 
   </div>
 </section>
+<!-- Project Section Ends -->
 
+
+
+<!-- Education Section -->
 <section id="education" class="py-5 bg-theme-blue d-flex" style="min-height: 100vh;">
   <div class="container-fluid">
 
     <!-- Top Button -->
     <div class="row justify-content-end">
       <div class="col-lg-3 text-center">
-        <button type="button" class="btn btn-outline-light btn-custom-3" style="width: 35%"> 
+        <button type="button" class="btn btn-outline-light btn-custom-3" style="width: 35%" (click)="scrollToTop()"> 
           <i class="fa-solid fa-jet-fighter-up"></i> 
             Top
         </button>
@@ -725,3 +736,4 @@
     
   </div>
 </section>
+<!-- Education Section Ends -->

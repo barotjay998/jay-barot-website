@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
 
 @Component({
@@ -12,10 +13,23 @@ export class HomeComponent {
   public numRows: number = 0;
   public numProjects: number = 0;
 
-  constructor(private dataService: DataServiceService) { }
+  constructor(
+    private dataService: DataServiceService,
+    private route: ActivatedRoute
+    ) { }
 
   ngOnInit() {
     this.loadData();
+
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        const target = document.getElementById(fragment);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+
   }
 
   loadData() {
@@ -57,6 +71,10 @@ export class HomeComponent {
 
   getRange(num: number): number[] {
     return Array.from({length: num}, (_, index) => index);
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
 }

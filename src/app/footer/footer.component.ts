@@ -20,8 +20,10 @@ export class FooterComponent {
 
   public sendEmail(): void {
     emailjs.send('service_p7hgqfe', 'template_g42gv1f', {
+      to_name: 'Jay Barot',
       to_email: this.recipientEmail,
-      message_html: this.message + '<br><br>From: ' + this.senderEmail
+      message: this.message,
+      sender_email: this.senderEmail
     }, 'kgADkdTn3yQLJM4Zp')
       .then((response: EmailJSResponseStatus) => {
         // console.log('Email sent successfully:', response);

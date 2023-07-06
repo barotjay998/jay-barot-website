@@ -533,10 +533,24 @@ a.disabled {
     background-position: center;
 }
 
+@keyframes animatedBackground {
+    from {
+    // 100% is one image width to the left, more than 100% is the next repeated image
+    // here we are repeating the image 10 times
+      background-position: 100% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+
 #hero {
+    animation: animatedBackground 10s linear infinite alternate;
     background-image: url(assets/images/ffflurry.svg);
-    background-size: cover;
-    background-position: center;
+    // background-size: cover;
+    background-size: 90%;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
 }
 
 #experience {
@@ -561,6 +575,13 @@ a.disabled {
 
 /* Very Small devices (phones, 600px and up) */
 @media only screen and (min-width: 200px) {
+
+    #hero {
+        animation: none;
+        background-image: url(assets/images/ffflurry.svg);
+        background-size: cover;
+        background-position: center;
+    }
 
     #hero-console {
         margin: 0rem 0rem 0rem 0rem;
@@ -658,6 +679,14 @@ a.disabled {
 
 /* Small devices (phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    #hero {
+        animation: none;
+        background-image: url(assets/images/ffflurry.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
     #hero-console {
         margin: 0rem 0rem 0rem 0rem;
     }
@@ -762,6 +791,14 @@ a.disabled {
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    #hero {
+        animation: none;
+        background-image: url(assets/images/ffflurry.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
     #hero-console {
         margin: 1rem 1rem 1rem 2rem;
     }
@@ -858,6 +895,14 @@ a.disabled {
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    #hero {
+        animation: none;
+        background-image: url(assets/images/ffflurry.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
     #hero-console {
         margin: 1rem 3rem 1rem 2rem;
     }
@@ -951,6 +996,17 @@ a.disabled {
         font-size: 1rem;
     }
 
+}
+
+/* Extra Large devices (desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+    #hero {
+        animation: animatedBackground 10s ease-in-out infinite alternate;
+        background-image: url(assets/images/ffflurry.svg);
+        background-size: 90%;
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+    }
 }
   
   

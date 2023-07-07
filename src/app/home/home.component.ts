@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
 
@@ -15,7 +15,8 @@ export class HomeComponent {
 
   constructor(
     private dataService: DataServiceService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private elementRef: ElementRef
     ) { }
 
   ngOnInit() {
@@ -75,6 +76,12 @@ export class HomeComponent {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  scrollToFooter(event: Event) {
+    event.preventDefault();
+    const footerElement = this.elementRef.nativeElement.ownerDocument.querySelector('app-footer');
+    footerElement.scrollIntoView({ behavior: 'smooth' });
   }
 
 }

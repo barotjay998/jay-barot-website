@@ -1,6 +1,10 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener, Inject, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
+
+interface Dictionary {
+  [key: string]: boolean;
+}
 
 @Component({
   selector: 'app-home',
@@ -9,15 +13,27 @@ import { DataServiceService } from '../services/data-service.service';
 })
 export class HomeComponent {
 
+  // Declare the variables
   public projectData: any;
   public numRows: number = 0;
   public numProjects: number = 0;
+  public isFlying: boolean = false;
+  // Tracking the visibility of the divs on the view.
+  divVisibility: Dictionary = {
+    "aboutTitle": false,
+    "aboutInfoRowOne": false,
+    "aboutInfoRowTwo": false,
+    "aboutInfoRowThree": false,
+    "aboutEmailCard": false,
+    "aboutPhoneCard": false,
+    "aboutChatNow": false,
+  };
 
   constructor(
     private dataService: DataServiceService,
     private route: ActivatedRoute,
-    private elementRef: ElementRef
-    ) { }
+    private elementRef: ElementRef,
+  ) { }
 
   ngOnInit() {
     this.loadData();
@@ -82,6 +98,57 @@ export class HomeComponent {
     event.preventDefault();
     const footerElement = this.elementRef.nativeElement.ownerDocument.querySelector('app-footer');
     footerElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    this.checkVisibility();
+  }
+
+  checkVisibility() {
+    for (const divId in this.divVisibility) {
+      const element = this.elementRef.nativeElement.querySelector(`#${divId}`);
+
+      if (this.isElementInViewport(element)) {
+        this.divVisibility[divId] = true;
+      } 
+      
+      // If the element is not in the viewport, set the visibility to false
+      // Once the animation class is added we do not want to remove it, so temporarily
+      // we comment out the else statement. If you want to have the animation run every time
+      // the element is in the viewport, uncomment the else statement.
+      // 
+      // else {
+      //   this.divVisibility[divId] = false;
+      // }
+
+    }
+  }
+
+  isElementInViewport(element: HTMLElement) {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+  
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= windowHeight &&
+      rect.right <= windowWidth
+    );
+  }
+
+  makeMeFly() {
+    this.isFlying = true;
+
+    setTimeout(() => {
+      this.isFlying = false;
+    }, 1000);
+
+    setTimeout(() => {
+      this.scrollToTop();
+    }, 400);
+
   }
 
 }

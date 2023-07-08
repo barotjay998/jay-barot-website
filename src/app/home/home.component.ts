@@ -27,6 +27,14 @@ export class HomeComponent {
     "aboutEmailCard": false,
     "aboutPhoneCard": false,
     "aboutChatNow": false,
+    "experienceTitle": false,
+    "experienceCardLeft": false,
+    "experienceCardRight": false,
+    "projectsHeading": false,
+    "carouselExampleIndicators": false,
+    "educationHeading": false,
+    "educationCardLeft": false,
+    "educationCardRight": false
   };
 
   constructor(
@@ -129,13 +137,29 @@ export class HomeComponent {
     const rect = element.getBoundingClientRect();
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
     const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // Return True when full element is in viewport:: when all the edges of the div box is in viewport
+    // return (
+    //   rect.top >= 0 &&
+    //   rect.left >= 0 &&
+    //   rect.bottom <= windowHeight &&
+    //   rect.right <= windowWidth
+    // );
+    
+    // Return True on first sight of the element:: when the top edges of the div box is in viewport
+    // return (
+    //   (rect.top >= 0 && rect.top <= windowHeight) ||  // Check if top edge is in viewport
+    //   (rect.left >= 0 && rect.left <= windowWidth)    // Check if left edge is in viewport
+    // );
+
+    // In this updated code, topInView checks if the top position of the element is between 0 and the window height,
+    // and leftInView checks if the left position of the element is between 0 and the window width. 
+    // Both conditions need to be true for the function to return true, indicating that the first few pixels 
+    // of the element are in the viewport.
+    const topInView = rect.top >= 0 && rect.top <= windowHeight;
+    const leftInView = rect.left >= 0 && rect.left <= windowWidth;
   
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= windowHeight &&
-      rect.right <= windowWidth
-    );
+    return topInView && leftInView;
   }
 
   makeMeFly() {

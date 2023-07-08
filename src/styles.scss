@@ -68,7 +68,10 @@ $colorPlatinum: #e5e5e5;
 }
 
 .jet-green {
-    color: #00d688;
+    color: #01c07a;
+    // border: 1px solid #00d688;
+    // border-radius: 100%;
+    // padding: 0.5rem;
 }
 
 /* Custom Size */
@@ -251,6 +254,19 @@ a.disabled {
     font-size: 2rem;
     color: #55cfa3;
     @extend .font-montserrat;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.hourglass {
+    animation: rotation 10s infinite linear;
 }
 
 .experience-card-flex-container {

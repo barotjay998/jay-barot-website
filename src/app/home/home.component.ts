@@ -26,7 +26,6 @@ export class HomeComponent {
     "aboutInfoRowThree": false,
     "aboutEmailCard": false,
     "aboutPhoneCard": false,
-    "aboutChatNow": false,
     "experienceTitle": false,
     "experienceCardLeft": false,
     "experienceCardRight": false,
@@ -100,6 +99,9 @@ export class HomeComponent {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Remove the hash from the URL, so that the browser does not scroll to it on reload
+    // hash part is the "fragment".
+    history.replaceState({}, document.title, window.location.pathname);
   }
 
   scrollToFooter(event: Event) {
@@ -173,6 +175,10 @@ export class HomeComponent {
       this.scrollToTop();
     }, 400);
 
+  }
+
+  openLink(linkUri: string) {
+    window.open(linkUri, '_blank');
   }
 
 }

@@ -16,11 +16,10 @@
         <div class="row animate__animated animate__fadeInLeft">
           <div class="col-md-12">
             <div id="hero-console" class="color-theme-green d-flex font-roboto-mono console font-weight-bold">
-              <p>
+              <p class="m-0">
                 <span class="color-grey">root@localhost:~#</span>
-                _<i class="fa-solid fa-robot"></i>_/
                 <span class="letter-spacing-01">
-                  Hello World!  I'll to help you discover more about Jay's professional background.
+                  Hello World! Welcome to my website, I'm
                 </span>
               </p>
             </div> 
@@ -37,10 +36,9 @@
         <div class="row animate__animated animate__fadeInUp">
           <div class="col-md-12">
             <p id="h-intro" class="hero-intro">
-              Jay is an experienced software developer who seeks to leverage his skills in creating 
-              innovative solutions that drive business success. With a deep passion for high-quality, efficient code, 
-              he actively looks for opportunities to collaborate and push the boundaries of what's possible in 
-              software development.
+              I am an experienced software developer, who seeks to leverage my skills in creating innovative solutions 
+              that drive business success. With a deep passion for high-quality, efficient code, I actively look for 
+              opportunities to collaborate and push the boundaries of what's possible in software development.
             </p>
           </div>
         </div>
@@ -72,24 +70,60 @@
           
           <div class="col-lg-10 text-center">
 
-            <button type="button" class="btn btn-outline-light btn-custom-2">
+            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
               <i class="fa-solid fa-handshake"></i>
               Soft Skills
-            </button>
+            </button> -->
 
-            <button type="button" class="btn btn-outline-light btn-custom-2">
+            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
               <i class="fa-solid fa-people-group"></i>
               Exactivities
-            </button>
+            </button> -->
 
-            <button type="button" class="btn btn-outline-light btn-custom-2">
+            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
               <i class="fa-solid fa-newspaper"></i>
               Publications
-            </button>
+            </button> -->
 
-            <button type="button" class="btn btn-outline-light btn-custom-2">
+            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
               <i class="fa-solid fa-laptop-code"></i>
               Technical Skills
+            </button> -->
+
+            <button 
+              (click)="openLink('https://www.linkedin.com/in/jay-barot/')"
+              type="button" 
+              class="btn btn-outline-light btn-custom-2"
+              >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </button>
+
+            <button 
+              (click)="openLink('https://www.linkedin.com/in/jay-barot/')"
+              type="button" 
+              class="btn btn-outline-light btn-custom-2"
+            >
+              <i class="cib-indeed"></i>
+              Indeed
+            </button>
+
+            <button 
+              (click)="openLink('https://github.com/barotjay998')"
+              type="button" 
+              class="btn btn-outline-light btn-custom-2"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </button>
+
+            <button 
+              (click)="openLink('https://leetcode.com/_barotjay998/')"
+              type="button" 
+              class="btn btn-outline-light btn-custom-2"
+            >
+              <i class="cib-leetcode"></i>
+              LeetCode
             </button>
 
           </div>
@@ -155,13 +189,10 @@
           <div class="col-md-10">
             <p class="about-info font-courier-prime">
               <i class="fa-solid fa-quote-left"></i>
-
-                Jay Barot is currently pursuing a Masters Degree in 
-                <strong>Computer Science</strong>  at 
-                <a href="https://www.vanderbilt.edu/" target="_blank" class="anchor-no-style"><strong>Vanderbilt University</strong></a>:
+                I am currently pursuing a Masters Degree in <strong>Computer Science</strong> at
+                <a href="https://www.vanderbilt.edu/" target="_blank" class="anchor-no-style"><strong>Vanderbilt University</strong></a>:                
                 Ranked #13 National University; #8 Best Value Schools.<a href="https://www.usnews.com/best-colleges/vanderbilt-3535" target="_blank"><img id="usnewslogo" class="img-fluid" src="assets/images/usnews_logo.png" 
-                  style="max-width:5rem; margin: 0px 3px 0px 3px;" alt="Vanderbilt University Logo"></a>
-
+                style="max-width:5rem; margin: 0px 3px 0px 3px;" alt="Vanderbilt University Logo"></a>
               <i class="fa-solid fa-quote-right"></i> 
             </p> 
           </div>
@@ -177,8 +208,8 @@
           <div class="col-md-10">
             <p class="about-info font-courier-prime" style="box-shadow: -0.2rem 0.2rem;">
               <i class="fa-solid fa-quote-left"></i>
-                With a Bachelor's degree in <strong>Information Technology </strong>
-                and over <strong>Two Years</strong> of <strong>Industry Experience</strong>. 
+                I hold a Bachelor's degree in <strong>Information Technology </strong>, 
+                complemented by a rich tapestry of over <strong>Two Years</strong> of <strong>Industry Experience</strong>.
               <i class="fa-solid fa-quote-right"></i> 
             </p>
           </div>
@@ -194,10 +225,9 @@
           <div class="col-md-10">
             <p class="about-info font-courier-prime">
               <i class="fa-solid fa-quote-left"></i>
-                Jay brings a unique blend of technical expertise, 
-                passion for innovation and a keen eye for design, 
-                resulting in cutting-edge applications that seamlessly 
-                merge functionality with aesthetics to his projects.
+                I bring a unique blend of technical expertise, a passion for innovation, 
+                and a keen eye for design, allowing me to create cutting-edge applications 
+                that effortlessly merge functionality with aesthetics in my projects.
               <i class="fa-solid fa-quote-right"></i> 
             </p>
           </div>
@@ -217,14 +247,17 @@
             <div class="row">
               <div class="col-md-12">
                 <a href = "mailto:barotjay998@yahoo.com">
-                  <i class="fa-solid fa-envelope" style="font-size: 1.5rem; color: #3c4ba1;"></i>
+                  <i class="fa-solid fa-envelope" style="font-size: 1.5rem; color: #585757"></i>
                 </a>
               </div>
             </div>
             
             <div class="row">
-              <div class="col-md-12" style="font-size: 1.2rem;">
-                <a href = "mailto:barotjay998@yahoo.com" class="anchor-no-style">
+              <div class="col-md-12" style="font-size: 1.2rem; color: #585757">
+                <a 
+                  href = "mailto:barotjay998@yahoo.com" 
+                  class="anchor-no-style"
+                >
                   Email
                 </a>
               </div>
@@ -256,12 +289,15 @@
             >
               <div class="row">
                 <div class="col-md-12">
-                  <a href="tel:+16157790420"><i class="fa-solid fa-phone" style="font-size: 1.5rem; color: #3c4ba1"></i></a>
+                  <a href="tel:+16157790420"><i class="fa-solid fa-phone" style="font-size: 1.5rem; color: #585757"></i></a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-12" style="font-size: 1.2rem;">
-                  <a href="tel:+16157790420" class="anchor-no-style">Phone</a>
+                <div class="col-md-12" style="font-size: 1.2rem; color: #585757">
+                  <a 
+                    href="tel:+16157790420" 
+                    class="anchor-no-style">Phone
+                  </a>
                 </div>
               </div>
               <div class="row">
@@ -278,17 +314,18 @@
             </div>
         </div>
 
-        <div 
+        <!-- Chat Now Link: Scrolls to the bottom of the page -->
+        <!-- <div 
           id="aboutChatNow" 
           [ngClass]="{
-            'animate__animated animate__flash animate__delay-2s animate__repeat-2': divVisibility['aboutChatNow']
+            'animate__animated animate__fadeInUp': divVisibility['aboutChatNow']
           }"
           class="row d-flex justify-content-start"
         >
           <div class="col-xl-5 offset-xl-1">
             <a href="#" (click)="scrollToFooter($event)" style="color: #535353"> Chat Now <i class="fa-regular fa-comment-dots"></i></a>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -297,7 +334,11 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="svg-container">
-              <img id="jay-barot-image" class="img-fluid img-jay-barot" src="assets/images/jay-barot.jpg" alt="Jay Barot Image">
+              <img 
+                id="jay-barot-image" 
+                class="img-fluid img-jay-barot" 
+                src="assets/images/jay-barot.jpg" 
+                alt="Jay Barot Image">
             </div>
           </div>
         </div>

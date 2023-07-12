@@ -5,8 +5,11 @@
 export const environment = {
     production: false,
     // api_url: 'https://localhost/v1/api'
-    api_url: 'assets'
-  };
+    api_url: 'assets',
+    recaptcha: {
+      siteKey: '6LfnCRYnAAAAAPsHZwr9FBM3koLtBo2hsBCV-jBk',
+    },
+};
   
   /*
    * For easier debugging in development mode, you can import the following file

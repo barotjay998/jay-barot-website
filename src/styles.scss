@@ -539,6 +539,11 @@ a.disabled {
     @extend .font-montserrat;
 }
 
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
 .img-jay-barot {
     width: 40%;
     margin: 25%;
@@ -552,6 +557,11 @@ a.disabled {
     background-size: cover;
     background-position: center;
 }
+
+re-captcha.is-invalid > div {
+    border: 1px solid #dc3545 !important;
+    border-radius: 0.2rem;
+  }
 
 @keyframes animatedBackground {
     from {

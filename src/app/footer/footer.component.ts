@@ -9,8 +9,9 @@ declare const grecaptcha: any; // Declare the global grecaptcha object
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  @ViewChild('contactForm') contactForm: any;
 
+  @ViewChild('contactForm') contactForm: any;
+  
   public recipientEmail: string = 'barotjay998@yahoo.com'
   public message: string;
   public senderEmail: string;
@@ -24,6 +25,7 @@ export class FooterComponent {
     this.captchaError = '';
   }
 
+  // Contact From Submit
   public sendEmail(): void {
 
     const captchaResponse = grecaptcha.getResponse();

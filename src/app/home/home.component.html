@@ -6,18 +6,17 @@
 <!-- Hero Section -->
 <section id="hero" class="py-5 bg-theme-blue d-flex align-items-center" style="min-height: 100vh;">
 
-  <div class="container-fluid mt-3">
-
+  <div class="container-fluid hero-container">
     <div class="row">
 
       <!-- Left -->
-      <div id="hero-left" class="col-xl-7">
+      <div id="hero-left" class="col-xl-7 d-flex flex-column justify-content-center">
 
-        <div class="row animate__animated animate__fadeInLeft">
-          <div class="col-md-12">
+        <div class="row animate__animated animate__fadeInLeft d-flex justify-content-center">
+          <div class="col-md-10">
             <div id="hero-console" class="color-theme-green d-flex font-roboto-mono console font-weight-bold">
               <p class="m-0">
-                <span class="color-grey">root@localhost:~#</span>
+                <span class="color-grey">root@TheBarotCode:~#</span>
                 <span class="letter-spacing-01">
                   Hello World! Welcome to my website, I'm
                 </span>
@@ -26,20 +25,32 @@
           </div>
         </div>
 
-        <div class="row mt-3 animate__animated animate__fadeInUp">
-          <div class="col-md-12">
+        <div class="row mt-3 animate__animated animate__fadeInUp d-flex justify-content-center">
+          <div class="col-md-10">
             <h1 id="h-name" class="hero-name">Jay Barot.</h1>
             <p id="h-title" class="hero-title">Software Developer</p>
           </div>
         </div>
 
-        <div class="row animate__animated animate__fadeInUp">
-          <div class="col-md-12">
+        <div class="row animate__animated animate__fadeInUp d-flex justify-content-center">
+          <div class="col-md-10">
             <p id="h-intro" class="hero-intro">
               I am an experienced software developer, who seeks to leverage my skills in creating innovative solutions 
               that drive business success. With a deep passion for high-quality, efficient code, I actively look for 
               opportunities to collaborate and push the boundaries of what's possible in software development.
             </p>
+          </div>
+        </div>
+
+        <div class="row animate__animated animate__fadeInLeft d-flex justify-content-center">
+          <div class="col-md-10">
+            <button type="button" 
+            class="btn aqua-btn btn-bg-slide px-4"
+            (click)="onChatNow()"
+            >
+            Chat Now
+            <i class="fa-solid fa-comment"></i>
+          </button>
           </div>
         </div>
 

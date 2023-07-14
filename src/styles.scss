@@ -123,6 +123,7 @@ a.disabled {
     background: $colorAquamarine;
     padding-right: 2rem;
     padding-left: 0.4rem;
+    letter-spacing: 0.1rem;
 }
 
 /* Aquamarine button */
@@ -613,27 +614,16 @@ re-captcha.is-invalid > div {
         background-position: center;
     }
 
-    #hero-console {
-        margin: 0rem 0rem 0rem 0rem;
-    }
-
-    #hero-left {
-        padding: 1rem;
-    }
-
     #h-name {
         font-size: 3rem;
-        margin-left: 0.5rem;
     }
 
     #h-title {
         font-size: 2rem;
-        margin-left: 0.5rem;
     }
 
     #h-intro {
         font-size: 1.2rem;
-        margin-left: 0.5rem;
     }
 
     #about-head {
@@ -713,6 +703,14 @@ re-captcha.is-invalid > div {
         font-size: 1.2rem;
     }
 
+    .hero-container {
+        margin-top: 5rem;
+    }
+
+    .back-btn-container {
+        padding-top: 7rem;
+    }
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -725,27 +723,16 @@ re-captcha.is-invalid > div {
         background-position: center;
     }
 
-    #hero-console {
-        margin: 0rem 0rem 0rem 0rem;
-    }
-
-    #hero-left {
-        padding: 2rem;
-    }
-
     #h-name {
         font-size: 4rem;
-        margin-left: 1rem;
     }
 
     #h-title {
         font-size: 3rem;
-        margin-left: 1rem;
     }
 
     #h-intro {
         font-size: 1.4rem;
-        margin-left: 1rem;
     }
 
     #about-head {
@@ -833,6 +820,14 @@ re-captcha.is-invalid > div {
         font-size: 1.25rem;
     }
 
+    .hero-container {
+        margin-top: 5rem;
+    }
+
+    .back-btn-container {
+        padding-top: 6rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -845,27 +840,16 @@ re-captcha.is-invalid > div {
         background-position: center;
     }
 
-    #hero-console {
-        margin: 1rem 1rem 1rem 2rem;
-    }
-
-    #hero-left {
-        padding: 5rem;
-    }
-
     #h-name {
         font-size: 7rem;
-        margin-left: 2rem;
     }
 
     #h-title {
         font-size: 4rem;
-        margin-left: 2rem;
     }
 
     #h-intro {
         font-size: 1.4rem;
-        margin-left: 2rem;
     }
 
     #about-head {
@@ -945,6 +929,13 @@ re-captcha.is-invalid > div {
         font-size: 1.25rem;
     }
 
+    .hero-container {
+        margin-top: 5rem;
+    }
+
+    .back-btn-container {
+        padding-top: 6rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -957,28 +948,16 @@ re-captcha.is-invalid > div {
         background-position: center;
     }
 
-    #hero-console {
-        margin: 1rem 3rem 1rem 2rem;
-    }
-
-    #hero-left {
-        padding: 5rem;
-    }
-
     #h-name {
         font-size: 7rem;
-        margin-left: 2rem;
-
     }
 
     #h-title {
         font-size: 4rem;
-        margin-left: 2rem;
     }
 
     #h-intro {
         font-size: 1.5rem;
-        margin-left: 2rem;
     }
 
     #about-head {
@@ -1058,10 +1037,26 @@ re-captcha.is-invalid > div {
         font-size: 1.25rem;
     }
 
+    .hero-container {
+        margin-top: 4rem;
+    }
+
+    .back-btn-container {
+        padding-top: 10rem;
+    }
+
 }
 
 /* Extra Large devices (desktops, 1300px and up) */
 @media only screen and (min-width: 1300px) {
+    .hero-container {
+        margin-top: 2rem;
+    }
+
+    .back-btn-container {
+        padding-top: 6rem;
+    }
+
     #hero {
         animation: animatedBackground 10s ease-in-out infinite alternate;
         background-image: url(assets/images/ffflurry.svg);

@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { InteractionServiceService } from '../services/interaction-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
@@ -8,7 +9,10 @@ import { InteractionServiceService } from '../services/interaction-service.servi
 })
 export class ContactMeComponent implements OnInit {
 
-  constructor(private interactionService: InteractionServiceService) {
+  constructor(
+    private interactionService: InteractionServiceService,
+    private router: Router
+    ) {
   }
 
   ngOnInit(): void {
@@ -21,6 +25,10 @@ export class ContactMeComponent implements OnInit {
     // Reset the standard header and footer.
     this.interactionService.changeIsStandardFooter(false);
     this.interactionService.changeIsStandardHeader(false);
+  }
+
+  onBackHome() {
+    this.router.navigate(['/home']);
   }
 
 }

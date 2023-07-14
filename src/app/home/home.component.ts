@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild, HostListener, Inject, Renderer2 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, ElementRef, HostListener } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
 
 interface Dictionary {
@@ -38,6 +38,7 @@ export class HomeComponent {
 
   constructor(
     private dataService: DataServiceService,
+    private router: Router,
     private route: ActivatedRoute,
     private elementRef: ElementRef,
   ) { }
@@ -179,6 +180,10 @@ export class HomeComponent {
 
   openLink(linkUri: string) {
     window.open(linkUri, '_blank');
+  }
+
+  onChatNow() {
+    this.router.navigate(['/contact-me']);
   }
 
 }

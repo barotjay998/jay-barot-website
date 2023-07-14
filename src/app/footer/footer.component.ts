@@ -1,6 +1,7 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { InteractionServiceService } from '../services/interaction-service.service';
 declare const grecaptcha: any; // Declare the global grecaptcha object
 
 @Component({
@@ -8,7 +9,7 @@ declare const grecaptcha: any; // Declare the global grecaptcha object
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
 
   @ViewChild('contactForm') contactForm: any;
   
@@ -18,11 +19,24 @@ export class FooterComponent {
   public siteKey: string = environment.recaptcha.siteKey;
   public captchaError: string;
 
-  constructor() {
+  // A standard footer is without the contact me form.
+  public isStandardFooter: boolean = false;
+
+  constructor(
+    private interactionService: InteractionServiceService
+  ) {
     // this.recipientEmail = '';
     this.message = '';
     this.senderEmail = '';
     this.captchaError = '';
+  }
+
+  ngOnInit(): void {
+    this.interactionService.currentIsStandardFooter.subscribe(
+      loaded => {
+        this.isStandardFooter = loaded;
+      }
+    );
   }
 
   // Contact From Submit

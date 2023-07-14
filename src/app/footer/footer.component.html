@@ -2,7 +2,7 @@
 
   <div class="container-fluid">
 
-    <div class="row">
+    <div class="row mb-3" *ngIf="!isStandardFooter; else footerIcons">
 
       <!-- Contact Me -->  
       <div class="col-lg-6 d-flex align-self-center" style="margin-top: 3rem;">
@@ -135,10 +135,49 @@
 
     </div>
 
+    <ng-template #footerIcons>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-12 d-flex flex-row justify-content-center" style="margin-top: 3rem;">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/jay-barot-751720170" 
+            class="footer-link-box"
+            target="_blank" class="footer-link mt-0 mb-0"> 
+            <i class="fa-brands fa-linkedin footer-link-icon"></i>
+          </a>
+
+          <!-- Indeed -->
+          <a href="https://profile.indeed.com/p/jayb-msw852b" 
+            target="_blank" class="footer-link mt-0 mb-0" style="text-decoration: none;"> 
+            <i class="cib-indeed"></i>
+            <!-- <i class="fa-solid fa-code footer-link-icon"></i> -->
+          </a>
+
+          <!-- Github -->
+          <a href="https://github.com/barotjay998" 
+              target="_blank" class="footer-link mt-0 mb-0"> 
+              <i class="fa-brands fa-github footer-link-icon"></i>
+          </a>
+
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/_barotjay998/" 
+              target="_blank" class="footer-link mt-0 mb-0" style="text-decoration: none;"> 
+              <i class="cib-leetcode"></i>
+              <!-- <i class="fa-solid fa-code footer-link-icon"></i> -->
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:jay.d.barot@vanderbilt.edu" 
+              target="_blank" class="footer-link mt-0 mb-0">
+              <i class="fa-solid fa-envelope footer-link-icon"></i>
+          </a>
+        </div>
+      </div>
+    </ng-template>
+
     <div class="row justify-content-center">
 
       <!-- Copyright -->
-      <div class="col-lg-8 text-center pb-3 pt-3 mt-3 ml-5 mr-5 font-courier-prime" style="border-top: 1px solid #c2c2c2;">
+      <div class="col-lg-8 text-center pb-3 pt-3 ml-5 mr-5 font-courier-prime" style="border-top: 1px solid #c2c2c2;">
         © 2023 Copyright:
         <a class="text-dark" href="#">Jay Barot</a>
         All Rights Reserved

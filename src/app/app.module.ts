@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { environment } from 'src/environments/environment';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({   
   declarations: [
@@ -15,6 +16,7 @@ import { environment } from 'src/environments/environment';
     HeaderComponent,
     FooterComponent,
     routingComponents,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,

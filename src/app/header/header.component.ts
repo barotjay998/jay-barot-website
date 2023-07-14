@@ -1,6 +1,7 @@
 import { Component, HostListener} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Platform } from '@angular/cdk/platform';
+import { InteractionServiceService } from '../services/interaction-service.service';
 
 @Component({
   selector: 'app-header',
@@ -11,33 +12,60 @@ export class HeaderComponent {
 
   isNavbarTransparent = true;
   isTogglerClicked = false;
+  // A standard header is without the contact me form.
+  public isStandardHeader: boolean = false;
 
-  constructor(private sanitizer: DomSanitizer, private platform: Platform) { }
+  constructor(
+    private sanitizer: DomSanitizer, 
+    private platform: Platform,
+    private interactionService: InteractionServiceService
+  ) { }
 
   ngOnInit() {
+    this.interactionService.currentIsStandardFooter.subscribe(
+      loaded => {
+        this.isStandardHeader = loaded;
+
+        // Make a standard header, which is by default non-transparent.
+        if (this.isStandardHeader == true) {
+          this.isNavbarTransparent = false;
+        }
+        else {
+          this.isNavbarTransparent = true;
+        }
+      }
+    );
   }
 
+  // Make the navbar non-transparent when the user scrolls down.
   @HostListener('window:scroll')
   onWindowScroll() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    if ((scrollPosition > 50) || (this.isTogglerClicked)) {
-      this.isNavbarTransparent = false;
-    }
-    else {
-      this.isNavbarTransparent = true;
+    // Check if the header is not a standard header.
+    if (this.isStandardHeader != true) {
+      if ((scrollPosition > 50) || (this.isTogglerClicked)) {
+        this.isNavbarTransparent = false;
+      } 
+      else {
+        this.isNavbarTransparent = true;
+      }
     }
     
   }
 
+  // Make the navbar non-transparent when the user clicks the toggler.
   togglerClicked(): void {
-    this.isTogglerClicked = !this.isTogglerClicked;
+    // Check if the header is not a standard header.
+    if (this.isStandardHeader != true) {
+      this.isTogglerClicked = !this.isTogglerClicked;
     
-    if (this.isTogglerClicked == true) {
-      this.isNavbarTransparent = false;
-    }
-    else {
-      this.isNavbarTransparent = true;
+      if (this.isTogglerClicked == true) {
+        this.isNavbarTransparent = false;
+      }
+      else {
+        this.isNavbarTransparent = true;
+      }
     }
   }
 

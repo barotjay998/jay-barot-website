@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo : '/home', pathMatch: 'full' },
   { path: 'home', component : HomeComponent },
+  { path: 'contact-me', component : ContactMeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -17,5 +19,6 @@ export class AppRoutingModule { }
 
 export const routingComponents = [
   HomeComponent, 
-  PageNotFoundComponent
+  PageNotFoundComponent,
+  ContactMeComponent
 ];

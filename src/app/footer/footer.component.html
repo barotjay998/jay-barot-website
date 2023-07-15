@@ -31,46 +31,77 @@
             <div class="row">
               <div class="col-xl-9 col-lg-10 col-md-9">
 
-                <form #contactForm="ngForm" (ngSubmit)="sendEmail()">
+                <form 
+                  [formGroup]="footerContactForm" 
+                  (ngSubmit)="sendEmail()" 
+                  novalidate
+                >
 
                   <!-- Message Textarea -->
                   <textarea 
-                    class="form-control contact-me-textarea mb-2"
+                    class="form-control contact-me-textarea"
                     id="message" 
-                    name="message" 
-                    [(ngModel)]="message" 
                     placeholder="Message*" 
-                    required>
+                    formControlName="message"
+                    [class.custom-is-invalid]="this.footerContactForm.get('message')?.invalid && this.footerContactForm.get('message')?.touched"
+                  >
                   </textarea>
+
+                  <div 
+                    *ngIf="this.footerContactForm.get('message')?.invalid && this.footerContactForm.get('message')?.touched"
+                    class="text-danger text-left">
+                    <small>Message is required.</small>
+                  </div>
 
                   <!-- Senders Email -->
                   <input 
-                    class="form-control contact-me-email mb-2"
+                    class="form-control contact-me-email"
                     type="email" 
                     id="senderEmail" 
-                    name="senderEmail" 
                     placeholder="Your Email*"
-                    [(ngModel)]="senderEmail" 
-                    required
+                    formControlName="senderEmail"
+                    [class.custom-is-invalid]="this.footerContactForm.get('senderEmail')?.invalid && this.footerContactForm.get('senderEmail')?.touched"
                   >
 
-                  <!-- Captcha -->
                   <div 
-                    class="g-recaptcha mt-1 mb-1" 
-                    [attr.data-sitekey]="siteKey">
+                    *ngIf="footerContactForm.get('senderEmail')?.hasError('required') && footerContactForm.get('senderEmail')?.touched" 
+                    class="text-danger text-left"
+                  >
+                    <small>
+                      Email is required.
+                    </small>
                   </div>
 
                   <div 
-                    class="error-message" 
-                    *ngIf="captchaError">{{ captchaError }}
+                    *ngIf="this.footerContactForm.get('senderEmail')?.hasError('email') && this.footerContactForm.get('senderEmail')?.touched" 
+                    class="text-danger text-left"
+                  >
+                    <small>
+                      Email must be a valid email address.
+                    </small>    
+                  </div>
+
+                  <!-- Captcha -->
+                  <re-captcha 
+                    [siteKey]="siteKey" 
+                    (resolved)="onCaptchaResolved($event)">
+                  </re-captcha>
+                  
+                  <div 
+                    *ngIf="isCaptchaInvalid()"
+                    class="text-danger text-left"
+                  >
+                    <small>
+                      Please complete the reCAPTCHA.
+                    </small>    
                   </div>
 
                   <!-- Submit Button -->
                   <button 
-                    class="btn btn-outline-dark w-100"
+                    class="btn btn-outline-dark w-100 mt-2"
                     (click)="sendEmail()"
                     type="submit" 
-                    [disabled]="!contactForm.valid"
+                    [disabled]="!footerContactForm.valid"
                   >
                     Send
                     <i class="fa-solid fa-paper-plane"></i>

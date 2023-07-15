@@ -490,10 +490,12 @@ a.disabled {
 
 .contact-me-textarea {
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .contact-me-email {
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .form-control {
@@ -553,11 +555,6 @@ a.disabled {
     @extend .font-montserrat;
 }
 
-.error-message {
-    color: red;
-    margin-top: 10px;
-}
-
 .img-jay-barot {
     width: 40%;
     margin: 25%;
@@ -572,9 +569,9 @@ a.disabled {
     background-position: center;
 }
 
-re-captcha.is-invalid > div {
-    border: 1px solid #dc3545 !important;
-    border-radius: 0.2rem;
+.custom-is-invalid {
+    margin-bottom: 0rem;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.26);
 }
 
 @keyframes animatedBackground {

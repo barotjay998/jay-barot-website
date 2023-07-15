@@ -1,8 +1,8 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { InteractionServiceService } from '../services/interaction-service.service';
-declare const grecaptcha: any; // Declare the global grecaptcha object
+import { RecaptchaService } from '../services/recaptcha.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,25 +10,40 @@ declare const grecaptcha: any; // Declare the global grecaptcha object
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  @ViewChild('contactForm') contactForm: any;
   
+  siteKey: string = '';
   public recipientEmail: string = 'barotjay998@yahoo.com'
-  public message: string;
-  public senderEmail: string;
-  public siteKey: string = environment.recaptcha.siteKey;
-  public captchaError: string;
+  captchaResolved: boolean = false;
 
   // A standard footer is without the contact me form.
   public isStandardFooter: boolean = false;
 
   constructor(
-    private interactionService: InteractionServiceService
+    private interactionService: InteractionServiceService,
+    private recaptchaService: RecaptchaService,
+    private formBuilder: FormBuilder
+
   ) {
-    // this.recipientEmail = '';
-    this.message = '';
-    this.senderEmail = '';
-    this.captchaError = '';
+    // Set the site key for the reCAPTCHA.
+    const selectedOption = 1;
+    this.siteKey = this.recaptchaService.getSiteKey(selectedOption);
+  }
+
+  // Build the footer contact form.
+  footerContactForm = this.formBuilder.group({
+    message: ["Hi Jay! I'd love to learn more about your software development services. Can we schedule a time to chat ?", Validators.required],
+    senderEmail: ['', [Validators.required, Validators.email]],
+    captchaResponse: ['', Validators.required],
+  });
+
+  onCaptchaResolved(response: string) {
+    this.captchaResolved = true;
+    this.footerContactForm.patchValue({ captchaResponse: response });
+  }
+
+  isCaptchaInvalid() {
+    const captchaControl = this.footerContactForm.get('captchaResponse');
+    return captchaControl?.invalid && this.captchaResolved;
   }
 
   ngOnInit(): void {
@@ -37,36 +52,30 @@ export class FooterComponent implements OnInit {
         this.isStandardFooter = loaded;
       }
     );
+
   }
 
   // Contact From Submit
   public sendEmail(): void {
 
-    const captchaResponse = grecaptcha.getResponse();
-    if (!captchaResponse) {
-      // Handle case when reCAPTCHA response is not available
-      // Display an error message or take appropriate action
-      this.captchaError = 'Please verify the reCAPTCHA.';
-      return;
-    }
-
-    emailjs.send('service_p7hgqfe', 'template_g42gv1f', {
-      to_name: 'Jay Barot',
-      to_email: this.recipientEmail,
-      message: this.message,
-      sender_email: this.senderEmail
-    }, 'kgADkdTn3yQLJM4Zp')
+    if (this.footerContactForm.valid && this.captchaResolved) {
+      // Form submission logic here
+      emailjs.send('service_p7hgqfe', 'template_g42gv1f', {
+        to_name: 'Jay Barot',
+        to_email: this.recipientEmail,
+        message: this.footerContactForm.value.message,
+        sender_email: this.footerContactForm.value.senderEmail
+      }, 'kgADkdTn3yQLJM4Zp')
       .then((response: EmailJSResponseStatus) => {
         // console.log('Email sent successfully:', response);
       }, (error) => {
         // console.error('Error sending email:', error);
       });
 
-    // this.recipientEmail = '';
-    this.message = '';
-    this.senderEmail = '';
-    this.captchaError = '';
-    this.contactForm.reset();
+      // Reset the form and clear form controls
+      this.footerContactForm.reset();
+      this.captchaResolved = false;
+    }
   }
 
 }

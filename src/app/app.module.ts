@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { environment } from 'src/environments/environment';
 import { ContactMeComponent } from './contact-me/contact-me.component';
@@ -25,15 +25,9 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     FormsModule,
     RecaptchaModule,
     RecaptchaFormsModule,
+    ReactiveFormsModule
   ],
-  providers: [
-    {
-      provide: RECAPTCHA_SETTINGS,
-      useValue: {
-        siteKey: environment.recaptcha.siteKey,
-      } as RecaptchaSettings,
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

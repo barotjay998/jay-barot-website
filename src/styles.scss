@@ -532,9 +532,22 @@ a.disabled {
     @extend .font-roboto;
 }
 
+.contact-me-page-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #747474;
+    @extend .font-roboto;
+}
+
 .contact-me-sub-title {
     text-align: left;
     text-align: left;
+    font-size: 1.25rem;
+    color: #606060;
+    @extend .font-montserrat;
+}
+
+.contact-me-page-sub-title {
     font-size: 1.25rem;
     color: #606060;
     @extend .font-montserrat;
@@ -562,7 +575,7 @@ a.disabled {
 re-captcha.is-invalid > div {
     border: 1px solid #dc3545 !important;
     border-radius: 0.2rem;
-  }
+}
 
 @keyframes animatedBackground {
     from {
@@ -703,6 +716,14 @@ re-captcha.is-invalid > div {
         font-size: 1.2rem;
     }
 
+    .contact-me-page-title {
+        font-size: 2.2rem;
+    }
+
+    .contact-me-page-sub-title {
+        font-size: 1.2rem;
+    }
+
     .hero-container {
         margin-top: 5rem;
     }
@@ -820,6 +841,14 @@ re-captcha.is-invalid > div {
         font-size: 1.25rem;
     }
 
+    .contact-me-page-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-me-page-sub-title {
+        font-size: 1.2rem;
+    }
+
     .hero-container {
         margin-top: 5rem;
     }
@@ -929,6 +958,14 @@ re-captcha.is-invalid > div {
         font-size: 1.25rem;
     }
 
+    .contact-me-page-title {
+        font-size: 3rem;
+    }
+
+    .contact-me-page-sub-title {
+        font-size: 1.2rem;
+    }
+
     .hero-container {
         margin-top: 5rem;
     }
@@ -1034,6 +1071,14 @@ re-captcha.is-invalid > div {
     }
 
     .contact-me-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .contact-me-page-title {
+        font-size: 4rem;
+    }
+
+    .contact-me-page-sub-title {
         font-size: 1.25rem;
     }
 

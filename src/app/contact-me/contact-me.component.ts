@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
 import { RecaptchaService } from '../services/recaptcha.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact-me',
@@ -71,15 +72,40 @@ export class ContactMeComponent implements OnInit {
         sender_email: this.contactMePageContactForm.value.senderEmail
       }, 'kgADkdTn3yQLJM4Zp')
       .then((response: EmailJSResponseStatus) => {
+
         // console.log('Email sent successfully:', response);
+
+        // Success Message
+        this.alertConfirmation();
+        
+        // Reset the form and clear form controls
+        this.contactMePageContactForm.reset();
+        this.captchaResolved = false;
+
       }, (error) => {
         // console.error('Error sending email:', error);
       });
 
-      // Reset the form and clear form controls
-      this.contactMePageContactForm.reset();
-      this.captchaResolved = false;
+
     }
   }
-  
+
+    // SweetAlert2 Success Message
+    alertConfirmation() {
+      Swal.fire({
+        title: 'Message sent!',
+        text: 'Jay shall be in touch shortly..',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        position: 'top-end',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      });
+    }
+
 }

@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { environment } from 'src/environments/environment';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { PublicationsComponent } from './publications/publications.component';
 
 @NgModule({   
   declarations: [
@@ -17,6 +18,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     FooterComponent,
     routingComponents,
     ContactMeComponent,
+    PublicationsComponent,
   ],
   imports: [
     BrowserModule,

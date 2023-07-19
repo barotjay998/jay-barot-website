@@ -24,6 +24,7 @@
     "ngx-captcha": "^13.0.0",
     "particle.js": "^1.0.7",
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.7.18",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

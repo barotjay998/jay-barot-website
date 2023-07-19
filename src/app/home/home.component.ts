@@ -186,4 +186,8 @@ export class HomeComponent {
     this.router.navigate(['/contact-me']);
   }
 
+  onPublications() {
+    this.router.navigate(['/publications']);
+  }
+
 }

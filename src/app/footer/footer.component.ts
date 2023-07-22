@@ -81,8 +81,6 @@ export class FooterComponent implements OnInit {
       }, (error) => {
         // console.error('Error sending email:', error);
       });
-
-
     }
   }
 

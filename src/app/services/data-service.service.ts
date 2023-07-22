@@ -21,6 +21,15 @@ export class DataServiceService {
       .pipe(catchError(this.handleError));
   }
 
+  getPublicationsData(): Observable<any>  {
+      
+      var url = `${environment.api_url}/publications-data.json`;
+  
+      return this.http.get(url)
+        .pipe(catchError(this.handleError));
+  }
+
+
   handleError(error: HttpErrorResponse) {
     return throwError(error.message || "Server Error");
   }

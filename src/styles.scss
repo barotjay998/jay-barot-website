@@ -555,6 +555,55 @@ a.disabled {
     @extend .font-montserrat;
 }
 
+.publication-title {
+    font-size: 4rem;
+    color: #606060;
+    @extend .font-roboto-mono;
+}
+
+.publication-sub-title {
+    font-size: 1.2rem;
+    color: #606060;
+    @extend .font-montserrat;
+}
+
+.publication-card {
+    height: 12rem;
+    margin-bottom: 1rem;
+    background: #d8d8d8;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px dashed black;
+}
+
+.publication-card-title {
+    font-size: 1.2rem;
+    @extend .font-roboto-mono;
+}
+
+.publication-card-journal {
+    @extend .font-courier-prime;
+}
+
+.publication-card-info {
+    @extend .font-courier-prime;
+}
+
+.publication-card-btn {
+    @extend .font-courier-prime;
+    border-radius: 0rem;
+    border: none;
+    background: none;
+    padding: 0rem;
+}
+
+.publication-card-btn:hover {
+    border-radius: 0rem;
+    color: #0152a8;
+    background: none;
+    padding: 0rem;
+}
+
 .img-jay-barot {
     width: 40%;
     margin: 25%;

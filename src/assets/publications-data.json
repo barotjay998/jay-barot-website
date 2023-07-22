@@ -5,7 +5,8 @@
         "volume": "8",
         "issue": "III",
         "date": "March, 2020",
-        "links": "https://www.ijraset.com/fileserve.php?FID=26785"
+        "links": "https://www.ijraset.com/fileserve.php?FID=26785",
+        "certificate": "/assets/docs/certificate_stocks_predicting_using_ml.pdf"
     },
     {
         "title": "Flask App for Real Time Sentiment Analysis of Tweets on NASDAQ and NSE Stocks",
@@ -13,7 +14,8 @@
         "volume": "8",
         "issue": "III",
         "date": "March, 2020",
-        "links": "https://www.ijraset.com/fileserve.php?FID=26798"
+        "links": "https://www.ijraset.com/fileserve.php?FID=26798",
+        "certificate": "/assets/docs/certificate_sentiment_snalysis_of_tweets.pdf"
     },
     {
         "title": "Wireless Sensors in IOT Based Smart Restaurant",
@@ -21,6 +23,7 @@
         "volume": "",
         "issue": "",
         "date": "June, 2019",
-        "links": ""
+        "links": "/assets/docs/wsn_paper.pdf",
+        "certificate": "/assets/docs/certificate_wsn_paper.jpg"
     }
 ]

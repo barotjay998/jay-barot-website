@@ -58,15 +58,30 @@
                         </span>
                     </p>
 
+                    <p *ngIf="publication.volume == '' && publication.issue == ''">
+                        &nbsp; &nbsp;
+                    </p>
+
                     <button 
                         type="button"
                         class="btn btn-outline-primary publication-card-btn"
+                        (click)="onViewPublication(publication)"
                     >
                         <i 
                             class="fa-solid fa-eye">
                         </i>
                         View
                     </button>
+
+                    <button 
+                    type="button"
+                    class="btn btn-outline-primary publication-card-btn"
+                    (click)="onViewCertificate(publication)"
+                    >
+                        <i class="fa-solid fa-certificate"></i>
+                        Certificate
+                    </button>
+
                 </div>
 
             </div>

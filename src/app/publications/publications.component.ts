@@ -30,7 +30,6 @@ export class PublicationsComponent implements OnInit {
   loadData() {
     this.dataService.getPublicationsData().subscribe((data) => {
       this.publicationData = data;
-      console.log(this.publicationData);
     });
   }
 
@@ -38,6 +37,14 @@ export class PublicationsComponent implements OnInit {
     // Reset the standard header and footer.
     this.interactionService.changeIsStandardFooter(false);
     this.interactionService.changeIsStandardHeader(false);
+  }
+
+  onViewPublication(publication: any) {
+    window.open(publication.links, '_blank');
+  }
+
+  onViewCertificate(publication: any) {
+    window.open(publication.certificate, '_blank');
   }
 
   onBackHome() {

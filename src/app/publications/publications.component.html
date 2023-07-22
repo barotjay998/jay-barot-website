@@ -1,0 +1,77 @@
+<div class="container-fluid bg-platinum back-btn-container">
+    <div class="row">
+        <div class="col-md-12">
+            <button 
+                type="button" 
+                class="btn btn-outline-dark" 
+                (click)="onBackHome()"
+            >
+                <i class="fa-solid fa-angles-left"></i>
+                <span class="px-4 font-weight-bold">
+                    <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="publication-title ">
+                    Publications.
+                </h1>
+                <p class="publication-sub-title"> 
+                    I am dedicated to advancing the field of software development through insightful publications. 
+                    On this page, you will find a collection of works that showcase emphasize the immense significance 
+                    of literature in the world of software development. I invite you to discover the power of combining technical 
+                    prowess with the art of literature as I take you on an enlightening journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div 
+                *ngFor="let publication of publicationData" 
+                class="col-md-11 publication-card d-flex flex-column justify-content-between"
+            >
+                <p class="publication-card-title">
+                    {{ publication.title }}
+                </p>
+                <p class="publication-card-journal">
+                    {{ publication.journal }}
+                </p>
+
+                <div class="d-flex justify-content-between">
+                    <span class="publication-card-info">
+                        {{ publication.date }}
+                    </span>
+
+                    <p class="publication-card-info mb-0">
+                        <span *ngIf="publication.volume != ''" >
+                            Volume {{ publication.volume }},
+                        </span>
+                        <span *ngIf="publication.issue != ''" >
+                            Issue {{ publication.issue }}
+                        </span>
+                    </p>
+
+                    <button 
+                        type="button"
+                        class="btn btn-outline-primary publication-card-btn"
+                    >
+                        <i 
+                            class="fa-solid fa-eye">
+                        </i>
+                        View
+                    </button>
+                </div>
+
+            </div>
+        </div> 
+
+    </div>
+</section>
+

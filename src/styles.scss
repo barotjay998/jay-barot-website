@@ -623,6 +623,16 @@ a.disabled {
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.26);
 }
 
+.page-not-found-image {
+    background: white;
+    border-radius: 2rem;
+}
+
+.page-not-found-button {
+    padding: 1rem;
+    background: #00fb9f82;
+}
+
 @keyframes animatedBackground {
     from {
     // 100% is one image width to the left, more than 100% is the next repeated image
@@ -667,7 +677,7 @@ a.disabled {
 @media only screen and (min-width: 200px) {
 
     #hero {
-        animation: none;
+        animation: animatedBackground 90s linear infinite alternate;
         background-image: url(assets/images/ffflurry.svg);
         background-size: cover;
         background-position: center;

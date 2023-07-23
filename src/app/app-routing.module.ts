@@ -4,12 +4,18 @@ import { HomeComponent } from './home/home.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { ExactivitiesComponent } from './exactivities/exactivities.component';
+import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { SoftSkillsComponent } from './soft-skills/soft-skills.component'
 
 const routes: Routes = [
   { path: '', redirectTo : '/home', pathMatch: 'full' },
   { path: 'home', component : HomeComponent },
   { path: 'contact-me', component : ContactMeComponent },
   { path: 'publications', component : PublicationsComponent },
+  { path: 'exactivities', component : PublicationsComponent },
+  { path: 'techskills', component : PublicationsComponent },
+  { path: 'softskills', component : PublicationsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -23,5 +29,8 @@ export const routingComponents = [
   HomeComponent, 
   PageNotFoundComponent,
   ContactMeComponent,
-  PublicationsComponent
+  PublicationsComponent,
+  ExactivitiesComponent,
+  TechSkillsComponent,
+  SoftSkillsComponent
 ];

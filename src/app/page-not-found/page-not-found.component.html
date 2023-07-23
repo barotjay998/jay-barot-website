@@ -1,1 +1,29 @@
-<p>page-not-found works!</p>
+<section class="bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container">
+        <div class="row d-flex justify-content-center page-not-found-image mx-1">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-11 text-center">
+                <img 
+                    class="img-fluid" 
+                    src="assets/images/404.jpg" 
+                    alt="Contact Jay"
+                    >
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-md-12 text-center">
+                <button 
+                type="button" 
+                class="btn btn-outline-dark page-not-found-button" 
+                (click)="onBackHome()"
+                >
+                <i class="fa-solid fa-angles-left"></i>
+                <span class="px-4 font-weight-bold">
+                    <i class="fa-solid fa-house-chimney"></i>
+                        Back to Home
+                </span>
+            </button>
+            </div>
+        </div>
+    </div>
+</section>

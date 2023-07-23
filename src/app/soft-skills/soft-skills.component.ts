@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { InteractionServiceService } from '../services/interaction-service.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html',
-  styleUrls: ['./page-not-found.component.scss']
+  selector: 'app-soft-skills',
+  templateUrl: './soft-skills.component.html',
+  styleUrls: ['./soft-skills.component.scss']
 })
-export class PageNotFoundComponent implements OnInit {
+export class SoftSkillsComponent {
 
   constructor(
     private interactionService: InteractionServiceService,

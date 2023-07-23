@@ -46,7 +46,7 @@
           <div class="col-md-10">
             <button type="button" 
             class="btn aqua-btn btn-bg-slide px-4"
-            (click)="onChatNow()"
+            (click)="onInternalLink('/contact-me')"
             >
             Chat Now
             <i class="fa-solid fa-comment"></i>
@@ -81,29 +81,19 @@
           
           <div class="col-lg-10 text-center">
 
-            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
-              <i class="fa-solid fa-handshake"></i>
-              Soft Skills
-            </button> -->
-
-            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
-              <i class="fa-solid fa-people-group"></i>
-              Exactivities
-            </button> -->
-
             <button 
               type="button" 
               class="btn btn-outline-light btn-custom-2"
-              (click)="onPublications()"
-            >
-              <i class="fa-solid fa-newspaper"></i>
-              Publications
+              (click)="onInternalLink('/exactivities')"
+              >
+              <i class="fa-solid fa-people-group"></i>
+              Exactivities
             </button>
 
-            <!-- <button type="button" class="btn btn-outline-light btn-custom-2">
+            <button type="button" class="btn btn-outline-light btn-custom-2">
               <i class="fa-solid fa-laptop-code"></i>
               Technical Skills
-            </button> -->
+            </button>
 
             <!-- Temporary Links -->
             <button 
@@ -125,21 +115,27 @@
             </button> -->
 
             <button 
+            type="button" 
+            class="btn btn-outline-light btn-custom-2"
+            (click)="onInternalLink('/publications')"
+            >
+              <i class="fa-solid fa-newspaper"></i>
+              Publications
+            </button>
+
+
+            <button type="button" class="btn btn-outline-light btn-custom-2">
+              <i class="fa-solid fa-handshake"></i>
+              Soft Skills
+            </button>
+
+            <button 
               (click)="openLink('https://github.com/barotjay998')"
               type="button" 
               class="btn btn-outline-light btn-custom-2"
             >
               <i class="fa-brands fa-github"></i>
               GitHub
-            </button>
-
-            <button 
-              (click)="openLink('https://leetcode.com/_barotjay998/')"
-              type="button" 
-              class="btn btn-outline-light btn-custom-2"
-            >
-              <i class="cib-leetcode"></i>
-              LeetCode
             </button>
 
           </div>

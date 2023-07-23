@@ -6,10 +6,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
-import { environment } from 'src/environments/environment';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { ExactivitiesComponent } from './exactivities/exactivities.component';
+import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
 
 @NgModule({   
   declarations: [
@@ -19,6 +21,9 @@ import { PublicationsComponent } from './publications/publications.component';
     routingComponents,
     ContactMeComponent,
     PublicationsComponent,
+    ExactivitiesComponent,
+    TechSkillsComponent,
+    SoftSkillsComponent,
   ],
   imports: [
     BrowserModule,

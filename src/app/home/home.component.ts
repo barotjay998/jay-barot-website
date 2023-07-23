@@ -182,12 +182,8 @@ export class HomeComponent {
     window.open(linkUri, '_blank');
   }
 
-  onChatNow() {
-    this.router.navigate(['/contact-me']);
-  }
-
-  onPublications() {
-    this.router.navigate(['/publications']);
+  onInternalLink(linkUri: string) {
+    this.router.navigate([linkUri]);
   }
 
 }

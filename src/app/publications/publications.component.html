@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<section class="bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+<section class="bg-platinum d-flex align-items-center pt-4" style="min-height: 100vh;">
     <div class="container">
         <div class="row animate__animated animate__fadeInUp">
             <div class="col-md-12">
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mt-4 animate__animated animate__fadeInUp">
+        <div class="row justify-content-center mt-4 mx-2 animate__animated animate__fadeInUp">
             <div 
                 *ngFor="let publication of publicationData" 
                 class="col-md-11 publication-card d-flex flex-column justify-content-between"
@@ -44,43 +44,54 @@
                     {{ publication.journal }}
                 </p>
 
-                <div class="d-flex justify-content-between">
-                    <span class="publication-card-info">
-                        {{ publication.date }}
-                    </span>
+                <div class="row d-flex justify-content-between">
 
-                    <p class="publication-card-info mb-0">
-                        <span *ngIf="publication.volume != ''" >
-                            Volume {{ publication.volume }},
+                    <div class="col-md-3 text-center">
+                        <span class="publication-card-info">
+                            {{ publication.date }}
                         </span>
-                        <span *ngIf="publication.issue != ''" >
-                            Issue {{ publication.issue }}
-                        </span>
-                    </p>
+                    </div>
 
-                    <p *ngIf="publication.volume == '' && publication.issue == ''">
-                        &nbsp; &nbsp;
-                    </p>
+                    <div *ngIf="publication.volume != '' || publication.issue != ''" class="col-md-3 text-center">
+                        <p class="publication-card-info mb-0">
+                            <span *ngIf="publication.volume != ''" >
+                                Volume {{ publication.volume }},
+                            </span>
+                            <span *ngIf="publication.issue != ''" >
+                                Issue {{ publication.issue }}
+                            </span>
+                        </p>
+                    </div>
 
-                    <button 
+                    <div *ngIf="publication.volume == '' && publication.issue == ''" class="col-md-3">
+                        <p>
+                            &nbsp; &nbsp;
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 text-center">
+                        <button 
                         type="button"
                         class="btn btn-outline-primary publication-card-btn"
                         (click)="onViewPublication(publication)"
-                    >
+                        >
                         <i 
                             class="fa-solid fa-eye">
                         </i>
                         View
-                    </button>
+                        </button>
+                    </div>
 
-                    <button 
-                    type="button"
-                    class="btn btn-outline-primary publication-card-btn"
-                    (click)="onViewCertificate(publication)"
-                    >
-                        <i class="fa-solid fa-certificate"></i>
-                        Certificate
-                    </button>
+                    <div class="col-md-3 text-center">
+                        <button 
+                        type="button"
+                        class="btn btn-outline-primary publication-card-btn"
+                        (click)="onViewCertificate(publication)"
+                        >
+                            <i class="fa-solid fa-certificate"></i>
+                            Certificate
+                        </button>
+                    </div>
 
                 </div>
 

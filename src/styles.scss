@@ -462,6 +462,7 @@ a.disabled {
     font-size: 2rem;
     border: 1px solid #00ffa2;
     box-shadow: 3px 3px;
+    background: #00fb9f2b;
 }
 
 .building-base {
@@ -515,7 +516,7 @@ a.disabled {
 .footer-link {
     margin: 1rem;
     font-size: 1.6rem;
-    color: #9a9a9a;
+    color: #747474;
 }
 
 .footer-link:hover {
@@ -557,8 +558,9 @@ a.disabled {
 
 .publication-title {
     font-size: 4rem;
-    color: #606060;
-    @extend .font-roboto-mono;
+    font-weight: bold;
+    color: #808099;
+    @extend .font-roboto;
 }
 
 .publication-sub-title {
@@ -567,8 +569,19 @@ a.disabled {
     @extend .font-montserrat;
 }
 
+.exactivities-title {
+    color: #585858;
+    background: #00ffa2;
+    padding: 3rem 4rem 3rem 2rem;
+    @extend .publication-title,.font-roboto;
+}
+
+.exactivities-sub-title {
+    @extend .publication-sub-title,.font-roboto;
+}
+
 .publication-card {
-    height: 12rem;
+    min-height: 12rem;
     margin-bottom: 1rem;
     background: #d8d8d8;
     padding: 1rem;
@@ -780,6 +793,19 @@ a.disabled {
         font-size: 1.2rem;
     }
 
+    .publication-title {
+        font-size: 2rem;
+    }
+
+    .publication-sub-title {
+        font-size: 1.10rem;
+    }
+
+    .exactivities-title {
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 2rem;
+    }
+
     .hero-container {
         margin-top: 5rem;
     }
@@ -905,6 +931,19 @@ a.disabled {
         font-size: 1.2rem;
     }
 
+    .publication-title {
+        font-size: 2rem;
+    }
+
+    .publication-sub-title {
+        font-size: 1.15rem;
+    }
+
+    .exactivities-title {
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 2.8rem;
+    }
+
     .hero-container {
         margin-top: 5rem;
     }
@@ -1020,6 +1059,19 @@ a.disabled {
 
     .contact-me-page-sub-title {
         font-size: 1.2rem;
+    }
+
+    .publication-title {
+        font-size: 3rem;
+    }
+
+    .publication-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .exactivities-title {
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 3.3rem;
     }
 
     .hero-container {
@@ -1138,6 +1190,19 @@ a.disabled {
         font-size: 1.25rem;
     }
 
+    .publication-title {
+        font-size: 4rem;
+    }
+
+    .publication-sub-title {
+        font-size: 1.3rem;
+    }
+
+    .exactivities-title {
+        padding: 2rem 3rem 2rem 1rem;
+        font-size: 3.5rem;
+    }
+
     .hero-container {
         margin-top: 4rem;
     }
@@ -1156,6 +1221,15 @@ a.disabled {
 
     .back-btn-container {
         padding-top: 6rem;
+    }
+
+    .exactivities-title {
+        padding: 4rem 5rem 4rem 2rem;
+        font-size: 3.5rem;
+    }
+
+    .exactivities-sub-title {
+        font-size: 1.4rem;
     }
 
     #hero {

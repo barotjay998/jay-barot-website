@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: 'home', component : HomeComponent },
   { path: 'contact-me', component : ContactMeComponent },
   { path: 'publications', component : PublicationsComponent },
-  { path: 'exactivities', component : PublicationsComponent },
-  { path: 'techskills', component : PublicationsComponent },
-  { path: 'softskills', component : PublicationsComponent },
+  { path: 'exactivities', component : ExactivitiesComponent },
+  { path: 'techskills', component : TechSkillsComponent },
+  { path: 'softskills', component : SoftSkillsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

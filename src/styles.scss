@@ -29,6 +29,10 @@ $colorPlatinum: #e5e5e5;
     font-family: 'Courier Prime', monospace;
 }
 
+.font-dancing-script {
+    font-family: 'Dancing Script', cursive;
+}
+
 /* Colors */
 
 .bg-theme-blue {
@@ -173,6 +177,30 @@ a.disabled {
     border-color: $colorAquamarine;
     color: $colorAquamarine;
 }
+
+.btn-soft-skill {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @extend .font-courier-prime;
+}
+
+.softskills {
+    border: 1px solid #5d5d5d;
+    border-radius: 0.5rem;
+}
+
+.softskills .skill-logo {
+    font-size: 2rem;
+    color: #5d5d5d;
+}
+
+.softskills .skill-text {
+    font-size: 1.15rem;
+    @extend .font-courier-prime;
+}
+
 
 // Console style
 .console {
@@ -559,14 +587,17 @@ a.disabled {
 .publication-title {
     font-size: 4rem;
     font-weight: bold;
-    color: #808099;
+    color: #424242;
+    // color: #808099;
     @extend .font-roboto;
 }
 
 .publication-sub-title {
     font-size: 1.2rem;
-    color: #606060;
-    @extend .font-montserrat;
+    text-decoration: underline;
+    padding: 2rem;
+    line-height: 200%;
+    @extend .font-courier-prime;
 }
 
 .exactivities-title {
@@ -577,7 +608,25 @@ a.disabled {
 }
 
 .exactivities-sub-title {
-    @extend .publication-sub-title,.font-roboto;
+    font-size: 1.2rem;
+    @extend .font-montserrat;
+}
+
+.exactivities-list-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #585858;
+    @extend .font-roboto;
+}
+
+.exactivities-list-title span{
+    background: #cbe0ff;
+    padding: 2rem 0.2rem 0.2rem 3rem;
+}
+
+.exactivities-list-info {
+    font-size: 1.2rem;
+    @extend .font-montserrat;
 }
 
 .publication-card {
@@ -799,11 +848,14 @@ a.disabled {
 
     .publication-sub-title {
         font-size: 1.10rem;
+        padding: 2rem 0rem 2rem 0rem;
+        text-decoration: none;
     }
 
     .exactivities-title {
+        line-height: 120%;
         padding: 2rem 1rem 2rem 1rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .hero-container {
@@ -937,6 +989,8 @@ a.disabled {
 
     .publication-sub-title {
         font-size: 1.15rem;
+        padding: 2rem 0rem 2rem 0rem;
+        text-align: justify;
     }
 
     .exactivities-title {
@@ -1067,6 +1121,8 @@ a.disabled {
 
     .publication-sub-title {
         font-size: 1.25rem;
+        padding: 2rem;
+        text-align: justify;
     }
 
     .exactivities-title {
@@ -1196,10 +1252,12 @@ a.disabled {
 
     .publication-sub-title {
         font-size: 1.3rem;
+        padding: 2rem;
+        text-align: justify;
     }
 
     .exactivities-title {
-        padding: 2rem 3rem 2rem 1rem;
+        padding: 4rem 5rem 4rem 2rem;
         font-size: 3.5rem;
     }
 

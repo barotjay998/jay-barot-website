@@ -11,7 +11,6 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
-import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
 
 @NgModule({   
   declarations: [
@@ -23,7 +22,6 @@ import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
     PublicationsComponent,
     ExactivitiesComponent,
     TechSkillsComponent,
-    SoftSkillsComponent,
   ],
   imports: [
     BrowserModule,

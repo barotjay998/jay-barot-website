@@ -6,7 +6,6 @@ import { PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
-import { SoftSkillsComponent } from './soft-skills/soft-skills.component'
 
 const routes: Routes = [
   { path: '', redirectTo : '/home', pathMatch: 'full' },
@@ -15,7 +14,6 @@ const routes: Routes = [
   { path: 'publications', component : PublicationsComponent },
   { path: 'exactivities', component : ExactivitiesComponent },
   { path: 'techskills', component : TechSkillsComponent },
-  { path: 'softskills', component : SoftSkillsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -31,6 +29,5 @@ export const routingComponents = [
   ContactMeComponent,
   PublicationsComponent,
   ExactivitiesComponent,
-  TechSkillsComponent,
-  SoftSkillsComponent
+  TechSkillsComponent
 ];

@@ -16,21 +16,18 @@
     </div>
 </div>
 
-<!-- Computer Society of Xaviers -->
-<!-- Workshops conducted -->
-
 <section class="py-5 bg-platinum d-flex align-items-center" style="min-height: 100vh;">
     <div class="container-fluid mx-4">
 
         <!-- Heading Section -->
         <div class="row d-flex justify-content-center align-items-center" style="margin-bottom: 5rem;">
             <!-- Title -->
-            <div class="col-xl-6 exactivities-title">
+            <div class="col-xl-6 exactivities-title animate__animated animate__fadeInLeft">
                 <p>
                     Balancing Wisdom: Unveiling My Diverse Horizons in Extra Curricular Activities.
                 </p>
             </div>
-            <div class="col-xl-5">
+            <div class="col-xl-5 animate__animated animate__fadeInRight">
                 <p class="exactivities-sub-title pt-3">
                     I believe in embracing a well-rounded lifestyle. In addition to my love for coding and technology, 
                     I actively participate in various extracurricular activities that not only contribute to my personal 
@@ -44,7 +41,9 @@
 
         <!-- Workshops Part 1 -->
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-xl-6">
+            <div 
+                class="col-xl-6 animate__animated animate__fadeInUp"
+            >
                 <div class="row">
                     <div class="col-xl-11">
                         <p class="exactivities-list-title">
@@ -61,14 +60,16 @@
                         <p class="exactivities-list-info">
                             During my junior year of study, I had the wonderful opportunity to organize and conduct several enriching workshops, 
                             one of which was a highly successful <strong>Web Development</strong> workshop tailored specifically for sophomores. 
-                            Over four intensive days, I guided a batch of 100 students in creating a fully functional Banking web application. 
+                            Over three intensive days, I guided students in creating a fully functional Banking web application. 
                             The workshop covered a comprehensive curriculum, starting from fundamentals and building knowledge step by step.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-6">
+            <div 
+                class="col-xl-6 animate__animated animate__fadeInUp"
+            >
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-10">
                         <img class="img-fluid" src="assets/images/web-wkshp-3.png" alt="Jay Barot Conducting Web Development Workshop">
@@ -78,8 +79,14 @@
         </div>
 
         <!-- Workshops Part 2 -->
-        <div class="row mt-5 d-flex justify-content-center align-items-center">
-            <div class="col-xl-6">
+        <div class="row my-5 d-flex justify-content-center align-items-center">
+            <div 
+                id="wkp2_left"
+                class="col-xl-6"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['wkp2_left']
+                }"
+            >
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-10">
                         <img class="img-fluid" src="assets/images/web-wkshp-1.jpg" alt="Jay Barot Conducting Web Development Workshop">
@@ -87,7 +94,14 @@
                 </div>
             </div>
 
-            <div class="col-xl-6" style="margin-top: 16px;">
+            <div 
+                id="wkp2_right"
+                class="col-xl-6" 
+                style="margin-top: 16px;"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['wkp2_right']
+                }"
+            >
                 <div class="row d-flex justify-content-end">
                     <div class="col-xl-10">
                         <p class="exactivities-list-info">
@@ -108,7 +122,13 @@
         </div>
 
         <!-- Soft Skills Highlighted -->
-        <div class="row my-4 d-flex justify-content-around">
+        <div 
+            id="sk1"
+            class="row my-4 d-flex justify-content-around"
+            [ngClass]="{
+                'animate__animated animate__fadeInUp': divVisibility['sk1']
+            }"
+        >
             <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
                 <p class="mb-0 skill-logo"><i class="fa-solid fa-bullhorn"></i></p>
                 <p class="mb-0 skill-text">Public Speaking <i class="fa-solid fa-arrow-up"></i></p>
@@ -120,37 +140,214 @@
             </div> 
 
             <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
-                <p class="mb-0 skill-logo"><i class="fa-regular fa-clock"></i></p>
-                <p class="mb-0 skill-text">Time Management <i class="fa-solid fa-arrow-up"></i></p>
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-people-line"></i></p>
+                <p class="mb-0 skill-text">Mentorship <i class="fa-solid fa-arrow-up"></i></p>
             </div> 
             
         </div>
 
         <!-- Workshops Part 3 -->
-        <div class="row mt-5 d-flex justify-content-center align-items-center">
-            <div class="col-xl-6">
+        <div  
+            class="row my-5 d-flex justify-content-center align-items-center"
+        >
+            <div 
+                id="wkp3_left"
+                class="col-xl-6"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['wkp3_left']
+                }"
+            >
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-10">
-                        <img class="img-fluid" src="assets/images/web-wkshp-2.jpg" alt="Jay Barot Conducting Web Development Workshop">
+                        <img class="img-fluid" src="assets/images/web-wkshp-2.jpg" alt="Jay Barot Conducting Computer Integration Workshop">
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-6" style="margin-top: 16px;">
+            <div 
+                id="wkp3_right"
+                class="col-xl-6" 
+                style="margin-top: 16px;"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['wkp3_right']
+                }"
+            >
                 <div class="row d-flex justify-content-end">
                     <div class="col-xl-10">
                         <p class="exactivities-list-info">
-                            I also orchestrated a transformative <strong>Computer Assembly</strong> workshop for Freshman students, 
-                            guiding them through building personalized computers from scratch and providing essential 
-                            information on requirement specifications, hardware selection, compatibility issues, and cost 
-                            reduction. As students assembled PCs, I offered concise explanations on the significance of each 
+                            I also orchestrated a transformative <strong>Computer Integration</strong> workshop Free of cost 
+                            as a way to give back to the community. During the workshop, I guided the participants through building 
+                            personalized computers from scratch and provided essential information on requirement 
+                            specifications, hardware selection, compatibility issues, and cost reduction. 
+                            As students assembled PCs, I offered concise explanations on the significance of each 
                             computer part, resulting in an empowering experience where participants gained practical skills 
-                            and a deeper understanding of the foundation that underpins our digital realm.
+                            and a deeper understanding of the foundation on which our softwares live.
+
+                            <br><br>
+                            At the end of the workshop, I further demonstrated the associated relevance of this 
+                            knowledge by delving into <strong>Virtual Machine Orchestration</strong>. 
+                            I provided a glimpse of <strong>Docker</strong> and <strong>Kubernetes</strong>, showcasing 
+                            how these powerful tools enable <strong>Software Containerization</strong>. By understanding 
+                            the building blocks of computers and the intricacies of VM Orchestration, 
+                            participants were equipped with valuable insights into both hardware and software aspects of 
+                            modern computing. 
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- CSX -->
+        <div class="row d-flex justify-content-center align-items-center">
+            <div 
+                id="csx_left"
+                class="col-xl-6"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['csx_left']
+                }"
+            >
+                <div class="row">
+                    <div class="col-xl-11">
+                        <p class="exactivities-list-title">
+                            <span class="mr-2">
+                                <i class="fa-solid fa-2"></i>.
+                            </span>
+                            Coordinator - Computer Society of Xaviers (CSX).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-end">
+                    <div class="col-xl-10">
+                        <p class="exactivities-list-info">
+                            The Computer Society of Xaviers (CSX) stands as a prestigious institution, 
+                            empowering students with transformative experiences in technology. Through 
+                            captivating <i>guest lectures, workshops, project exhibitions, competitions, 
+                            and call for paper publications </i>, CSX fosters an environment of innovation 
+                            and knowledge exchange. 
+                            <br><br>
+                            In 2018, I was humbled to be elected as the <strong>Head Coordinator</strong>, 
+                            by the <span style="text-decoration: underline;"> unanimous votes of department faculties and a personal recommendation of the dean </span>, 
+                            overseeing the participation of over <strong>720</strong> college students in a dynamic array of activities. 
+                            CSX embodies the relentless pursuit of excellence, shaping the future of technology and 
+                            education, and inspiring the next generation of tech pioneers to push 
+                            the boundaries of possibility.
+                        </p>
+                        <a href="https://www.xavier.ac.in/pdf/CSX/CSX%20News%20Letter.pdf" 
+                            target="_blank" class="btn btn-outline-primary btn-sm">
+                            CSX Newsletter
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div 
+                id="csx_right"
+                class="col-xl-6"
+                [ngClass]="{
+                    'animate__animated animate__fadeInUp': divVisibility['csx_right']
+                }"
+            >
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-10">
+                        <img class="img-fluid" src="assets/images/csx-committee.jpg" alt="Jay Barot Conducting Web Development Workshop">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills Highlighted -->
+        <div 
+            id="sk2"
+            class="row my-4 d-flex justify-content-around"
+            [ngClass]="{
+                'animate__animated animate__fadeInUp': divVisibility['sk2']
+            }"
+        >
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-regular fa-clock"></i></p>
+                <p class="mb-0 skill-text">Time Management <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-people-carry-box"></i></p>
+                <p class="mb-0 skill-text">Team Work <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-sitemap"></i></p>
+                <p class="mb-0 skill-text">Organization <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+            
+        </div>
+
+        <!-- Class Representative -->
+        <div 
+            id="cr"
+            class="row d-flex justify-content-center align-items-center"
+            [ngClass]="{
+                'animate__animated animate__fadeInUp': divVisibility['cr']
+            }"
+        >
+            <div class="col-xl-12">
+                <div class="row">
+                    <div class="col-xl-11">
+                        <p class="exactivities-list-title">
+                            <span class="mr-2">
+                                <i class="fa-solid fa-3"></i>.
+                            </span>
+                            The Voice of the Class: My Role as Class Representative.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-10">
+                        <p class="exactivities-list-info">
+                            During my undergraduate, I had the incredible honor of serving as the class 
+                            representative for <strong> four consecutive semesters </strong> in my junior and senior years, 
+                            a position that spoke to the trust and confidence my fellow students and esteemed faculty had in me. 
+                            I took immense pride in being consistently elected, advocating for my peers' needs and concerns,
+                            acting as the bridge between faculty and students, and fostering a 
+                            strong sense of community and collaboration. 
+                            <br><br>
+                            Organizing class-related events brought us together like a tight-knit family. 
+                            This experience revealed my innate ability to lead, inspire, and make a positive impact on others, 
+                            values that I carry as a software developer, driving my commitment to excellence in every project. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills Highlighted -->
+        <div 
+            id="sk3"
+            class="row my-4 d-flex justify-content-around"
+            [ngClass]="{
+                'animate__animated animate__fadeInUp': divVisibility['sk3']
+            }"
+        >
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-people-group"></i></p>
+                <p class="mb-0 skill-text">Leadership <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-handshake-simple"></i></p>
+                <p class="mb-0 skill-text">Conflict resolution <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 m-3 py-3 d-flex flex-column justify-content-center align-items-center softskills">
+                <p class="mb-0 skill-logo"><i class="fa-solid fa-people-roof"></i></p>
+                <p class="mb-0 skill-text">Interpersonal communication <i class="fa-solid fa-arrow-up"></i></p>
+            </div> 
+            
+        </div>
+
     </div>
 
 </section>

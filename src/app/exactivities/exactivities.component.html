@@ -351,3 +351,32 @@
     </div>
 
 </section>
+
+<!-- Top Button -->
+<div 
+    class="container-fluid bg-platinum"
+>
+    <div 
+        id="exact-top-btn"
+        class="row justify-content-start"
+        [ngClass]="{
+            'animate__animated animate__fadeInUp': divVisibility['exact-top-btn']
+        }"
+    >
+        <div class="col-lg-3 text-center">
+            <button 
+                type="button" 
+                class="btn btn-outline-dark w-50"
+                (click)="makeMeFly()"
+            > 
+            <i 
+                [ngClass]="{
+                'animate__animated animate__fadeOutUpBig animate__slower jet-green': isFlying
+                }"
+                class="fa-solid fa-jet-fighter-up">
+            </i> 
+                Top
+            </button>
+        </div>
+    </div>
+</div>

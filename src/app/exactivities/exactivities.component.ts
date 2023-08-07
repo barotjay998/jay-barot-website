@@ -13,6 +13,7 @@ interface Dictionary {
 })
 export class ExactivitiesComponent {
 
+  public isFlying: boolean = false;
   // Tracking the visibility of the divs on the view.
   divVisibility: Dictionary = {
     "wkp2_left": false,
@@ -25,6 +26,7 @@ export class ExactivitiesComponent {
     "sk2": false,
     "cr": false,
     "sk3": false,
+    "exact-top-btn": false,
   };
 
   constructor(
@@ -66,6 +68,26 @@ export class ExactivitiesComponent {
     const leftInView = rect.left >= 0 && rect.left <= windowWidth;
   
     return topInView && leftInView;
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Remove the hash from the URL, so that the browser does not scroll to it on reload
+    // hash part is the "fragment".
+    history.replaceState({}, document.title, window.location.pathname);
+  }
+
+  makeMeFly() {
+    this.isFlying = true;
+
+    setTimeout(() => {
+      this.isFlying = false;
+    }, 1000);
+
+    setTimeout(() => {
+      this.scrollToTop();
+    }, 400);
+
   }
 
   ngOnDestroy(): void {

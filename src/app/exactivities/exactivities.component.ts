@@ -40,6 +40,7 @@ export class ExactivitiesComponent {
     // We need standard header and footer for this page.
     this.interactionService.changeIsStandardFooter(true);
     this.interactionService.changeIsStandardHeader(true);
+    this.scrollToTop();
   }
 
 

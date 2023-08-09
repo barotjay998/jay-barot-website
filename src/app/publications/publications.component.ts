@@ -24,7 +24,15 @@ export class PublicationsComponent implements OnInit {
     // We need standard header and footer for this page.
     this.interactionService.changeIsStandardFooter(true);
     this.interactionService.changeIsStandardHeader(true);
+    this.scrollToTop();
     this.loadData();
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Remove the hash from the URL, so that the browser does not scroll to it on reload
+    // hash part is the "fragment".
+    history.replaceState({}, document.title, window.location.pathname);
   }
 
   loadData() {

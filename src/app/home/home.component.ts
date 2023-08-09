@@ -183,7 +183,6 @@ export class HomeComponent {
   }
 
   onInternalLink(linkUri: string) {
-    console.log(linkUri);
     this.router.navigate([linkUri]);
   }
 

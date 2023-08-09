@@ -666,6 +666,47 @@ a.disabled {
     padding: 0rem;
 }
 
+.techskills-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #424242;
+    @extend .font-roboto;
+}
+
+.techskills-title i {
+    font-size: 4rem;
+    color: #07db8d;
+    rotate: 45deg;
+}
+
+.techskill-sub-title{
+    @extend .font-roboto;
+}
+
+.techskill-sub-title i {
+    color: #07db8d;
+}
+
+.skill-card {
+    margin: 0.5rem;
+    // border: 1px dashed;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, rgb(215 215 215) 0%, rgb(255 255 255) 50%, rgb(218 216 216) 100%);
+}
+
+.skill-card i {
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: #6e6e6e;
+}
+
+.skill-card p {
+    font-size: 1.2rem;
+    text-align: center;
+    @extend .font-courier-prime;
+}
+
 .img-jay-barot {
     width: 40%;
     margin: 25%;
@@ -866,6 +907,26 @@ a.disabled {
         padding-top: 7rem;
     }
 
+    .techskills-title {
+        font-size: 2.5rem;
+    }
+    
+    .techskills-title i {
+        font-size: 2.5rem;
+    }
+
+    .techskill-sub-title{
+        font-size: 1.5rem;
+    }
+
+    .skill-card i {
+        font-size: 2rem;
+    }
+
+    .skill-card p {
+        font-size: 1rem;
+    }
+
 }
 
 /* Small devices (phones, 600px and up) */
@@ -1006,6 +1067,26 @@ a.disabled {
         padding-top: 6rem;
     }
 
+    .techskills-title {
+        font-size: 3rem;
+    }
+    
+    .techskills-title i {
+        font-size: 3rem;
+    }
+
+    .techskill-sub-title{
+        font-size: 1.5rem;
+    }
+
+    .skill-card i {
+        font-size: 2rem;
+    }
+
+    .skill-card p {
+        font-size: 1rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1137,6 +1218,27 @@ a.disabled {
     .back-btn-container {
         padding-top: 6rem;
     }
+
+    .techskills-title {
+        font-size: 3rem;
+    }
+    
+    .techskills-title i {
+        font-size: 3rem;
+    }
+
+    .techskill-sub-title{
+        font-size: 1.5rem;
+    }
+
+    .skill-card i {
+        font-size: 3rem;
+    }
+
+    .skill-card p {
+        font-size: 1.2rem;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1267,6 +1369,26 @@ a.disabled {
 
     .back-btn-container {
         padding-top: 10rem;
+    }
+
+    .techskills-title {
+        font-size: 4rem;
+    }
+    
+    .techskills-title i {
+        font-size: 4rem;
+    }
+
+    .techskill-sub-title{
+        font-size: 2rem;
+    }
+
+    .skill-card i {
+        font-size: 4rem;
+    }
+
+    .skill-card p {
+        font-size: 1.2rem;
     }
 
 }

@@ -73,7 +73,7 @@ export class HeaderComponent {
 
     // window.open('/assets/docs/jaybarotresume.pdf', '_blank');
 
-    const filePath = '/assets/docs/jaybarotresume.pdf'; // Path to the file relative to the 'assets' folder
+    const filePath = '/assets/docs/Jay-Barot-Software-Developer-Resume.pdf'; // Path to the file relative to the 'assets' folder
 
     // Check if the platform is supported for file downloads
     if (this.platform.isBrowser) {

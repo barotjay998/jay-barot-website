@@ -80,7 +80,7 @@ export class HeaderComponent {
       // Create a temporary anchor element
       const link = document.createElement('a');
       link.href = filePath;
-      link.download = 'jaybarotresume.pdf'; // Specify the desired file name
+      link.download = 'Jay-Barot-Software-Developer-Resume.pdf'; // Specify the desired file name
   
       // Trigger a click event to simulate a download
       link.dispatchEvent(new MouseEvent('click'));

@@ -110,7 +110,7 @@ a.disabled {
 /* Logo Text */
 .logo-text {
     color: $colorAquamarine;
-    font-size: xx-large;
+    font-size: 1.65rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
     margin-left: 1rem;
@@ -233,7 +233,7 @@ a.disabled {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     @extend .font-roboto
 }
@@ -245,7 +245,7 @@ a.disabled {
 }
 
 .about-info {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: #575757;
     // border: 0.1rem solid;
     padding: 1rem;
@@ -436,6 +436,7 @@ a.disabled {
 
 .carousel-indicators li {
     background-color: #9d9d9d;
+    height: 0.5rem;
 }
 
 .carousel-indicators .active {
@@ -786,7 +787,7 @@ a.disabled {
         background-position: center;
     }
 
-    #h-name {
+    #h-name, #about-head, .experience-title, .projects-heading {
         font-size: 3rem;
     }
 
@@ -795,16 +796,7 @@ a.disabled {
     }
 
     #h-intro {
-        font-size: 1.2rem;
-    }
-
-    #about-head {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .experience-title {
-        font-size: 3.5rem;
+        font-size: 1rem;
     }
 
     .experience-job-title {
@@ -812,7 +804,7 @@ a.disabled {
     }
 
     .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .experience-projects-heading {
@@ -825,10 +817,6 @@ a.disabled {
 
     .project-card-row {
         margin: 1.5rem;
-    }
-
-    .projects-heading {
-        font-size: 3.5rem;
     }
 
     .projects-sub-heading {
@@ -876,7 +864,7 @@ a.disabled {
     }
 
     .contact-me-page-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .contact-me-page-sub-title {
@@ -943,21 +931,12 @@ a.disabled {
         font-size: 4rem;
     }
 
-    #h-title {
+    #h-title, #about-head, .experience-title, .projects-heading {
         font-size: 3rem;
     }
 
     #h-intro {
-        font-size: 1.4rem;
-    }
-
-    #about-head {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .experience-title {
-        font-size: 4rem;
+        font-size: 1rem;
     }
 
     .experience-job-title {
@@ -965,7 +944,7 @@ a.disabled {
     }
 
     .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .experience-projects-heading {
@@ -980,16 +959,8 @@ a.disabled {
         margin: 2rem;
     }
 
-    .projects-heading {
-        font-size: 7rem;
-    }
-
     .projects-sub-heading {
         font-size: 2rem;
-    }
-
-    .projects-heading {
-        font-size: 4rem;
     }
 
     .projects-sub-heading {
@@ -1037,7 +1008,7 @@ a.disabled {
     }
 
     .contact-me-page-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .contact-me-page-sub-title {
@@ -1100,24 +1071,15 @@ a.disabled {
     }
 
     #h-name {
-        font-size: 7rem;
-    }
-
-    #h-title {
         font-size: 4rem;
     }
 
+    #h-title, #about-head, .experience-title, .projects-heading {
+        font-size: 3rem;
+    }
+
     #h-intro {
-        font-size: 1.4rem;
-    }
-
-    #about-head {
-        font-size: 5rem;
-        text-align: center;
-    }
-
-    .experience-title {
-        font-size: 5rem;
+        font-size: 1.2rem;
     }
 
     .experience-job-title {
@@ -1138,10 +1100,6 @@ a.disabled {
 
     .project-card-row {
         margin: 2.2rem;
-    }
-
-    .projects-heading {
-        font-size: 5rem;
     }
 
     .projects-sub-heading {
@@ -1189,7 +1147,7 @@ a.disabled {
     }
 
     .contact-me-page-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .contact-me-page-sub-title {
@@ -1251,25 +1209,16 @@ a.disabled {
         background-position: center;
     }
 
-    #h-name {
-        font-size: 7rem;
-    }
-
-    #h-title {
+    #h-name, #about-head, .experience-title, .projects-heading  {
         font-size: 4rem;
     }
 
+    #h-title {
+        font-size: 3rem;
+    }
+
     #h-intro {
-        font-size: 1.5rem;
-    }
-
-    #about-head {
-        font-size: 5rem;
-        text-align: left;
-    }
-
-    .experience-title {
-        font-size: 5rem;
+        font-size: 1.3rem;
     }
 
     .experience-job-title {
@@ -1277,7 +1226,7 @@ a.disabled {
     }
 
     .experience-job-description, .experience-job-period, .key-projects-description, .about-info {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
     }
 
     .experience-projects-heading {
@@ -1290,10 +1239,6 @@ a.disabled {
 
     .project-card-row {
         margin: 2rem;
-    }
-
-    .projects-heading {
-        font-size: 7rem;
     }
 
     .projects-sub-heading {
@@ -1341,7 +1286,7 @@ a.disabled {
     }
 
     .contact-me-page-title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .contact-me-page-sub-title {

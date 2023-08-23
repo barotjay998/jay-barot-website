@@ -8,7 +8,7 @@
             "Docker",
             "Netlify"
         ],
-        "image": "/assets/images/projects/game-of-papers.png",
+        "image": "/assets/images/projects/game-of-papers.webp",
         "imageAlt": "Jay Barot Machine Learning Project",
         "links": "",
         "partners": [
@@ -35,7 +35,7 @@
             "Envoy", 
             "gRPC"
         ],
-        "image": "/assets/images/projects/distributed-systems-project.png",
+        "image": "/assets/images/projects/distributed-systems-project.webp",
         "imageAlt": "Jay Barot Distributed Systems Project",
         "links": "",
         "partners": [
@@ -85,7 +85,7 @@
             "Ryu SDN", 
             "Python"
         ],
-        "image": "/assets/images/projects/computer-networks-project.png",
+        "image": "/assets/images/projects/computer-networks-project.webp",
         "imageAlt": "Jay Barot Software Defined Networking Project",
         "links": "",
         "partners": [
@@ -110,7 +110,7 @@
         "techStack": [
             "SE Research Proposal"
         ],
-        "image": "/assets/images/projects/left-dorsal-mid-insula.png",
+        "image": "/assets/images/projects/left-dorsal-mid-insula.webp",
         "imageAlt": "Jay Barot Software Engineering Research Proposal",
         "links": "",
         "partners": [],
@@ -133,7 +133,7 @@
             "iJRASET",
             "Python"
         ],
-        "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.png",
+        "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.webp",
         "imageAlt": "Jay Machine Learning Sentiment Analysis Project",
         "links": "",
         "partners": [],
@@ -157,7 +157,7 @@
             "Python",
             "ML"
         ],
-        "image": "/assets/images/projects/predicting-nasdaq-nse-ml.png",
+        "image": "/assets/images/projects/predicting-nasdaq-nse-ml.webp",
         "imageAlt": "Jay Barot Machine Learning Models Project: ARIMA, LSTM & Linear Regression",
         "links": "",
         "partners": [],
@@ -180,7 +180,7 @@
             "Python",
             "MonogoDB"
         ],
-        "image": "/assets/images/projects/child-cancer-donation-project.png",
+        "image": "/assets/images/projects/child-cancer-donation-project.webp",
         "imageAlt": "Jay Barot Children Cancer Donation Internet Programming Project",
         "links": "",
         "partners": [],
@@ -227,7 +227,7 @@
             "Java",
             "XML"
         ],
-        "image": "/assets/images/projects/android-feedback-project.png",
+        "image": "/assets/images/projects/android-feedback-project.webp",
         "imageAlt": "Jay Barot Students Feedback Android App Project",
         "links": "",
         "partners": [],
@@ -250,7 +250,7 @@
             "Python",
             "Slack API"
         ],
-        "image": "/assets/images/projects/movie-recommendation-chatbot-project.png",
+        "image": "/assets/images/projects/movie-recommendation-chatbot-project.webp",
         "imageAlt": "Jay Barot Movie Recommendation Chatbot Project, Slack API",
         "links": "",
         "partners": [],
@@ -295,7 +295,7 @@
             "Arduino",
             "C++"
         ],
-        "image": "/assets/images/projects/iot-project.png",
+        "image": "/assets/images/projects/iot-project.webp",
         "imageAlt": "Jay Barot Wireless Networks and IoT Project",
         "links": "",
         "partners": [],

@@ -3,6 +3,7 @@ import { InteractionServiceService } from '../services/interaction-service.servi
 import { Router } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
 import { RecaptchaService } from '../services/recaptcha.service';
+import { MetaService } from '../services/meta.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import Swal from 'sweetalert2';
 
@@ -21,7 +22,8 @@ export class ContactMeComponent implements OnInit {
     private interactionService: InteractionServiceService,
     private recaptchaService: RecaptchaService,
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private metaService: MetaService
     ) {
     // Set the site key for the reCAPTCHA.
     const selectedOption = 2;

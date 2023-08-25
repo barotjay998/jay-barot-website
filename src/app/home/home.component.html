@@ -61,7 +61,7 @@
 
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
-            <img class="img-fluid" src="assets/images/developer.webp" alt="Hero Image Jay Barot">
+            <img class="img-fluid" src="assets/images/developer.webp" alt="Vector illustration of a software developer coding on a laptop against a backdrop of illustrated software screenshots.">
           </div>
         </div>
 
@@ -202,7 +202,7 @@
                 I am currently pursuing a Masters Degree in <strong>Computer Science</strong> at
                 <a href="https://www.vanderbilt.edu/" target="_blank" class="anchor-no-style"><strong>Vanderbilt University</strong></a>:                
                 Ranked #13 National University; #8 Best Value Schools.<a href="https://www.usnews.com/best-colleges/vanderbilt-3535" target="_blank"><img id="usnewslogo" class="img-fluid" src="assets/images/usnews_logo.webp" 
-                style="max-width:5rem; margin: 0px 3px 0px 3px;" alt="Vanderbilt University Logo"></a>
+                style="max-width:5rem; margin: 0px 3px 0px 3px;" alt="U.S.News and World Report Logo"></a>
               <i class="fa-solid fa-quote-right"></i> 
             </p> 
           </div>
@@ -348,7 +348,7 @@
                 id="jay-barot-image" 
                 class="img-fluid img-jay-barot" 
                 src="assets/images/jay-barot.webp" 
-                alt="Jay Barot Image">
+                alt="Portrait of Jay Barot wearing a grey hoodie and black t-shirt, standing with folded hands. Illuminated background with lights and trees.">
             </div>
           </div>
         </div>
@@ -691,12 +691,15 @@
                           *ngIf="project.image == '';else elseBlock"
                           class="img-fluid project-image" 
                           src="assets/images/placeholder.webp"
+                          alt="Placeholder image - no image content"
                         >
 
                         <ng-template #elseBlock>
                           <img
                           class="img-fluid project-image" 
-                          src={{project.image}}>
+                          src={{project.image}}
+                          alt={{project.imageAlt}}
+                          >
                         </ng-template>
                       
                     </div>

@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
+import { MetaService } from '../services/meta.service';
 
 interface Dictionary {
   [key: string]: boolean;
@@ -41,6 +42,7 @@ export class HomeComponent {
     private router: Router,
     private route: ActivatedRoute,
     private elementRef: ElementRef,
+    private metaService: MetaService
   ) { }
 
   ngOnInit() {

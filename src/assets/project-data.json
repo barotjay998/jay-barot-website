@@ -9,7 +9,7 @@
             "Netlify"
         ],
         "image": "/assets/images/projects/game-of-papers.webp",
-        "imageAlt": "Jay Barot Machine Learning Project",
+        "imageAlt": "Logo featuring a laurel wreath positioned atop a graduation hat, forming a throne-like structure with a paper resting in the center. The color scheme is predominantly yellow.",
         "links": "",
         "partners": [
             "Adit Negi",
@@ -36,7 +36,7 @@
             "gRPC"
         ],
         "image": "/assets/images/projects/distributed-systems-project.webp",
-        "imageAlt": "Jay Barot Distributed Systems Project",
+        "imageAlt": "High-Level Architecture: Client requests flow to reverse proxy. Write traffic directed to Kafka ingestion service, while Read traffic routed to Elastic Search cluster.",
         "links": "",
         "partners": [
             "Adit Negi",
@@ -86,7 +86,7 @@
             "Python"
         ],
         "image": "/assets/images/projects/computer-networks-project.webp",
-        "imageAlt": "Jay Barot Software Defined Networking Project",
+        "imageAlt": "Project environment setup: Deployed on Chameleon cloud with Ryu SDN controller on Docker network.",
         "links": "",
         "partners": [
             "Adit Negi",
@@ -111,7 +111,7 @@
             "SE Research Proposal"
         ],
         "image": "/assets/images/projects/left-dorsal-mid-insula.webp",
-        "imageAlt": "Jay Barot Software Engineering Research Proposal",
+        "imageAlt": "Brain scan images highlighting left-dorsal-mid-insula area from x, y, and z coordinates.",
         "links": "",
         "partners": [],
         "mentor": [
@@ -134,7 +134,7 @@
             "Python"
         ],
         "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.webp",
-        "imageAlt": "Jay Machine Learning Sentiment Analysis Project",
+        "imageAlt": "Hero section: Stock symbol search box and navigation bar on the project's web app home page.",
         "links": "",
         "partners": [],
         "mentor": [
@@ -158,7 +158,7 @@
             "ML"
         ],
         "image": "/assets/images/projects/predicting-nasdaq-nse-ml.webp",
-        "imageAlt": "Jay Barot Machine Learning Models Project: ARIMA, LSTM & Linear Regression",
+        "imageAlt": "Comparative results table of diverse ML models on assorted stock market datasets",
         "links": "",
         "partners": [],
         "mentor": [
@@ -181,7 +181,7 @@
             "MonogoDB"
         ],
         "image": "/assets/images/projects/child-cancer-donation-project.webp",
-        "imageAlt": "Jay Barot Children Cancer Donation Internet Programming Project",
+        "imageAlt": "Children's Cancer Donation Web App Homepage: Information and 'Donate Now' Button",
         "links": "",
         "partners": [],
         "mentor": [
@@ -205,7 +205,7 @@
             "MySQL"
         ],
         "image": "",
-        "imageAlt": "Jay Barot Online Food Ordering Web Application Project",
+        "imageAlt": "",
         "links": "",
         "partners": [],
         "mentor": [
@@ -228,7 +228,7 @@
             "XML"
         ],
         "image": "/assets/images/projects/android-feedback-project.webp",
-        "imageAlt": "Jay Barot Students Feedback Android App Project",
+        "imageAlt": "Screenshots: Android App - Login page, Feedback Form page and Admin Dashboard.",
         "links": "",
         "partners": [],
         "mentor": [
@@ -251,7 +251,7 @@
             "Slack API"
         ],
         "image": "/assets/images/projects/movie-recommendation-chatbot-project.webp",
-        "imageAlt": "Jay Barot Movie Recommendation Chatbot Project, Slack API",
+        "imageAlt": "Poster: Slack Movie Recommendation Chatbot Project - Slack logo, AI robot, mobile, and box office background.",
         "links": "",
         "partners": [],
         "mentor": [
@@ -273,7 +273,7 @@
             "R - programming"
         ],
         "image": "",
-        "imageAlt": "Jay Barot Titanic Data Visualization Project",
+        "imageAlt": "",
         "links": "",
         "partners": [],
         "mentor": [
@@ -296,7 +296,7 @@
             "C++"
         ],
         "image": "/assets/images/projects/iot-project.webp",
-        "imageAlt": "Jay Barot Wireless Networks and IoT Project",
+        "imageAlt": "IoT restaurant model circuit diagram: Arduino board, breadboard, and sensor connections.",
         "links": "",
         "partners": [],
         "mentor": [

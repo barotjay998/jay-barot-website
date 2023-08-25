@@ -11,6 +11,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { MetaService } from './services/meta.service';
 
 @NgModule({   
   declarations: [
@@ -32,7 +33,9 @@ import { TechSkillsComponent } from './tech-skills/tech-skills.component';
     RecaptchaFormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    MetaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

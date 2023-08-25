@@ -188,4 +188,12 @@ export class HomeComponent {
     this.router.navigate([linkUri]);
   }
 
+  sendEmail(email: string) {
+    window.location.href = `mailto:${email}`;
+  }
+
+  callPhoneNumber() {
+    window.location.href = `tel:+16157790420`;
+  }
+
 }

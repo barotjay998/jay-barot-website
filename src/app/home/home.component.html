@@ -254,22 +254,15 @@
             }"
             class="col-xl-5 col-md-4 about-contact-info-card text-center"
           >
-            <div class="row">
+            <div class="row" (click)="sendEmail('barotjay998@yahoo.com')" style="cursor: pointer;">
               <div class="col-md-12">
-                <a href = "mailto:barotjay998@yahoo.com">
                   <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: #585757"></i>
-                </a>
               </div>
             </div>
             
-            <div class="row">
+            <div class="row" (click)="sendEmail('barotjay998@yahoo.com')" style="cursor: pointer;">
               <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                <a 
-                  href = "mailto:barotjay998@yahoo.com" 
-                  class="anchor-no-style"
-                >
-                  Email
-                </a>
+                <label>Email</label>
               </div>
             </div>
             <div class="row">
@@ -297,17 +290,14 @@
               }"
               class="col-xl-5 col-md-4 about-contact-info-card text-center"
             >
-              <div class="row">
+              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
                 <div class="col-md-12">
-                  <a href="tel:+16157790420"><i class="fa-solid fa-phone" style="font-size: 1.2rem; color: #585757"></i></a>
+                    <i class="fa-solid fa-phone" style="font-size: 1.2rem; color: #585757"></i>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
                 <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                  <a 
-                    href="tel:+16157790420" 
-                    class="anchor-no-style">Phone
-                  </a>
+                  <label>Phone</label>
                 </div>
               </div>
               <div class="row">

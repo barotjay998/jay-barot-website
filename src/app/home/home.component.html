@@ -82,6 +82,15 @@
           <div class="col-lg-10 text-center">
 
             <button 
+              (click)="openLink('https://www.linkedin.com/in/jay-barot-751720170')"
+              type="button" 
+              class="btn btn-outline-light btn-custom-2"
+              >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </button>
+
+            <button 
               type="button" 
               class="btn btn-outline-light btn-custom-2"
               (click)="onInternalLink('/exactivities')"
@@ -106,16 +115,6 @@
             >
               <i class="fa-solid fa-newspaper"></i>
                 Publications
-            </button>
-
-            <!-- Temporary Links -->
-            <button 
-              (click)="openLink('https://www.linkedin.com/in/jay-barot-751720170')"
-              type="button" 
-              class="btn btn-outline-light btn-custom-2"
-              >
-              <i class="fa-brands fa-linkedin"></i>
-              LinkedIn
             </button>
 
             <!-- <button 

@@ -33,6 +33,11 @@ $colorPlatinum: #e5e5e5;
     font-family: 'Dancing Script', cursive;
 }
 
+.font-kalam {
+    font-family: 'Kalam', cursive;
+
+}
+
 /* Colors */
 
 .bg-theme-blue {
@@ -133,6 +138,7 @@ a.disabled {
 /* Aquamarine button */
 .aqua-btn {
     font-weight: bold;
+    letter-spacing: 0.07rem;
     background-color: $colorMaastrichtBlue;
     color: $colorMaastrichtBlue;
     border: 1px solid $colorAquamarine;
@@ -341,6 +347,16 @@ a.disabled {
 
 .experience-job-link:hover {
     color: $colorLavenderBlue;
+}
+
+.lab-link {
+    @extend .experience-job-link;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.lab-link:hover {
+    text-decoration: underline;
 }
 
 .experience-job-period {

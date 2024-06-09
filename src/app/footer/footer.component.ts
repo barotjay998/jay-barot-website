@@ -32,7 +32,7 @@ export class FooterComponent implements OnInit {
 
   // Build the footer contact form.
   footerContactForm = this.formBuilder.group({
-    message: ["Hi Jay! I'd love to learn more about your software development services. Can we schedule a time to chat ?", Validators.required],
+    message: ["Hi Jay! I'd love to connect and discuss our potential collaboration opportunity. Can we schedule a time to chat?", Validators.required],
     senderEmail: ['', [Validators.required, Validators.email]],
     captchaResponse: ['', Validators.required],
   });

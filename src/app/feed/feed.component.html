@@ -1,0 +1,69 @@
+<div class="container-fluid bg-platinum back-btn-container">
+    <div class="row">
+        <div class="col-md-12">
+            <button 
+                type="button" 
+                class="btn btn-outline-dark" 
+                (click)="onBackHome()"
+            >
+                <i class="fa-solid fa-angles-left"></i>
+                <span class="px-4 font-weight-bold">
+                    <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="py-5 bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <!-- Title -->
+            <div class="col-xl-qw my-feed-title font-italic">
+                <p class="mb-0">@MyFeed</p>
+            </div>
+        </div>
+        
+
+        <div class="row justify-content-center mt-4 mx-2">
+            <div *ngFor="let data of feedData"  class="col-md-12 my-4 px-5 py-4 my-feed-box">
+
+                <div class="row">
+                    <div class="col-xl-12 my-feed-date">
+                        <p>@ {{data.date}}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-feed-text">
+                        <p>
+                            {{data.text}}
+                            <span
+                            *ngIf="data.external != ''"
+                        >
+                            <a
+                                href="{{data.external}}" 
+                                target="_blank"
+                                class="mr-2"
+                                aria-label="Feed External Link"
+                            >   
+                                {{data.externalType}}
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div *ngIf="data.img != ''" class="row justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
+                        <img src="{{data.img}}" alt="{{data.alt}}" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

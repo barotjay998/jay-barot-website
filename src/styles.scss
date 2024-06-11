@@ -742,6 +742,27 @@ a.disabled {
     background-position: center;
 }
 
+.my-feed-title {
+    color: #585858;
+    @extend .publication-title,.font-roboto;
+}
+
+.my-feed-box {
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 0.2rem lightgray;
+    border-radius: 1.5rem;
+}
+
+.my-feed-date{
+    color: #585858;
+    @extend .font-montserrat;
+}
+
+.my-feed-text {
+    color: #585858;
+    @extend .font-roboto;
+}
+
 .custom-is-invalid {
     margin-bottom: 0rem;
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.26);

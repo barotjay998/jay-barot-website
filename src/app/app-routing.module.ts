@@ -6,6 +6,7 @@ import { PageNotFoundComponent} from './page-not-found/page-not-found.component'
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { FeedComponent } from './feed/feed.component';
 
 const routes: Routes = [
   { path: '', redirectTo : '/home', pathMatch: 'full' },
@@ -48,6 +49,13 @@ const routes: Routes = [
       title: "Tech Stack | Jay Barot Portfolio: Mastering Java, Python, TypeScript, and More"
     }
   },
+  { path: 'feed', 
+    component : FeedComponent,
+    data: {
+      metaDescription: "Stay Updated with Jay Barot's Latest Contributions | Follow Jay's recent milestones, thoughts, and updates on social media, including YouTube videos and more.", 
+      title: "My Feed | Jay Barot"
+    }
+  },
   { 
     path: '**', 
     component: PageNotFoundComponent,
@@ -70,5 +78,6 @@ export const routingComponents = [
   ContactMeComponent,
   PublicationsComponent,
   ExactivitiesComponent,
-  TechSkillsComponent
+  TechSkillsComponent,
+  FeedComponent
 ];

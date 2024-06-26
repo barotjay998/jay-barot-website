@@ -39,19 +39,19 @@
                     <div class="col-md-12 my-feed-text">
                         <p>
                             {{data.text}}
-                            <span
-                            *ngIf="data.external != ''"
-                        >
-                            <a
-                                href="{{data.external}}" 
-                                target="_blank"
-                                class="mr-2"
-                                aria-label="Feed External Link"
-                            >   
-                                {{data.externalType}}
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </span>
+                            <span *ngIf="data.externals.length > 0">
+                                <ng-container *ngFor="let external of data.externals; let i = index">
+                                    <a  
+                                        href="{{external}}" 
+                                        target="_blank"
+                                        class="mr-2"
+                                        aria-label="Feed External Link"
+                                    >   
+                                        {{data.externalLabels[i]}}
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </ng-container>
+                            </span>
                         </p>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
         "links": "",
         "img": "/assets/images/sacmat-presentation.webp",
         "alt": "Jay Giving a Presentation at SACMAT",
-        "externals": ["https://dl.acm.org/doi/10.1145/3649158.3657035"],
-        "externalLabels": ["ACM Link"]
+        "externals": ["https://dl.acm.org/doi/10.1145/3649158.3657035", "https://youtu.be/2GC3maiEBPY"],
+        "externalLabels": ["ACM Link", "YouTube"]
     }
 ]

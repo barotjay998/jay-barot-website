@@ -442,39 +442,33 @@ a.disabled {
 }
 
 .btns-carousel {
-    color: #32cd77;
-    font-size: 5rem;
+    color: #7dd8a6;
+    font-size: 2rem;
+    border: 2px dotted transparent;
+    padding: 5px;
+    background-color: transparent;
 }
 
 .btns-carousel:hover {
-    color: #02e08f;
+    color: #00c47c;
     padding: 5px;
     border-radius: 100%;
     border: 2px dotted rgb(97, 238, 84);
     text-shadow: 0 0 5px rgb(97, 238, 84);
 }
 
-.carousel-indicators li {
-    background-color: #9d9d9d;
-    height: 0.5rem;
-}
-
-.carousel-indicators .active {
-    background-color: #32cd77;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    width: 10%;
-    background-color: #0000000a;
+.btns-carousel:focus,
+.btns-carousel:active {
+    outline: none; /* Removes the outline */
+    box-shadow: none; /* Removes any focus box shadow */
+    background: none; /* Prevents any default background change */
+    border: none; /* Removes any default border */
 }
 
 .project-card {
     border: 1px solid #c5c5c5;
     background: #f1f1f1;
-    // background: linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(230, 230, 230) 35%, rgb(221, 221, 221) 100%);
     box-shadow: 0rem 0rem 1rem 0.5rem lightgray;
-    margin: 1rem 1rem 1rem 1rem;
-    // padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -856,24 +850,8 @@ a.disabled {
         font-size: 1.4rem;
     }
 
-    .project-card-row {
-        margin: 1.5rem;
-    }
-
     .projects-sub-heading {
         font-size: 1.4rem;
-    }
-
-    .project-card {
-        margin: 1rem 2rem 1rem 2rem;
-    }
-
-    .btns-carousel {
-        font-size: 2.5rem;
-    }
-
-    .project-image-row {
-        display: none;
     }
 
     .project-tech-row {
@@ -996,28 +974,12 @@ a.disabled {
         font-size: 1.5rem;
     }
 
-    .project-card-row {
-        margin: 2rem;
-    }
-
     .projects-sub-heading {
         font-size: 2rem;
     }
 
     .projects-sub-heading {
         font-size: 1.6rem;
-    }
-
-    .project-card {
-        margin: 1rem 3rem 1rem 3rem;
-    }
-
-    .btns-carousel {
-        font-size: 3rem;
-    }
-
-    .project-image-row {
-        display: none;
     }
 
     .project-tech-row {
@@ -1139,24 +1101,8 @@ a.disabled {
         font-size: 1.8rem;
     }
 
-    .project-card-row {
-        margin: 2.2rem;
-    }
-
     .projects-sub-heading {
         font-size: 1.7rem;
-    }
-
-    .project-card {
-        margin: 1rem 4rem 1rem 4rem;
-    }
-
-    .btns-carousel {
-        font-size: 3rem;
-    }
-
-    .project-image-row {
-        display: none;
     }
 
     .project-tech-row {
@@ -1278,24 +1224,8 @@ a.disabled {
         font-size: 2rem;
     }
 
-    .project-card-row {
-        margin: 2rem;
-    }
-
     .projects-sub-heading {
         font-size: 1.8rem;
-    }
-
-    .project-card {
-        margin: 1rem 1rem 1rem 1rem;
-    }
-
-    .btns-carousel {
-        font-size: 5rem;
-    }
-
-    .project-image-row {
-        display: block;
     }
 
     .project-tech-row {
@@ -1405,6 +1335,7 @@ a.disabled {
         background-position: 0px 0px;
         background-repeat: repeat-x;
     }
+
 }
   
   

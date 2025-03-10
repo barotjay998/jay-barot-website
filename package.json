@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "emailjs-com": "^3.2.0",
+    "hammerjs": "^2.0.8",
     "ng-recaptcha": "^12.0.1",
     "ngx-captcha": "^13.0.0",
     "particle.js": "^1.0.7",

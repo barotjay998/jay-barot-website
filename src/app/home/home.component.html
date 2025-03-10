@@ -653,12 +653,100 @@
       class="row"
     >
       <div class="col-lg-12 text-center m-4">
+          <h1 class="projects-heading">Projects.</h1>
+          <h2 class="projects-sub-heading">Exploring Innovations, Cultivating Solutions.</h2>
+        </div>
+      </div>
+
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        
+          <div class="carousel-inner">
+            <div *ngFor="let projectSet of paginatedProjects; let i = index" 
+                class="carousel-item" 
+                [ngClass]="{'active': i === 0}">
+              <div class="container-fluid">
+                <div class="row my-4 mx-2 d-flex justify-content-around">
+                  
+                  <div *ngFor="let project of projectSet" 
+                      class="col d-flex align-items-stretch" 
+                      [ngClass]="{
+                        'col-12': maxProjectsOnSlide === 1, 
+                        'col-6': maxProjectsOnSlide === 2,
+                        'col-4': maxProjectsOnSlide === 3,  
+                        'col-3': maxProjectsOnSlide >= 4,
+                      }" 
+                    >
+
+                    <div class="project-card d-flex flex-column justify-content-between">
+                      <img class="img-fluid project-image" 
+                          [src]="project.image || 'assets/images/placeholder.webp'" 
+                          alt="{{ project.title }}">
+                      
+                      <div class="m-2">
+                        <p class="project-subject">{{ project.subject }}</p>
+                        <p class="project-title">{{ project.title }}</p>
+                        <a *ngIf="project.links" class="d-block project-learn-more" href="#">Learn More <i class="fa-solid fa-angles-right"></i></a>
+                        <div class="d-flex flex-wrap">
+                          <span *ngFor="let tech of project.techStack" class="project-technology-label">{{ tech }}</span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="text-center mt-3">
+        <button class="fa-solid fa-circle-left btns-carousel" (click)="nextSlide()"></button>
+        <button class="fa-solid fa-circle-right btns-carousel" (click)="nextSlide()"></button>
+      </div>
+
+  </div>
+</section>
+
+
+<!-- Project Section -->
+<!-- <section id="projects" class="py-5 bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+  <div class="container-fluid">
+
+
+    <div class="row justify-content-end">
+      <div class="col-lg-3 text-center">
+        <button 
+          type="button" 
+          class="btn btn-outline-dark w-50" 
+          (click)="makeMeFly()"
+        > 
+          <i 
+            [ngClass]="{
+              'animate__animated animate__fadeOutUpBig animate__slower jet-green': isFlying,
+            }"
+            class="fa-solid fa-jet-fighter-up"
+          ></i> 
+            Top
+        </button>
+      </div>
+    </div>
+    
+    
+    <div 
+      id="projectsHeading"
+      [ngClass]="{
+        'animate__animated animate__fadeInUp': divVisibility['projectsHeading']
+      }"
+      class="row"
+    >
+      <div class="col-lg-12 text-center m-4">
         <h1 class="projects-heading">Projects.</h1>
         <h2 class="projects-sub-heading">Exploring Innovations, Cultivating Solutions.</h2>
       </div>
     </div>
 
-    <!-- Projects Carouselng -->
+  
     <div 
       id="carouselExampleIndicators" 
       [ngClass]="{
@@ -677,7 +765,7 @@
 
       <div class="carousel-inner">
 
-        <!-- Carousel Item: Repeat it for numRows times -->
+   
         <div *ngFor="let index of getRange(numRows)"
               [ngClass]="{ 'active': index === 0 }"
               class="carousel-item"
@@ -686,7 +774,7 @@
           <div class="container">
             <div class="row project-card-row d-flex justify-content-around">
               
-              <!-- Projects Card -->
+            
               <div *ngFor="let project of projectData[index]" class="col-lg-3 project-card d-flex flex-column justify-content-between">
 
                 <div class="project-image-row">
@@ -757,13 +845,13 @@
       </div>
 
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+       
         <span class="" aria-hidden="true"><i class="fa-solid fa-circle-left btns-carousel"></i></span>
         <span class="sr-only">Previous</span>
       </a>
       
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+       
         <span class="" aria-hidden="true"><i class="fa-solid fa-circle-right btns-carousel"></i></span>
         <span class="sr-only">Next</span>
       </a>
@@ -771,7 +859,7 @@
     </div>
 
   </div>
-</section>
+</section> -->
 <!-- Project Section Ends -->
 
 

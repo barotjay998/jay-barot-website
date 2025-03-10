@@ -1,7 +1,9 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, AfterViewInit, ViewChild} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataServiceService } from '../services/data-service.service';
 import { MetaService } from '../services/meta.service';
+
+declare var $: any;
 
 interface Dictionary {
   [key: string]: boolean;
@@ -12,13 +14,18 @@ interface Dictionary {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, AfterViewInit {
+  @ViewChild('carouselIndicators', { static: false }) carousel!: ElementRef;
 
   // Declare the variables
   public projectData: any;
   public numRows: number = 0;
   public numProjects: number = 0;
   public isFlying: boolean = false;
+  public maxProjectsOnSlide: number = 0;
+  paginatedProjects: any[][] = [];
+  projectsPerSlide = 3;
+
   // Tracking the visibility of the divs on the view.
   divVisibility: Dictionary = {
     "aboutTitle": false,
@@ -31,7 +38,7 @@ export class HomeComponent {
     "experienceCardLeft": false,
     "experienceCardRight": false,
     "projectsHeading": false,
-    "carouselExampleIndicators": false,
+    "carouselIndicators": false,
     "educationHeading": false,
     "educationCardLeft": false,
     "educationCardRight": false
@@ -45,8 +52,8 @@ export class HomeComponent {
     private metaService: MetaService
   ) { }
 
-  ngOnInit() {
-    this.loadData();
+  async ngOnInit() {
+    await this.loadData();
 
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
@@ -56,45 +63,20 @@ export class HomeComponent {
         }
       }
     });
-
-  }
-
-  loadData() {
-    this.dataService.getProjectData().subscribe((data) => {
-      this.projectData = data;
-
-      // Process the data
-      this.processData();
-    });
     
+    this.calculateProjectsPerSlide();
+
   }
 
-  processData() {
-    // Get the number of objects in the projectData array
-    this.numProjects = Object.keys(this.projectData).length;
-
-    // Get the number of rows needed to display the projects
-    this.numRows = this.divideAndCeil(this.numProjects);
-
-    // Divide the projects into rows
-    this.projectData = this.chunkArray(this.projectData, 3);
+  ngAfterViewInit() {
+    $('#carouselIndicators').carousel({ interval: false }); // Disable auto-slide
+    this.enableSwipe();
   }
 
-  chunkArray(array: any[], size: number) {
-    const chunkedArray = [];
-
-    for (let i = 0; i < array.length; i += size) {
-      const chunk = array.slice(i, i + size);
-      chunkedArray.push(chunk);
-    }
-    
-    return chunkedArray;
+  async loadData() {
+    this.projectData = await this.dataService.getProjectData().toPromise();
   }
 
-  divideAndCeil(num: number) {
-    // We are going to have three projects card per carousel slide
-    return Math.ceil(num / 3);
-  }
 
   getRange(num: number): number[] {
     return Array.from({length: num}, (_, index) => index);
@@ -116,6 +98,61 @@ export class HomeComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
     this.checkVisibility();
+  }
+
+  @HostListener('window:resize')
+  calculateProjectsPerSlide() {
+    const width = window.innerWidth;
+    this.projectsPerSlide = width > 1250 ? 4 : width > 992 ? 3 : width > 768 ? 2 : width > 576 ? 1 : 1;
+    this.paginateProjects();
+  }
+
+  paginateProjects() {
+    // Convert the object to an array of values (projects)
+    const projectsArray = Object.values(this.projectData);
+  
+    this.paginatedProjects = [];
+    
+    // Apply pagination logic on the array of projects
+    for (let i = 0; i < projectsArray.length; i += this.projectsPerSlide) {
+      this.paginatedProjects.push(projectsArray.slice(i, i + this.projectsPerSlide));
+    }
+  
+    // Calculate the maximum number of projects on a slide
+    this.maxProjectsOnSlide = Math.max(...this.paginatedProjects.map(page => page.length));
+  }
+
+  nextSlide() {
+    $('#carouselIndicators').carousel('next');
+  }
+
+  prevSlide() {
+    $('#carouselIndicators').carousel('prev');
+  }
+
+  enableSwipe() {
+    const carousel = document.getElementById('carouselIndicators');
+    
+    if (!carousel) return; // Ensure carousel exists
+
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    carousel.addEventListener('touchstart', (event: TouchEvent) => {
+      touchstartX = event.touches[0].clientX; // Store starting touch position
+    });
+
+    carousel.addEventListener('touchmove', (event: TouchEvent) => {
+      touchendX = event.touches[0].clientX; // Store moving touch position
+    });
+
+    carousel.addEventListener('touchend', () => {
+      if (touchstartX - touchendX > 50) {
+        $('#carouselIndicators').carousel('next'); // Move to next slide
+      } else if (touchstartX - touchendX < -50) {
+        $('#carouselIndicators').carousel('prev'); // Move to previous slide
+      }
+    });
   }
 
   checkVisibility() {

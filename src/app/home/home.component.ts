@@ -32,8 +32,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     "aboutInfoRowOne": false,
     "aboutInfoRowTwo": false,
     "aboutInfoRowThree": false,
-    "aboutEmailCard": false,
-    "aboutPhoneCard": false,
     "experienceTitle": false,
     "experienceCardLeft": false,
     "experienceCardRight": false,

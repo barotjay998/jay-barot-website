@@ -19,98 +19,68 @@
               </div>
             </div>
 
-            <!-- <div class="row">
-              <div class="col-xl-9 col-lg-10 col-md-9">
-                <textarea class="form-control contact-me-textarea mb-2" [(ngModel)]="message" placeholder="Message"></textarea>
-                <input type="email" class="form-control contact-me-email mb-2" [(ngModel)]="senderEmail" placeholder="Your Email">
-                <button class="btn btn-outline-dark w-100" (click)="sendEmail()">Send <i class="fa-solid fa-paper-plane"></i></button>   
-              </div>
-            </div> -->
+            <!-- Contact Info -->
+        <div class="row justify-content-left">
 
-            <!-- Contact Me Form -->
-            <div class="row">
-              <div class="col-xl-9 col-lg-10 col-md-9">
-
-                <form 
-                  [formGroup]="footerContactForm" 
-                  (ngSubmit)="sendEmail()" 
-                  novalidate
-                >
-
-                  <!-- Message Textarea -->
-                  <textarea 
-                    class="form-control contact-me-textarea"
-                    id="message" 
-                    placeholder="Message*" 
-                    formControlName="message"
-                    [class.custom-is-invalid]="this.footerContactForm.get('message')?.invalid && this.footerContactForm.get('message')?.touched"
-                  >
-                  </textarea>
-
-                  <div 
-                    *ngIf="this.footerContactForm.get('message')?.invalid && this.footerContactForm.get('message')?.touched"
-                    class="text-danger text-left">
-                    <small>Message is required.</small>
-                  </div>
-
-                  <!-- Senders Email -->
-                  <input 
-                    class="form-control contact-me-email"
-                    type="email" 
-                    id="senderEmail" 
-                    placeholder="Your Email*"
-                    formControlName="senderEmail"
-                    [class.custom-is-invalid]="this.footerContactForm.get('senderEmail')?.invalid && this.footerContactForm.get('senderEmail')?.touched"
-                  >
-
-                  <div 
-                    *ngIf="footerContactForm.get('senderEmail')?.hasError('required') && footerContactForm.get('senderEmail')?.touched" 
-                    class="text-danger text-left"
-                  >
-                    <small>
-                      Email is required.
-                    </small>
-                  </div>
-
-                  <div 
-                    *ngIf="this.footerContactForm.get('senderEmail')?.hasError('email') && this.footerContactForm.get('senderEmail')?.touched" 
-                    class="text-danger text-left"
-                  >
-                    <small>
-                      Email must be a valid email address.
-                    </small>    
-                  </div>
-
-                  <!-- Captcha -->
-                  <re-captcha 
-                    [siteKey]="siteKey" 
-                    (resolved)="onCaptchaResolved($event)">
-                  </re-captcha>
-                  
-                  <div 
-                    *ngIf="isCaptchaInvalid()"
-                    class="text-danger text-left"
-                  >
-                    <small>
-                      Please complete the reCAPTCHA.
-                    </small>    
-                  </div>
-
-                  <!-- Submit Button -->
-                  <button 
-                    class="btn btn-outline-dark w-100 mt-2"
-                    (click)="sendEmail()"
-                    type="submit" 
-                    [disabled]="!footerContactForm.valid"
-                  >
-                    Send
-                    <i class="fa-solid fa-paper-plane"></i>
-                  </button>
-
-                </form>  
+          <!-- Email -->
+          <div 
+            class="col-xl-5 col-md-4 about-contact-info-card text-center"
+          >
+            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
+              <div class="col-md-12">
+                  <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: #585757"></i>
               </div>
             </div>
             
+            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
+              <div class="col-md-12" style="font-size: 1rem; color: #585757">
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-1">
+                <a href = "mailto:barot.jay@outlook.com" style="letter-spacing: 0.1rem;">
+                  Barot.Jay@outlook.com
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-1">
+                <a href = "mailto:jay.d.barot@vanderbilt.edu" style="letter-spacing: 0.1rem;">
+                  Jay.D.Barot@Vanderbilt.edu
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone -->
+            <div 
+              class="col-xl-5 col-md-4 about-contact-info-card text-center"
+            >
+              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
+                <div class="col-md-12">
+                    <i class="fa-solid fa-phone" style="font-size: 1.2rem; color: #585757"></i>
+                </div>
+              </div>
+              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
+                <div class="col-md-12" style="font-size: 1rem; color: #585757">
+                  <label>Phone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" style="letter-spacing: 0.05rem;">
+                  <span>&nbsp;</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" style="letter-spacing: 0.05rem;">
+                  <span style="text-decoration: underline;">US</span> 
+                    <a href="tel:+16157790420" style="letter-spacing: 0.1rem;"> +1 (615) 779 - 0420</a> 
+                </div>
+              </div>
+            </div>
+        </div>
+
           </div>
         </div>
       </div>
@@ -240,7 +210,7 @@
 
       <!-- Copyright -->
       <div class="col-lg-8 text-center pb-3 pt-3 ml-5 mr-5 font-courier-prime" style="border-top: 1px solid #c2c2c2;">
-        <i class="fa-regular fa-copyright"></i> 2023 Copyright:
+        <i class="fa-regular fa-copyright"></i> 2025 Copyright:
         <span class="text-dark">Jay Barot</span>
         All Rights Reserved
       </div>

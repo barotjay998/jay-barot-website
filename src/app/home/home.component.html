@@ -52,7 +52,7 @@
           <div class="col-md-10">
             <button type="button" 
             class="btn aqua-btn btn-bg-slide px-4"
-            (click)="onInternalLink('/contact-me')"
+            (click)="scrollToFooter($event)"
             >
             Chat Now
             <i class="fa-solid fa-comment"></i>
@@ -108,29 +108,11 @@
             <button 
               type="button" 
               class="btn btn-outline-light btn-custom-2"
-              (click)="onInternalLink('/techskills')"
-            >
-              <i class="fa-solid fa-laptop-code"></i>
-              Technical Skills
-            </button>
-
-            <button 
-              type="button" 
-              class="btn btn-outline-light btn-custom-2"
               (click)="onInternalLink('/publications')"
             >
               <i class="fa-solid fa-newspaper"></i>
                 Publications
             </button>
-
-            <!-- <button 
-              (click)="openLink('https://profile.indeed.com/p/jayb-msw852b')"
-              type="button" 
-              class="btn btn-outline-light btn-custom-2"
-            >
-              <i class="cib-indeed"></i>
-              Indeed
-            </button> -->
 
             <button 
             type="button" 
@@ -186,7 +168,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row align-items-center">
 
       <!-- Left -->
       <div class="col-xl-6">
@@ -258,90 +240,6 @@
             </p>
           </div>
         </div>
-
-        <!-- Contact Info -->
-        <div class="row justify-content-center">
-
-          <!-- Email -->
-          <div 
-            id="aboutEmailCard" 
-            [ngClass]="{
-              'animate__animated animate__fadeInUp': divVisibility['aboutEmailCard']
-            }"
-            class="col-xl-5 col-md-4 about-contact-info-card text-center"
-          >
-            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
-              <div class="col-md-12">
-                  <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: #585757"></i>
-              </div>
-            </div>
-            
-            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
-              <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                <label>Email</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 my-1">
-                <a href = "mailto:barot.jay@outlook.com" style="letter-spacing: 0.1rem;">
-                  Barot.Jay@outlook.com
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 my-1">
-                <a href = "mailto:jay.d.barot@vanderbilt.edu" style="letter-spacing: 0.1rem;">
-                  Jay.D.Barot@Vanderbilt.edu
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Phone -->
-            <div 
-              id="aboutPhoneCard" 
-              [ngClass]="{
-                'animate__animated animate__fadeInUp': divVisibility['aboutPhoneCard']
-              }"
-              class="col-xl-5 col-md-4 about-contact-info-card text-center"
-            >
-              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
-                <div class="col-md-12">
-                    <i class="fa-solid fa-phone" style="font-size: 1.2rem; color: #585757"></i>
-                </div>
-              </div>
-              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
-                <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                  <label>Phone</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12" style="letter-spacing: 0.05rem;">
-                  <span>&nbsp;</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12" style="letter-spacing: 0.05rem;">
-                  <span style="text-decoration: underline;">US</span> 
-                    <a href="tel:+16157790420" style="letter-spacing: 0.1rem;"> +1 (615) 779 - 0420</a> 
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <!-- Chat Now Link: Scrolls to the bottom of the page -->
-        <!-- <div 
-          id="aboutChatNow" 
-          [ngClass]="{
-            'animate__animated animate__fadeInUp': divVisibility['aboutChatNow']
-          }"
-          class="row d-flex justify-content-start"
-        >
-          <div class="col-xl-5 offset-xl-1">
-            <a href="#" (click)="scrollToFooter($event)" style="color: #535353"> Chat Now <i class="fa-regular fa-comment-dots"></i></a>
-          </div>
-        </div> -->
-
       </div>
 
       <!-- Right -->
@@ -707,161 +605,6 @@
 
   </div>
 </section>
-
-
-<!-- Project Section -->
-<!-- <section id="projects" class="py-5 bg-platinum d-flex align-items-center" style="min-height: 100vh;">
-  <div class="container-fluid">
-
-
-    <div class="row justify-content-end">
-      <div class="col-lg-3 text-center">
-        <button 
-          type="button" 
-          class="btn btn-outline-dark w-50" 
-          (click)="makeMeFly()"
-        > 
-          <i 
-            [ngClass]="{
-              'animate__animated animate__fadeOutUpBig animate__slower jet-green': isFlying,
-            }"
-            class="fa-solid fa-jet-fighter-up"
-          ></i> 
-            Top
-        </button>
-      </div>
-    </div>
-    
-    
-    <div 
-      id="projectsHeading"
-      [ngClass]="{
-        'animate__animated animate__fadeInUp': divVisibility['projectsHeading']
-      }"
-      class="row"
-    >
-      <div class="col-lg-12 text-center m-4">
-        <h1 class="projects-heading">Projects.</h1>
-        <h2 class="projects-sub-heading">Exploring Innovations, Cultivating Solutions.</h2>
-      </div>
-    </div>
-
-  
-    <div 
-      id="carouselExampleIndicators" 
-      [ngClass]="{
-        'animate__animated animate__fadeInUp': divVisibility['carouselExampleIndicators']
-      }"
-      class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-        <li *ngFor="let index of getRange(numRows)" 
-              data-target="#carouselExampleIndicators" 
-              [attr.data-slide-to]="index" class="carousel-nav-btns" 
-              [ngClass]="{ 'active': index === 0 }"
-            >
-        </li>
-      </ol>
-
-      <div class="carousel-inner">
-
-   
-        <div *ngFor="let index of getRange(numRows)"
-              [ngClass]="{ 'active': index === 0 }"
-              class="carousel-item"
-              >
-
-          <div class="container">
-            <div class="row project-card-row d-flex justify-content-around">
-              
-            
-              <div *ngFor="let project of projectData[index]" class="col-lg-3 project-card d-flex flex-column justify-content-between">
-
-                <div class="project-image-row">
-                  <div class="row justify-content-center">
-                    <div 
-                      class="col-12 text-center p-0"
-                    >
-                        <img
-                          *ngIf="project.image == '';else elseBlock"
-                          class="img-fluid project-image" 
-                          src="assets/images/placeholder.webp"
-                          alt="Placeholder image - no image content"
-                        >
-
-                        <ng-template #elseBlock>
-                          <img
-                          class="img-fluid project-image" 
-                          src={{project.image}}
-                          alt={{project.imageAlt}}
-                          >
-                        </ng-template>
-                      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-4">
-                  <div class="col-lg-12">
-                    <p class="project-subject">
-                      {{project.subject}}
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-title-row">
-                  <div class="row">
-                    <div class="col-lg-12 project-title">
-                      <p> 
-                        {{project.title}}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="proj-tech" class="mb-2 project-tech-row">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <a 
-                        *ngIf=" project.links != '' "
-                        class="d-block project-learn-more"
-                        href="#"
-                      >
-                        Learn More <i class="fa-solid fa-angles-right" style="font-size: 0.8rem;"></i> 
-                      </a>
-                      <label *ngFor="let technology of project.techStack" class="project-technology-label b-inline text-center">
-                        {{technology}}
-                      </label>   
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-       
-        <span class="" aria-hidden="true"><i class="fa-solid fa-circle-left btns-carousel"></i></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-       
-        <span class="" aria-hidden="true"><i class="fa-solid fa-circle-right btns-carousel"></i></span>
-        <span class="sr-only">Next</span>
-      </a>
-
-    </div>
-
-  </div>
-</section> -->
-<!-- Project Section Ends -->
-
 
 
 <!-- Education Section -->

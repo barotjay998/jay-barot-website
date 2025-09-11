@@ -1,12 +1,21 @@
 [
     {
+        "title": "ToneCheck: Unveiling the Impact of Dialects in Privacy Policy",
+        "journal": "ACM Symposium on Access Control Models and Technologies (SACMAT)",
+        "volume": "",
+        "issue": "",
+        "date": "June, 2024",
+        "externals": ["https://dl.acm.org/doi/10.1145/3649158.3657035", "https://youtu.be/2GC3maiEBPY"],
+        "externalLabels": ["View Paper", "YouTube"]
+    },
+    {
         "title": "Predicting NASDAQ and NSE Stocks using Machine Learning Algorithms: ARIMA, LSTM & Linear Regression",
         "journal": "International Journal for Research in Applied Science and Engineering Technology",
         "volume": "8",
         "issue": "III",
         "date": "March, 2020",
-        "links": "https://www.ijraset.com/fileserve.php?FID=26785",
-        "certificate": "/assets/docs/certificate_stocks_predicting_using_ml.pdf"
+        "externals": ["https://www.ijraset.com/fileserve.php?FID=26785", "/assets/docs/certificate_stocks_predicting_using_ml.pdf"],
+        "externalLabels": ["View Paper", "Certificate"]
     },
     {
         "title": "Flask App for Real Time Sentiment Analysis of Tweets on NASDAQ and NSE Stocks",
@@ -14,8 +23,8 @@
         "volume": "8",
         "issue": "III",
         "date": "March, 2020",
-        "links": "https://www.ijraset.com/fileserve.php?FID=26798",
-        "certificate": "/assets/docs/certificate_sentiment_snalysis_of_tweets.pdf"
+        "externals": ["https://www.ijraset.com/fileserve.php?FID=26798", "/assets/docs/certificate_sentiment_snalysis_of_tweets.pdf"],
+        "externalLabels": ["View Paper", "Certificate"]
     },
     {
         "title": "Wireless Sensors in IOT Based Smart Restaurant",
@@ -23,7 +32,7 @@
         "volume": "",
         "issue": "",
         "date": "June, 2019",
-        "links": "/assets/docs/wsn_paper.pdf",
-        "certificate": "/assets/docs/certificate_wsn_paper.webp"
+        "externals": ["/assets/docs/wsn_paper.pdf", "/assets/docs/certificate_wsn_paper.webp"],
+        "externalLabels": ["View Paper", "Certificate"]
     }
 ]

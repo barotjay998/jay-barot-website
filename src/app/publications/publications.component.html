@@ -24,18 +24,18 @@
                     Literature Publications.
                 </h1>
                 <p class="publication-sub-title"> 
-                    <span class="mx-1"></span> <i class="fa-solid fa-quote-left"></i> I am dedicated to advancing the field of software development through insightful publications. 
-                    On this page, you will find a collection of works that showcase emphasize the immense significance 
-                    of literature in the world of software development. I invite you to discover the power of combining technical 
-                    prowess with the art of literature as I take you on an enlightening journey.<i class="fa-solid fa-quote-right"></i>
+                    <span class="mx-1"></span> <i class="fa-solid fa-quote-left"></i> I’m passionate about exploring the intersection of software development and literature. 
+                    This page brings together a collection of my publications that highlight the role of writing and research in shaping ideas within the field. 
+                    Through these works, I aim to show how technical knowledge can be enriched by thoughtful expression and storytelling.<i class="fa-solid fa-quote-right"></i>
                 </p>
             </div>
         </div>
 
         <div class="row justify-content-center mt-4 mx-2 animate__animated animate__fadeInUp">
+
             <div 
-                *ngFor="let publication of publicationData" 
-                class="col-md-11 publication-card d-flex flex-column justify-content-between"
+            *ngFor="let publication of publicationData" 
+            class="col-md-11 publication-card d-flex flex-column justify-content-between"
             >
                 <p class="publication-card-title">
                     {{ publication.title }}.
@@ -47,57 +47,47 @@
                 <div class="row d-flex justify-content-between">
 
                     <div class="col-md-3 text-center">
-                        <span class="publication-card-info">
-                            {{ publication.date }}
-                        </span>
+                    <span class="publication-card-info">
+                        {{ publication.date }}
+                    </span>
                     </div>
 
                     <div *ngIf="publication.volume != '' || publication.issue != ''" class="col-md-3 text-center">
-                        <p class="publication-card-info mb-0">
-                            <span *ngIf="publication.volume != ''" >
-                                Volume {{ publication.volume }},
-                            </span>
-                            <span *ngIf="publication.issue != ''" >
-                                Issue {{ publication.issue }}
-                            </span>
-                        </p>
+                    <p class="publication-card-info mb-0">
+                        <span *ngIf="publication.volume != ''">
+                        Volume {{ publication.volume }},
+                        </span>
+                        <span *ngIf="publication.issue != ''">
+                        Issue {{ publication.issue }}
+                        </span>
+                    </p>
                     </div>
 
                     <div *ngIf="publication.volume == '' && publication.issue == ''" class="col-md-3">
-                        <p>
-                            &nbsp; &nbsp;
-                        </p>
+                    <p>&nbsp; &nbsp;</p>
                     </div>
 
-                    <div class="col-md-3 text-center">
-                        <button 
-                        type="button"
-                        class="btn btn-outline-primary publication-card-btn"
-                        (click)="onViewPublication(publication)"
+                    <!-- Dynamic externals section -->
+                    <div class="col-md-6 text-left">
+                    <div *ngIf="publication.externals?.length > 0" class="my-feed-text">
+                        <ng-container *ngFor="let external of publication.externals; let i = index">
+                        <a  
+                            href="{{external}}" 
+                            target="_blank"
+                            class="btn btn-outline-primary publication-card-btn mx-2"
+                            aria-label="External Link"
                         >
-                        <i 
-                            class="fa-solid fa-eye">
-                        </i>
-                        View
-                        </button>
+                            {{ publication.externalLabels[i] }}
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        </ng-container>
                     </div>
-
-                    <div class="col-md-3 text-center">
-                        <button 
-                        type="button"
-                        class="btn btn-outline-primary publication-card-btn"
-                        (click)="onViewCertificate(publication)"
-                        >
-                            <i class="fa-solid fa-certificate"></i>
-                            Certificate
-                        </button>
                     </div>
-
-                </div>
 
             </div>
+            </div>
+        
         </div> 
 
     </div>
 </section>
-

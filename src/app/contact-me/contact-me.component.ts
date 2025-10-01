@@ -77,7 +77,7 @@ export class ContactMeComponent implements OnInit {
       // Form submission logic here
       emailjs.send('service_p7hgqfe', 'template_g42gv1f', {
         to_name: 'Jay Barot',
-        to_email: this.recipientEmail,
+        from_name: this.recipientEmail,
         message: this.contactMePageContactForm.value.message,
         sender_email: this.contactMePageContactForm.value.senderEmail
       }, 'kgADkdTn3yQLJM4Zp')

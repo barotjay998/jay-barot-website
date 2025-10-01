@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const routes: Routes = [
   { path: '', redirectTo : '/home', pathMatch: 'full' },
@@ -13,6 +14,14 @@ const routes: Routes = [
     data: { 
       metaDescription: "Hey there, I'm Jay Barot - your go-to Software Developer! TheBarotCode is a testament to my passion for bringing your ideas to life. With a focus on customer satisfaction, I specialize in software design that truly resonates. Let's connect!",
       title: "Home | Jay Barot - Software Engineer"
+    }
+  },
+  { 
+    path: 'contact-me', 
+    component : ContactMeComponent,
+    data: {
+      metaDescription: "Unlock your software goals with a seasoned Software Developer! Reach out to Jay for expertise across web apps, mobile solutions, and enterprise software. Connect now to supercharge your development needs.",
+      title: "Contact | Jay Barot - Software Engineer"
     }
   },
   { 
@@ -51,5 +60,6 @@ export const routingComponents = [
   HomeComponent, 
   PageNotFoundComponent,
   PublicationsComponent,
-  ExactivitiesComponent
+  ExactivitiesComponent,
+  ContactMeComponent
 ];

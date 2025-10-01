@@ -1,0 +1,143 @@
+<div class="container-fluid bg-platinum back-btn-container">
+    <div class="row">
+        <div class="col-md-12">
+            <button 
+                type="button" 
+                class="btn btn-outline-dark" 
+                (click)="onBackHome()"
+            >
+                <i class="fa-solid fa-angles-left"></i>
+                <span class="px-4 font-weight-bold">
+                    <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="py-5 bg-platinum d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container-fluid">
+
+        <!-- Contact me section -->
+        <div class="row animate__animated animate__fadeInUp">
+            <!-- Left -->
+            <div class="col-xl-6 d-flex align-items-center">
+                <div class="row d-flex justify-content-xl-end justify-content-center">
+                    <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11">
+                        <!-- Title, Introduction -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <p class="contact-me-page-title mb-0">
+                                    Your Vision, My Code: <br> Get in Touch
+                                    <i class="fa-solid fa-comments"></i> 
+                                </p>
+                                <p class="contact-me-page-sub-title">
+                                    Feel free to reach out! I'm open to discussing new ideas, answering questions, or simply saying 'hi.' 
+                                    Use the form below, and I'll get back to you as soon as possible.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Me Form -->
+                        <div class="row mt-3">
+                            <div class="col-xl-10 col-lg-6 col-md-8 col-sm-11">
+
+                                <form 
+                                    [formGroup]="contactMePageContactForm" 
+                                    (ngSubmit)="sendEmail()" 
+                                    novalidate
+                                >
+
+                                    <!-- Message Textarea -->
+                                    <textarea 
+                                        class="form-control contact-me-textarea"
+                                        id="message" 
+                                        placeholder="Message*" 
+                                        formControlName="message"
+                                        [class.custom-is-invalid]="this.contactMePageContactForm.get('message')?.invalid && this.contactMePageContactForm.get('message')?.touched"
+                                    >
+                                    </textarea>
+
+                                    <div 
+                                        *ngIf="this.contactMePageContactForm.get('message')?.invalid && this.contactMePageContactForm.get('message')?.touched"
+                                        class="text-danger text-left">
+                                        <small>Message is required.</small>
+                                    </div>
+                    
+                                    <!-- Senders Email -->
+                                    <input 
+                                        class="form-control contact-me-email"
+                                        type="email" 
+                                        id="senderEmail" 
+                                        placeholder="Your Email*"
+                                        formControlName="senderEmail"
+                                        [class.custom-is-invalid]="this.contactMePageContactForm.get('senderEmail')?.invalid && this.contactMePageContactForm.get('senderEmail')?.touched"
+                                    >
+
+
+                                    <div 
+                                        *ngIf="contactMePageContactForm.get('senderEmail')?.hasError('required') && contactMePageContactForm.get('senderEmail')?.touched" 
+                                        class="text-danger text-left"
+                                        >
+                                        <small>
+                                            Email is required.
+                                        </small>
+                                    </div>
+
+                                    <div 
+                                        *ngIf="this.contactMePageContactForm.get('senderEmail')?.hasError('email') && this.contactMePageContactForm.get('senderEmail')?.touched" 
+                                        class="text-danger text-left"
+                                        >
+                                        <small>
+                                            Email must be a valid email address.
+                                        </small>    
+                                    </div>
+
+                                    <!-- Captcha -->
+                                    <re-captcha 
+                                    [siteKey]="siteKey" 
+                                    (resolved)="onCaptchaResolved($event)">
+                                    </re-captcha>
+                
+                                    <div 
+                                        *ngIf="isCaptchaInvalid()"
+                                        class="text-danger text-left"
+                                        >
+                                        <small>
+                                            Please complete the reCAPTCHA.
+                                        </small>    
+                                    </div>
+
+                    
+                                    <!-- Submit Button -->
+                                    <button 
+                                        class="btn btn-outline-dark w-100 mt-2"
+                                        (click)="sendEmail()"
+                                        type="submit" 
+                                        [disabled]="!contactMePageContactForm.valid"
+                                    >
+                                        Send
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="col-xl-6 d-flex align-items-center">
+                <div class="row d-flex justify-content-xl-start justify-content-center">
+                    <div class="col-xl-9 col-lg-6 col-md-6 col-sm-8">
+                      <img 
+                        class="img-fluid" 
+                        src="assets/images/contact-me.webp" 
+                        alt="Vector illustration: A woman video chatting on her mobile with a bearded man wearing headphones, sitting by a chair with a plant.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -10,6 +10,7 @@ import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { PublicationsComponent } from './publications/publications.component';
 import { ExactivitiesComponent } from './exactivities/exactivities.component';
 import { MetaService } from './services/meta.service';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({   
   declarations: [
@@ -18,7 +19,8 @@ import { MetaService } from './services/meta.service';
     FooterComponent,
     routingComponents,
     PublicationsComponent,
-    ExactivitiesComponent
+    ExactivitiesComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

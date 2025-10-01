@@ -32,9 +32,10 @@ export class ContactMeComponent implements OnInit {
 
   // Build the footer contact form.
   contactMePageContactForm = this.formBuilder.group({
-    message: ["Start typing your message! (e.g., Project Inquiry, General Question, Just Saying Hi)", Validators.required],
+    name: ['', Validators.required],
+    message: ['', Validators.required],
     senderEmail: ['', [Validators.required, Validators.email]],
-    captchaResponse: ['', Validators.required],
+  captchaResponse: ['', Validators.required],
   });
 
   onCaptchaResolved(response: string) {
@@ -73,11 +74,12 @@ export class ContactMeComponent implements OnInit {
 
   // Contact From Submit
   public sendEmail(): void {
+  
     if (this.contactMePageContactForm.valid && this.captchaResolved) {
       // Form submission logic here
       emailjs.send('service_p7hgqfe', 'template_g42gv1f', {
         to_name: 'Jay Barot',
-        from_name: this.recipientEmail,
+        from_name: this.contactMePageContactForm.value.name,
         message: this.contactMePageContactForm.value.message,
         sender_email: this.contactMePageContactForm.value.senderEmail
       }, 'kgADkdTn3yQLJM4Zp')

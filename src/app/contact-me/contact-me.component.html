@@ -49,15 +49,34 @@
                                     novalidate
                                 >
 
-                                    <!-- Message Textarea -->
-                                    <textarea 
-                                        class="form-control contact-me-textarea"
-                                        id="message" 
-                                        placeholder="Message*" 
-                                        formControlName="message"
-                                        [class.custom-is-invalid]="this.contactMePageContactForm.get('message')?.invalid && this.contactMePageContactForm.get('message')?.touched"
-                                    >
-                                    </textarea>
+                                <!-- Name Field -->
+                                <input 
+                                    class="form-control contact-me-name mb-3"
+                                    type="text" 
+                                    id="name" 
+                                    placeholder="Your Name*"
+                                    formControlName="name"
+                                    [class.custom-is-invalid]="this.contactMePageContactForm.get('name')?.invalid && this.contactMePageContactForm.get('name')?.touched"
+                                >
+
+                                <div 
+                                    *ngIf="contactMePageContactForm.get('name')?.invalid && contactMePageContactForm.get('name')?.touched" 
+                                    class="text-danger text-left"
+                                >
+                                    <small>
+                                        Name is required.
+                                    </small>
+                                </div>
+
+                                <!-- Message Textarea -->
+                                <textarea 
+                                    class="form-control contact-me-textarea"
+                                    id="message" 
+                                    placeholder="Start typing your message here.. (e.g., Project Inquiry, General Question, Just Saying Hi)" 
+                                    formControlName="message"
+                                    [class.custom-is-invalid]="this.contactMePageContactForm.get('message')?.invalid && this.contactMePageContactForm.get('message')?.touched"
+                                >
+                                </textarea>
 
                                     <div 
                                         *ngIf="this.contactMePageContactForm.get('message')?.invalid && this.contactMePageContactForm.get('message')?.touched"
@@ -74,7 +93,6 @@
                                         formControlName="senderEmail"
                                         [class.custom-is-invalid]="this.contactMePageContactForm.get('senderEmail')?.invalid && this.contactMePageContactForm.get('senderEmail')?.touched"
                                     >
-
 
                                     <div 
                                         *ngIf="contactMePageContactForm.get('senderEmail')?.hasError('required') && contactMePageContactForm.get('senderEmail')?.touched" 

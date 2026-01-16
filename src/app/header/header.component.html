@@ -1,11 +1,11 @@
 <nav class="navbar custom-navbar navbar-expand-lg navbar-dark bg-theme-blue fixed-top navbar-inverse py-3 px-4"
-[ngClass]="{ 'transparent': isNavbarTransparent, 'solid': !isNavbarTransparent }">
+  [ngClass]="{ 'transparent': isNavbarTransparent, 'solid': !isNavbarTransparent }">
 
-    <div>
-      <!-- Logo Image -->
-      <!-- <img src="assets/images/logo.webp" style="width:2rem"> -->
-  
-      <a 
+  <!-- <div>
+  Logo Image
+  <img src="assets/images/logo.png" style="width:6rem">
+
+  <a 
         class="font-roboto logo-text" 
         href="#"
         >
@@ -14,88 +14,81 @@
         class="log-sub-text"
         > Barot </span>
       </a>
-  
-    </div>
-     
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarNav" 
-        aria-controls="navbarNav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        (click)="togglerClicked()"
-        >
-        <span class="navbar-toggler-icon"></span>
-  
-      </button>
-  
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-  
-        <ul class="navbar-nav">
-  
-          <!-- About -->
-          <li class="nav-item d-flex align-items-center ml-2">
-            
-            <a class="nav-link" routerLink="/home" fragment="about">
-              <span class="font-roboto-mono color-theme-green font-weight-bold"> 00. </span>
-  
-              <span>
-                <i class="fa-solid fa-address-card"></i>
-                About
-              </span>
-            </a>
-  
-          </li>
-  
-          <!-- Experience -->
-          <li class="nav-item d-flex align-items-center ml-2">
-  
-            <a class="nav-link" routerLink="/home" fragment="experience">
-              <span class="font-roboto-mono color-theme-green font-weight-bold"> 01. </span>
-              <i class="fa-solid fa-gauge-high"></i>
-              Experience
-            </a>
-  
-          </li>
-  
-          <!-- Work -->
-          <li class="nav-item d-flex align-items-center ml-2">
-  
-            <a class="nav-link" routerLink="/home" fragment="projects">
-              <span class="font-roboto-mono color-theme-green font-weight-bold"> 02. </span>
-              <i class="fa-solid fa-code"></i>
-              Projects
-            </a>
-  
-          </li>
-          
-          <!-- Contact -->
-          <li class="nav-item d-flex align-items-center ml-2">
-  
-            <a class="nav-link" routerLink="/home" fragment="education">
-              <span class="font-roboto-mono color-theme-green font-weight-bold"> 03. </span>
-              <i class="fa-solid fa-graduation-cap"></i>
-              Education
-            </a>
-  
-          </li>
-  
-          <!-- Resume -->
-          <li class="nav-item d-flex align-items-center ml-4 mr-4 mt-1 text-center">
-              <button type="button" 
-                class="btn aqua-btn btn-bg-slide font-kalam px-5 py-1"
-                (click)="downloadFile()"
-                >
-                Resume
-                <i class="fa-solid fa-download"></i>
-              </button>
-          </li>
-  
-        </ul>
-  
-      </div>
-  
-  </nav>
-  
+
+  </div> -->
+
+  <a class="navbar-brand d-flex align-items-center" routerLink="/home">
+    <img src="assets/images/logo.webp" class="img-fluid" style="max-height:2rem;">
+  </a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation" (click)="togglerClicked()">
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <ul class="navbar-nav">
+
+      <!-- About -->
+      <li class="nav-item d-flex align-items-center ml-2">
+
+        <a class="nav-link" routerLink="/home" fragment="about">
+          <span class="font-roboto-mono color-theme-green font-weight-bold"> 00. </span>
+
+          <span>
+            <i class="fa-solid fa-address-card"></i>
+            About
+          </span>
+        </a>
+
+      </li>
+
+      <!-- Experience -->
+      <li class="nav-item d-flex align-items-center ml-2">
+
+        <a class="nav-link" routerLink="/home" fragment="experience">
+          <span class="font-roboto-mono color-theme-green font-weight-bold"> 01. </span>
+          <i class="fa-solid fa-gauge-high"></i>
+          Experience
+        </a>
+
+      </li>
+
+      <!-- Work -->
+      <li class="nav-item d-flex align-items-center ml-2">
+
+        <a class="nav-link" routerLink="/home" fragment="projects">
+          <span class="font-roboto-mono color-theme-green font-weight-bold"> 02. </span>
+          <i class="fa-solid fa-code"></i>
+          Projects
+        </a>
+
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item d-flex align-items-center ml-2">
+
+        <a class="nav-link" routerLink="/home" fragment="education">
+          <span class="font-roboto-mono color-theme-green font-weight-bold"> 03. </span>
+          <i class="fa-solid fa-graduation-cap"></i>
+          Education
+        </a>
+
+      </li>
+
+      <!-- Resume -->
+      <li class="nav-item d-flex align-items-center ml-4 mr-4 mt-1 text-center">
+        <button type="button" class="btn aqua-btn btn-bg-slide font-kalam px-5 py-1" (click)="downloadFile()">
+          Resume
+          <i class="fa-solid fa-download"></i>
+        </button>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>

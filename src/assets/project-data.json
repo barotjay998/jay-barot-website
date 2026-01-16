@@ -1,16 +1,43 @@
 [
     {
+        "title": "TruEye - Fine-Grained Authenticity Detection System",
+        "techStack": [
+            "PyTorch", 
+            "React", 
+            "PostgreSQL", 
+            "Flask"
+        ],
+        "image": "/assets/images/projects/ai-detective.webp",
+        "imageAlt": "Screenshot of the “AI Inspector” web app for AI image detection, displaying user profile stats, detection results with highlighted manipulated regions, and a “Spot the Fake” game interface where users choose the AI-generated image. Text overlay reads “Experience our web app to explore advanced models, play games, and more.”",
+        "links": "https://ai-inspector.netlify.app/",
+        "linktag": "Try the AI Inspector Web App",
+        "partners": [
+        ],
+        "mentor": [
+            "Lin Dan"
+        ],
+        "subject": "Artificial Intelligence - Research",
+        "subjectCode": "",
+        "institute": "Vanderbilt University",
+        "degree": "Computer Science",
+        "degreeLevel": "PhD",
+        "semester": "",
+        "academicTerm": "Fall 2025",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
         "title": "Game of Papers - A recommendation system for research papers",
         "techStack": [
             "SciBERT", 
             "Angular", 
             "Flask", 
-            "Docker",
-            "Netlify"
+            "Docker"
         ],
         "image": "/assets/images/projects/game-of-papers.webp",
-        "imageAlt": "Logo featuring a laurel wreath positioned atop a graduation hat, forming a throne-like structure with a paper resting in the center. The color scheme is predominantly yellow.",
-        "links": "",
+        "imageAlt": "Screenshot of the “Game of Papers” academic paper recommendation web app, showing ICML papers ranked by similarity, a featured paper directory view, and a detailed paper page with download button. Text overlay at the bottom reads “Watch the demo video” with a YouTube icon.",
+        "links": "https://www.youtube.com/watch?v=zpSTXFzWJPE",
+        "linktag": "View Demo Video",
         "partners": [
             "Adit Negi",
             "Samir Gupta"
@@ -18,7 +45,7 @@
         "mentor": [
             "Ipek Oguz"
         ],
-        "subject": "Projects in Machine Learning",
+        "subject": "Applied Artificial Intelligence",
         "subjectCode": "CS-5892-02",
         "institute": "Vanderbilt University",
         "degree": "Computer Science",
@@ -27,6 +54,30 @@
         "academicTerm": "Spring 2023",
         "startDate": "01-01-2023",
         "endDate": "05-01-2023"
+    },
+    {
+        "title": "FeedbackWizard: Empowering Students with an End Semester College Professor Feedback Mobile Android App",
+        "techStack": [
+            "Java",
+            "XML"
+        ],
+        "image": "/assets/images/projects/android-feedback-project.webp",
+        "imageAlt": "Screenshots: Android App - Login page, Feedback Form page and Admin Dashboard.",
+        "links": "",
+        "linktag": "",
+        "partners": [],
+        "mentor": [
+            "Prachi Tawade"
+        ],
+        "subject": "Android App Development",
+        "subjectCode": "ITL704",
+        "institute": "Xavier Institute of Engineering",
+        "degree": "Information Technology",
+        "degreeLevel": "Bachelor",
+        "semester": "7",
+        "academicTerm": "Fall 2019",
+        "startDate": "",
+        "endDate": ""
     },
     {
         "title": "Ingestion Service for Cloud Native Applications",
@@ -38,6 +89,7 @@
         "image": "/assets/images/projects/distributed-systems-project.webp",
         "imageAlt": "High-Level Architecture: Client requests flow to reverse proxy. Write traffic directed to Kafka ingestion service, while Read traffic routed to Elastic Search cluster.",
         "links": "",
+        "linktag": "",
         "partners": [
             "Adit Negi",
             "Rithik Reddy",
@@ -46,31 +98,8 @@
         "mentor": [
             "Aniruddha Gokhale"
         ],
-        "subject": "Distributed Systems Principles",
+        "subject": "Distributed Systems",
         "subjectCode": "CS-6381-01",
-        "institute": "Vanderbilt University",
-        "degree": "Computer Science",
-        "degreeLevel": "Masters",
-        "semester": "2",
-        "academicTerm": "Spring 2023",
-        "startDate": "01-01-2023",
-        "endDate": "05-01-2023"
-    },
-    {
-        "title": "Dynamic Movie Discovery: Unleashing the Power of Java 19 Microservices with Spring MVC",
-        "techStack": [
-            "Spring MVC",
-            "Eureka"
-        ],
-        "image": "",
-        "imageAlt": "Jay Barot Microservices Project",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Douglas C. Schmidt"
-        ],
-        "subject": "Scalable Microservices",
-        "subjectCode": "CS-5891-01",
         "institute": "Vanderbilt University",
         "degree": "Computer Science",
         "degreeLevel": "Masters",
@@ -88,6 +117,7 @@
         "image": "/assets/images/projects/computer-networks-project.webp",
         "imageAlt": "Project environment setup: Deployed on Chameleon cloud with Ryu SDN controller on Docker network.",
         "links": "",
+        "linktag": "",
         "partners": [
             "Adit Negi",
             "Justin Yeh"
@@ -95,30 +125,8 @@
         "mentor": [
             "Aniruddha Gokhale"
         ],
-        "subject": "Computer Networks",
+        "subject": "Network Security",
         "subjectCode": "CS-5283-01",
-        "institute": "Vanderbilt University",
-        "degree": "Computer Science",
-        "degreeLevel": "Masters",
-        "semester": "1",
-        "academicTerm": "Fall 2022",
-        "startDate": "08-01-2022",
-        "endDate": "12-01-2022"
-    },
-    {
-        "title": "Using Medical Imaging to Identify, Benefit and Boost the Productivity of Software Developers with Mental Ailment",
-        "techStack": [
-            "SE Research Proposal"
-        ],
-        "image": "/assets/images/projects/left-dorsal-mid-insula.webp",
-        "imageAlt": "Brain scan images highlighting left-dorsal-mid-insula area from x, y, and z coordinates.",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Yu Huang"
-        ],
-        "subject": "Advance Topics Software Engineering",
-        "subjectCode": "CS-8395-02",
         "institute": "Vanderbilt University",
         "degree": "Computer Science",
         "degreeLevel": "Masters",
@@ -136,11 +144,12 @@
         "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.webp",
         "imageAlt": "Hero section: Stock symbol search box and navigation bar on the project's web app home page.",
         "links": "",
+        "linktag": "",
         "partners": [],
         "mentor": [
             "Amit Narote"
         ],
-        "subject": "Machine Learning",
+        "subject": "Applied Machine Learning",
         "subjectCode": "",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -160,11 +169,12 @@
         "image": "/assets/images/projects/predicting-nasdaq-nse-ml.webp",
         "imageAlt": "Comparative results table of diverse ML models on assorted stock market datasets",
         "links": "",
+        "linktag": "",
         "partners": [],
         "mentor": [
             "Amit Narote"
         ],
-        "subject": "Machine Learning",
+        "subject": "Applied Machine Learning",
         "subjectCode": "",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
@@ -172,76 +182,6 @@
         "semester": "8",
         "academicTerm": "Spring 2020",
         "startDate": "03-01-2020",
-        "endDate": ""
-    },
-    {
-        "title": "Empowering Hope: Crafting an Intuitive Python Web App for Effortless Children's Cancer Donations",
-        "techStack": [
-            "Python",
-            "MonogoDB"
-        ],
-        "image": "/assets/images/projects/child-cancer-donation-project.webp",
-        "imageAlt": "Children's Cancer Donation Web App Homepage: Information and 'Donate Now' Button",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Jaychand Upadhyay"
-        ],
-        "subject": "Web Development with Python",
-        "subjectCode": "ITL404",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "4",
-        "academicTerm": "Spring 2018",
-        "startDate": "",
-        "endDate": ""
-    },
-    {
-        "title": "FlavorLink: Crafting a Seamless Online Food Ordering Web Application",
-        "techStack": [
-            "JavaScript",
-            "Flask",
-            "MySQL"
-        ],
-        "image": "",
-        "imageAlt": "",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Martina D'souza"
-        ],
-        "subject": "Internet Programming",
-        "subjectCode": "ITC502, ITL501",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "5",
-        "academicTerm": "Fall 2018",
-        "startDate": "",
-        "endDate": ""
-    },
-    {
-        "title": "FeedbackWizard: Empowering Students with an End Semester College Professor Feedback Mobile Android App",
-        "techStack": [
-            "Java",
-            "XML"
-        ],
-        "image": "/assets/images/projects/android-feedback-project.webp",
-        "imageAlt": "Screenshots: Android App - Login page, Feedback Form page and Admin Dashboard.",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Prachi Tawade"
-        ],
-        "subject": "Android App Development",
-        "subjectCode": "ITL704",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "7",
-        "academicTerm": "Fall 2019",
-        "startDate": "",
         "endDate": ""
     },
     {
@@ -253,63 +193,20 @@
         "image": "/assets/images/projects/movie-recommendation-chatbot-project.webp",
         "imageAlt": "Poster: Slack Movie Recommendation Chatbot Project - Slack logo, AI robot, mobile, and box office background.",
         "links": "",
+        "linktag": "",
         "partners": [],
         "mentor": [
             "Simran Singhani"
         ],
-        "subject": "Artificial Intelligence, Natural Language Processing",
+        "subject": "Applied Artificial Intelligence, Natural Language Processing",
         "subjectCode": "ITC703",
         "institute": "Xavier Institute of Engineering",
         "degree": "Information Technology",
         "degreeLevel": "Bachelor",
         "semester": "7",
         "academicTerm": "Fall 2019",
-        "startDate": "",
-        "endDate": ""
-    },
-    {
-        "title": "Titanic Insights: Analyzing Passenger Survival - A Captivating Data Modeling Project",
-        "techStack": [
-            "R - programming"
-        ],
-        "image": "",
-        "imageAlt": "",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Simran Singhani"
-        ],
-        "subject": "Data Science & Engineering",
-        "subjectCode": "ITC703",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "7",
-        "academicTerm": "Fall 2019",
-        "startDate": "",
-        "endDate": ""
-    },
-    {
-        "title": "SmartServe: Transforming Dining Experiences with an IoT Restaurant Automation Model Powered by Embedded System Boards",
-        "techStack": [
-            "Arduino",
-            "C++"
-        ],
-        "image": "/assets/images/projects/iot-project.webp",
-        "imageAlt": "IoT restaurant model circuit diagram: Arduino board, breadboard, and sensor connections.",
-        "links": "",
-        "partners": [],
-        "mentor": [
-            "Meena Ugale"
-        ],
-        "subject": "Internet of Things, Wireless Sensor Networks",
-        "subjectCode": "ITC501, ITL504",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "5",
-        "academicTerm": "Fall 2018",
         "startDate": "",
         "endDate": ""
     }
+ 
 ]

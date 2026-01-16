@@ -4,7 +4,7 @@
 
     <div class="row mb-3" *ngIf="!isStandardFooter; else footerIcons">
 
-      <!-- Contact Me -->  
+      <!-- Contact Me -->
       <div class="col-lg-6 d-flex align-self-center" style="margin-top: 3rem;">
         <div class="row justify-content-center mx-1">
           <div class="col-lg-10 col-md-10 col-sm-10 d-flex flex-column">
@@ -13,73 +13,69 @@
               <div class="col-md-12">
                 <p class="contact-me-title">Let's Start a Conversation. <i class="fa-solid fa-comments"></i> </p>
                 <p class="contact-me-sub-title">
-                  Share Your Ideas and Let's Bring Your Vision to Life! 
+                  Share Your Ideas and Let's Bring Your Vision to Life!
                   Reach Out to Discuss Your Next Project or Collaboration Opportunity.
                 </p>
               </div>
             </div>
 
             <!-- Contact Info -->
-        <div class="row justify-content-left">
+            <div class="row justify-content-left">
 
-          <!-- Email -->
-          <div 
-            class="col-xl-5 col-md-4 about-contact-info-card text-center"
-          >
-            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
-              <div class="col-md-12">
-                  <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: #585757"></i>
-              </div>
-            </div>
-            
-            <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
-              <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                <label>Email</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 my-1">
-                <a href = "mailto:barot.jay@outlook.com" style="letter-spacing: 0.1rem;">
-                  Barot.Jay@outlook.com
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 my-1">
-                <a href = "mailto:jay.d.barot@vanderbilt.edu" style="letter-spacing: 0.1rem;">
-                  Jay.D.Barot@Vanderbilt.edu
-                </a>
-              </div>
-            </div>
-          </div>
+              <!-- Email -->
+              <div class="col-xl-5 col-md-4 about-contact-info-card text-center">
+                <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
+                  <div class="col-md-12">
+                    <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: #585757"></i>
+                  </div>
+                </div>
 
-          <!-- Phone -->
-            <div 
-              class="col-xl-5 col-md-4 about-contact-info-card text-center"
-            >
-              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
-                <div class="col-md-12">
+                <div class="row" (click)="sendEmail('barot.jay@outlook.com')" style="cursor: pointer;">
+                  <div class="col-md-12" style="font-size: 1rem; color: #585757">
+                    <label>Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 my-1">
+                    <a href="mailto:barot.jay@outlook.com" style="letter-spacing: 0.1rem;">
+                      Barot.Jay@outlook.com
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 my-1">
+                    <a href="mailto:jay.d.barot@vanderbilt.edu" style="letter-spacing: 0.1rem;">
+                      Jay.D.Barot@Vanderbilt.edu
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-xl-5 col-md-4 about-contact-info-card text-center">
+                <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
+                  <div class="col-md-12">
                     <i class="fa-solid fa-phone" style="font-size: 1.2rem; color: #585757"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
-                <div class="col-md-12" style="font-size: 1rem; color: #585757">
-                  <label>Phone</label>
+                <div class="row" (click)="callPhoneNumber()" style="cursor: pointer;">
+                  <div class="col-md-12" style="font-size: 1rem; color: #585757">
+                    <label>Phone</label>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12" style="letter-spacing: 0.05rem;">
-                  <span>&nbsp;</span>
+                <div class="row">
+                  <div class="col-md-12" style="letter-spacing: 0.05rem;">
+                    <span>&nbsp;</span>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12" style="letter-spacing: 0.05rem;">
-                  <span style="text-decoration: underline;">US</span> 
-                    <a href="tel:+16157790420" style="letter-spacing: 0.1rem;"> +1 (615) 779 - 0420</a> 
+                <div class="row">
+                  <div class="col-md-12" style="letter-spacing: 0.05rem;">
+                    <span style="text-decoration: underline;">US</span>
+                    <a href="tel:+16157790420" style="letter-spacing: 0.1rem;"> +1 (615) 779 - 0420</a>
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
 
           </div>
         </div>
@@ -90,18 +86,16 @@
 
         <div class="row d-flex justify-content-center" style="margin-top: 3rem;">
           <div class="col-xl-8 col-lg-8 col-md-6 col-sm-7 col-10 d-flex justify-content-center">
-            <img class="img-fluid" src="assets/images/contact.webp" alt="A vector illustration of a man using a cell phone to send a message and email, set against a cityscape background">
+            <img class="img-fluid" src="assets/images/contact.webp"
+              alt="A vector illustration of a man using a cell phone to send a message and email, set against a cityscape background">
           </div>
         </div>
 
         <div class="row d-flex justify-content-center">
           <div class="col-6 d-flex flex-row justify-content-center">
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/j-barot/" 
-              target="_blank" 
-              class="footer-link"
-              aria-label="Visit Jay Barots' LinkedIn Profile"
-              > 
+            <a href="https://www.linkedin.com/in/j-barot/" target="_blank" class="footer-link"
+              aria-label="Visit Jay Barots' LinkedIn Profile">
               <i class="fa-brands fa-linkedin footer-link-icon"></i>
             </a>
 
@@ -113,16 +107,13 @@
               aria-label="View Jay Barots' Indeed Profile and Resume"
               > 
               <i class="cib-indeed"></i> -->
-              <!-- <i class="fa-solid fa-code footer-link-icon"></i> -->
+            <!-- <i class="fa-solid fa-code footer-link-icon"></i> -->
             <!-- </a> -->
 
             <!-- Github -->
-            <a href="https://github.com/barotjay998" 
-                target="_blank" 
-                class="footer-link"
-                aria-label="Visit Jay Barots' GitHub Profile"
-                > 
-                <i class="fa-brands fa-github footer-link-icon"></i>
+            <a href="https://github.com/barotjay998" target="_blank" class="footer-link"
+              aria-label="Visit Jay Barots' GitHub Profile">
+              <i class="fa-brands fa-github footer-link-icon"></i>
             </a>
 
             <!-- LeetCode -->
@@ -136,12 +127,9 @@
             </a> -->
 
             <!-- Email -->
-            <a href="mailto:barot.jay@outlook.com" 
-                target="_blank" 
-                class="footer-link"
-                aria-label="Contact Jay Barot via Email"
-              >
-                <i class="fa-solid fa-envelope footer-link-icon"></i>
+            <a href="mailto:barot.jay@outlook.com" target="_blank" class="footer-link"
+              aria-label="Contact Jay Barot via Email">
+              <i class="fa-solid fa-envelope footer-link-icon"></i>
             </a>
           </div>
 
@@ -155,33 +143,22 @@
       <div class="row d-flex justify-content-center">
         <div class="col-lg-12 d-flex flex-row justify-content-center" style="margin-top: 3rem;">
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/j-barot/" 
-            class="footer-link-box"
-            target="_blank" 
-            class="footer-link mt-0 mb-0"
-            aria-label="Visit Jay Barots' LinkedIn Profile"
-          > 
+          <a href="https://www.linkedin.com/in/j-barot/" class="footer-link-box" target="_blank"
+            class="footer-link mt-0 mb-0" aria-label="Visit Jay Barots' LinkedIn Profile">
             <i class="fa-brands fa-linkedin footer-link-icon"></i>
           </a>
 
           <!-- Indeed -->
-          <a href="https://profile.indeed.com/p/jayb-msw852b" 
-            target="_blank"
-            class="footer-link mt-0 mb-0" 
-            style="text-decoration: none;"
-            aria-label="View Jay Barots' Indeed Profile and Resume"
-            > 
+          <a href="https://profile.indeed.com/p/jayb-msw852b" target="_blank" class="footer-link mt-0 mb-0"
+            style="text-decoration: none;" aria-label="View Jay Barots' Indeed Profile and Resume">
             <i class="cib-indeed"></i>
             <!-- <i class="fa-solid fa-code footer-link-icon"></i> -->
           </a>
 
           <!-- Github -->
-          <a href="https://github.com/barotjay998" 
-              target="_blank" 
-              class="footer-link mt-0 mb-0"
-              aria-label="Visit Jay Barots' GitHub Profile"
-            > 
-              <i class="fa-brands fa-github footer-link-icon"></i>
+          <a href="https://github.com/barotjay998" target="_blank" class="footer-link mt-0 mb-0"
+            aria-label="Visit Jay Barots' GitHub Profile">
+            <i class="fa-brands fa-github footer-link-icon"></i>
           </a>
 
           <!-- LeetCode -->
@@ -195,12 +172,9 @@
           </a> -->
 
           <!-- Email -->
-          <a href="mailto:barot.jay@outlook.com" 
-              target="_blank" 
-              class="footer-link mt-0 mb-0"
-              aria-label="Contact Jay Barot via Email"
-              >
-              <i class="fa-solid fa-envelope footer-link-icon"></i>
+          <a href="mailto:barot.jay@outlook.com" target="_blank" class="footer-link mt-0 mb-0"
+            aria-label="Contact Jay Barot via Email">
+            <i class="fa-solid fa-envelope footer-link-icon"></i>
           </a>
         </div>
       </div>
@@ -210,7 +184,7 @@
 
       <!-- Copyright -->
       <div class="col-lg-8 text-center pb-3 pt-3 ml-5 mr-5 font-courier-prime" style="border-top: 1px solid #c2c2c2;">
-        <i class="fa-regular fa-copyright"></i> 2025 Copyright:
+        <i class="fa-regular fa-copyright"></i> {{ currentYear }} Copyright:
         <span class="text-dark">Jay Barot</span>
         All Rights Reserved
       </div>

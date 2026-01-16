@@ -10,6 +10,7 @@ export class FooterComponent implements OnInit {
 
   // A standard footer is without the contact me form.
   public isStandardFooter: boolean = false;
+  currentYear = new Date().getFullYear();
 
   constructor(
     private interactionService: InteractionServiceService,

@@ -142,7 +142,7 @@ a.disabled {
     background-color: $colorMaastrichtBlue;
     color: $colorMaastrichtBlue;
     border: 1px solid $colorAquamarine;
-    border-radius: 0rem;
+    border-radius: 0.5rem;
     color: $colorAquamarine;
     cursor: pointer;
 }
@@ -157,7 +157,7 @@ a.disabled {
 .btn-custom-2 {
     margin: 0.5rem;
     width: 10rem;
-    border-radius: 0rem;
+    border-radius: 0.5rem;
 }
 
 .btn-custom-3 {
@@ -257,7 +257,7 @@ a.disabled {
     color: #575757;
     // border: 0.1rem solid;
     padding: 1rem;
-    // border-radius: 1rem;
+    border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem;
     @extend .font-roboto;
 }

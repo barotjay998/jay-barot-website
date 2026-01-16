@@ -108,7 +108,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   paginateProjects() {
     // Convert the object to an array of values (projects)
     const projectsArray = Object.values(this.projectData);
-  
+
     this.paginatedProjects = [];
     
     // Apply pagination logic on the array of projects

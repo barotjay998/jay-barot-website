@@ -542,7 +542,7 @@
       class="row"
     >
       <div class="col-lg-12 text-center m-4">
-          <h1 class="projects-heading">Projects.</h1>
+          <h1 class="projects-heading">Selective Projects.</h1>
           <h2 class="projects-sub-heading">Exploring Innovations, Cultivating Solutions.</h2>
         </div>
       </div>
@@ -574,7 +574,7 @@
                       <div class="m-2">
                         <p class="project-subject">{{ project.subject }}</p>
                         <p class="project-title">{{ project.title }}</p>
-                        <a *ngIf="project.links" class="d-block project-learn-more" href="#">Learn More <i class="fa-solid fa-angles-right"></i></a>
+                        <a *ngIf="project.links" class="d-block project-learn-more" href="{{project.links}}" target="_blank">{{project.linktag}} <i class="fa-solid fa-angles-right"></i></a>
                         <div class="d-flex flex-wrap">
                           <span *ngFor="let tech of project.techStack" class="project-technology-label">{{ tech }}</span>
                         </div>

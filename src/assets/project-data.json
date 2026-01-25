@@ -56,8 +56,30 @@
         "endDate": "05-01-2023"
     },
     {
+        "title": "MarketAnalytica: News-Driven AI Stock Sentiment & Analytics Platform",
+        "techStack": [
+            "FastAPI", "React", "Docker", "FinBERT"
+        ],
+        "image": "/assets/images/projects/marketanalytica.webp",
+        "imageAlt": "MarketAnalytica AI sentiment dashboard showing aggregated news sentiment score, distribution",
+        "links": "https://marketanalytica.thebarotcode.com",
+        "linktag": "Explore the Platform",
+        "partners": [],
+        "mentor": [],
+        "subject": "Applied Machine Learning",
+        "subjectCode": "",
+        "institute": "",
+        "degree": "",
+        "degreeLevel": "",
+        "semester": "",
+        "academicTerm": "",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
         "title": "FeedbackWizard: Empowering Students with an End Semester College Professor Feedback Mobile Android App",
         "techStack": [
+            "Android SDK",
             "Java",
             "XML"
         ],
@@ -107,30 +129,6 @@
         "academicTerm": "Spring 2023",
         "startDate": "01-01-2023",
         "endDate": "05-01-2023"
-    },
-    {
-        "title": "Real-Time Platform for Stock Tweet Sentiment Analysis and Price Prediction on NASDAQ and NSE",
-        "techStack": [
-            "iJRASET",
-            "Python"
-        ],
-        "image": "/assets/images/projects/flask-app-for-realtime-data-and-sentiment-analysis-on-stocks.webp",
-        "imageAlt": "Hero section: Stock symbol search box and navigation bar on the project's web app home page.",
-        "links": "",
-        "linktag": "",
-        "partners": [],
-        "mentor": [
-            "Amit Narote"
-        ],
-        "subject": "Applied Machine Learning",
-        "subjectCode": "",
-        "institute": "Xavier Institute of Engineering",
-        "degree": "Information Technology",
-        "degreeLevel": "Bachelor",
-        "semester": "8",
-        "academicTerm": "Spring 2020",
-        "startDate": "03-01-2020",
-        "endDate": ""
     },
     {
         "title": "CineBuddy: A Cutting-Edge Movie Recommendation Chatbot Powered by NLP and AI",

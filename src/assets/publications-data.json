@@ -1,5 +1,14 @@
 [
     {
+        "title": "TruEye: Fine-Grained Detection of AI-Generated Human Subjects in Image",
+        "journal": "arXiv",
+        "volume": "",
+        "issue": "2606.27505",
+        "date": "June, 2026",
+        "externals": ["https://arxiv.org/abs/2606.27505"],
+        "externalLabels": ["View Paper"]
+    },
+    {
         "title": "ToneCheck: Unveiling the Impact of Dialects in Privacy Policy",
         "journal": "ACM Symposium on Access Control Models and Technologies (SACMAT)",
         "volume": "",

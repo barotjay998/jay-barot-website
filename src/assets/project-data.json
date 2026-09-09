@@ -5,12 +5,14 @@
             "PyTorch", 
             "React", 
             "PostgreSQL", 
-            "Flask"
+            "Flask",
+            "AWS",
+            "Docker"
         ],
         "image": "/assets/images/projects/ai-detective.webp",
         "imageAlt": "Screenshot of the “AI Inspector” web app for AI image detection, displaying user profile stats, detection results with highlighted manipulated regions, and a “Spot the Fake” game interface where users choose the AI-generated image. Text overlay reads “Experience our web app to explore advanced models, play games, and more.”",
-        "links": "https://ai-inspector.netlify.app/",
-        "linktag": "Try the AI Inspector Web App",
+        "links": "https://www.inspect-ai.net/",
+        "linktag": "Try the Inspect AI Web App",
         "partners": [
         ],
         "mentor": [
